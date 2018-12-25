@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -std=c++17 -fdump-tree-optimized -g  -O0 -pg -ggdb3   CMakeFiles/openGL.dir/opengl.cpp.o  -o openGL -rdynamic 

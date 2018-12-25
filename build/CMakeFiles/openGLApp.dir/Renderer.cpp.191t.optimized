@@ -1,0 +1,153 @@
+
+;; Function void GLClearError() (_Z12GLClearErrorv, funcdef_no=1426, decl_uid=19211, cgraph_uid=404, symbol_order=406)
+
+void GLClearError() ()
+{
+  unsigned int D.53303;
+  unsigned int D.53301;
+  bool retval.0;
+  unsigned int _4;
+  unsigned int _5;
+  bool retval.0_6;
+
+  <bb 2>:
+  _4 = glGetError ();
+  _5 = _4;
+  retval.0_6 = _5 != 0;
+  if (retval.0_6 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  goto <bb 2>;
+
+  <bb 4>:
+  return;
+
+}
+
+
+
+;; Function bool GLLogCall(const char*, const char*, int) (_Z9GLLogCallPKcS0_i, funcdef_no=1427, decl_uid=19215, cgraph_uid=405, symbol_order=407)
+
+bool GLLogCall(const char*, const char*, int) (const char * function, const char * file, int line)
+{
+  struct basic_ostream & D.53324;
+  struct basic_ostream & D.53323;
+  struct basic_ostream & D.53322;
+  struct basic_ostream & D.53321;
+  struct basic_ostream & D.53320;
+  struct basic_ostream & D.53319;
+  struct __ostream_type & D.53318;
+  struct basic_ostream & D.53317;
+  GLenum D.53316;
+  GLenum error;
+  bool D.53314;
+  struct basic_ostream & D.53313;
+  struct basic_ostream & D.53312;
+  struct basic_ostream & D.53311;
+  struct basic_ostream & D.53310;
+  struct basic_ostream & D.53309;
+  struct basic_ostream & D.53308;
+  struct __ostream_type & D.53307;
+  struct basic_ostream & D.53306;
+  bool _1;
+  GLenum _5;
+  struct basic_ostream & _8;
+  struct basic_ostream & _9;
+  struct __ostream_type & _11;
+  struct __ostream_type & _12;
+  struct basic_ostream & _14;
+  struct basic_ostream & _15;
+  struct basic_ostream & _18;
+  struct basic_ostream & _19;
+  struct basic_ostream & _21;
+  struct basic_ostream & _22;
+  struct basic_ostream & _25;
+  struct basic_ostream & _26;
+  struct basic_ostream & _28;
+  struct basic_ostream & _29;
+  struct basic_ostream & _32;
+  struct basic_ostream & _33;
+  bool _35;
+  bool _36;
+
+  <bb 2>:
+  _5 = glGetError ();
+  error_6 = _5;
+  if (error_6 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _8 = std::operator<< <std::char_traits<char> > (&cout, "[OpenGl Error] (");
+  _9 = _8;
+  _11 = std::basic_ostream<char>::operator<< (_9, error_6);
+  _12 = _11;
+  _14 = std::operator<< <std::char_traits<char> > (_12, ") ");
+  _15 = _14;
+  _18 = std::operator<< <std::char_traits<char> > (_15, function_16(D));
+  _19 = _18;
+  _21 = std::operator<< <std::char_traits<char> > (_19, " ");
+  _22 = _21;
+  _25 = std::operator<< <std::char_traits<char> > (_22, file_23(D));
+  _26 = _25;
+  _28 = std::operator<< <std::char_traits<char> > (_26, ":");
+  _29 = _28;
+  _32 = std::basic_ostream<char>::operator<< (_29, line_30(D));
+  _33 = _32;
+  std::basic_ostream<char>::operator<< (_33, endl);
+  _35 = 0;
+  goto <bb 5> (<L2>);
+
+  <bb 4>:
+  _36 = 1;
+
+  # _1 = PHI <_35(3), _36(4)>
+<L2>:
+  return _1;
+
+}
+
+
+
+;; Function void __static_initialization_and_destruction_0(int, int) (_Z41__static_initialization_and_destruction_0ii, funcdef_no=1774, decl_uid=53201, cgraph_uid=752, symbol_order=778)
+
+void __static_initialization_and_destruction_0(int, int) (int __initialize_p, int __priority)
+{
+  <bb 2>:
+  if (__initialize_p_2(D) == 1)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  if (__priority_4(D) == 65535)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__comp_dtor , &__ioinit, &__dso_handle);
+
+  <bb 5>:
+  return;
+
+}
+
+
+
+;; Function (static initializers for /home/benjamin/Videos/openGLSeries/code/Renderer.cpp) (_GLOBAL__sub_I__Z12GLClearErrorv, funcdef_no=1775, decl_uid=53207, cgraph_uid=753, symbol_order=900)
+
+(static initializers for /home/benjamin/Videos/openGLSeries/code/Renderer.cpp) ()
+{
+  <bb 2>:
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+

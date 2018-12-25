@@ -1,0 +1,531 @@
+
+;; Function bool exists(const string&) (_Z6existsRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, funcdef_no=4144, decl_uid=116540, cgraph_uid=1245, symbol_order=1249)
+
+bool exists(const string&) (const struct string & name)
+{
+  struct stat buffer;
+  int D.120966;
+  const char * D.120965;
+  bool D.120964;
+  const char * _5;
+  int _7;
+  bool _8;
+
+  <bb 2>:
+  buffer = {};
+  _5 = std::__cxx11::basic_string<char>::c_str (name_3(D));
+  _7 = stat (_5, &buffer);
+  _8 = _7 == 0;
+  buffer ={v} {CLOBBER};
+
+<L1>:
+  return _8;
+
+}
+
+
+
+;; Function Texture::Texture(const string&) (_ZN7TextureC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, funcdef_no=4149, decl_uid=116165, cgraph_uid=1250, symbol_order=1254)
+
+Texture::Texture(const string&) (struct Texture * const this, const struct string & path)
+{
+  void * D.121035;
+  bool D.120895;
+  bool D.120894;
+  bool D.120893;
+  bool D.120892;
+  bool D.120891;
+  bool D.120890;
+  bool D.120889;
+  stbi_uc * D.120888;
+  struct string * D.120886;
+  unsigned char * D.120884;
+  unsigned char * D.120881;
+  bool D.120877;
+  bool retval.7;
+  int D.120875;
+  int D.120874;
+  unsigned char * D.120873;
+  bool D.120869;
+  bool retval.6;
+  bool D.120864;
+  bool retval.5;
+  bool D.120859;
+  bool retval.4;
+  bool D.120854;
+  bool retval.3;
+  bool D.120849;
+  bool retval.2;
+  unsigned int D.120847;
+  bool D.120843;
+  bool retval.1;
+  unsigned int * D.120841;
+  stbi_uc * D.120840;
+  const char * D.120839;
+  int * D.120838;
+  int * D.120837;
+  int * D.120836;
+  void * D.116640;
+  bool D.120833;
+  struct string * D.120832;
+  bool retval.0;
+  struct string * D.120830;
+  int (*__vtbl_ptr_type) () * D.120829;
+  int (*__vtbl_ptr_type) () * _13;
+  struct string * _16;
+  struct string * _23;
+  bool _25;
+  bool retval.0_26;
+  int * _28;
+  int * _29;
+  int * _30;
+  const char * _32;
+  stbi_uc * _34;
+  stbi_uc * _35;
+  unsigned int * _38;
+  bool _41;
+  bool _42;
+  bool retval.1_43;
+  unsigned int _46;
+  bool _49;
+  bool _50;
+  bool retval.2_51;
+  bool _56;
+  bool _57;
+  bool retval.3_58;
+  bool _63;
+  bool _64;
+  bool retval.4_65;
+  bool _70;
+  bool _71;
+  bool retval.5_72;
+  bool _77;
+  bool _78;
+  bool retval.6_79;
+  unsigned char * _82;
+  int _83;
+  int _84;
+  bool _87;
+  bool _88;
+  bool retval.7_89;
+  unsigned char * _92;
+  unsigned char * _93;
+  void * _96;
+  struct string * _100;
+
+  <bb 2>:
+  MEM[(struct  &)this_11(D)] ={v} {CLOBBER};
+  _13 = &_ZTV7Texture + 16;
+  this_11(D)->_vptr.Texture = _13;
+  this_11(D)->m_RendererID = 0;
+  _16 = &this_11(D)->m_FilePath;
+  std::__cxx11::basic_string<char>::basic_string (_16, path_17(D));
+  this_11(D)->m_LocalBuffer = 0B;
+  this_11(D)->m_Width = 0;
+  this_11(D)->m_Height = 0;
+  this_11(D)->m_BPP = 0;
+  _23 = &this_11(D)->m_FilePath;
+  _25 = exists (_23);
+  retval.0_26 = ~_25;
+  if (retval.0_26 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  _96 = __cxa_allocate_exception (16);
+  std::invalid_argument::invalid_argument (_96, "Texture file path did not exist.");
+
+  <bb 4>:
+  __cxa_throw (_96, &_ZTISt16invalid_argument, __comp_dtor );
+
+  <bb 5>:
+  stbi_set_flip_vertically_on_load (1);
+
+  <bb 6>:
+  _28 = &this_11(D)->m_BPP;
+  _29 = &this_11(D)->m_Height;
+  _30 = &this_11(D)->m_Width;
+  _32 = std::__cxx11::basic_string<char>::c_str (path_17(D));
+  _34 = stbi_load (_32, _30, _29, _28, 4);
+
+  <bb 7>:
+  _35 = _34;
+  this_11(D)->m_LocalBuffer = _35;
+  GLClearError ();
+
+  <bb 8>:
+  _38 = &this_11(D)->m_RendererID;
+  glGenTextures (1, _38);
+
+  <bb 9>:
+  _41 = GLLogCall ("glGenTextures(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 23);
+
+  <bb 10>:
+  _42 = _41;
+  retval.1_43 = ~_42;
+  if (retval.1_43 != 0)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+  <bb 11>:
+  raise (2);
+
+  <bb 12>:
+  GLClearError ();
+
+  <bb 13>:
+  _46 = this_11(D)->m_RendererID;
+  glBindTexture (3553, _46);
+
+  <bb 14>:
+  _49 = GLLogCall ("glBindTexture(GL_TEXTURE_2D, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 24);
+
+  <bb 15>:
+  _50 = _49;
+  retval.2_51 = ~_50;
+  if (retval.2_51 != 0)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+
+  <bb 16>:
+  raise (2);
+
+  <bb 17>:
+  GLClearError ();
+
+  <bb 18>:
+  glTexParameteri (3553, 10241, 9729);
+
+  <bb 19>:
+  _56 = GLLogCall ("glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 25);
+
+  <bb 20>:
+  _57 = _56;
+  retval.3_58 = ~_57;
+  if (retval.3_58 != 0)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  raise (2);
+
+  <bb 22>:
+  GLClearError ();
+
+  <bb 23>:
+  glTexParameteri (3553, 10240, 9729);
+
+  <bb 24>:
+  _63 = GLLogCall ("glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 26);
+
+  <bb 25>:
+  _64 = _63;
+  retval.4_65 = ~_64;
+  if (retval.4_65 != 0)
+    goto <bb 26>;
+  else
+    goto <bb 27>;
+
+  <bb 26>:
+  raise (2);
+
+  <bb 27>:
+  GLClearError ();
+
+  <bb 28>:
+  glTexParameteri (3553, 10242, 33071);
+
+  <bb 29>:
+  _70 = GLLogCall ("glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 27);
+
+  <bb 30>:
+  _71 = _70;
+  retval.5_72 = ~_71;
+  if (retval.5_72 != 0)
+    goto <bb 31>;
+  else
+    goto <bb 32>;
+
+  <bb 31>:
+  raise (2);
+
+  <bb 32>:
+  GLClearError ();
+
+  <bb 33>:
+  glTexParameteri (3553, 10243, 33071);
+
+  <bb 34>:
+  _77 = GLLogCall ("glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 28);
+
+  <bb 35>:
+  _78 = _77;
+  retval.6_79 = ~_78;
+  if (retval.6_79 != 0)
+    goto <bb 36>;
+  else
+    goto <bb 37>;
+
+  <bb 36>:
+  raise (2);
+
+  <bb 37>:
+  GLClearError ();
+
+  <bb 38>:
+  _82 = this_11(D)->m_LocalBuffer;
+  _83 = this_11(D)->m_Height;
+  _84 = this_11(D)->m_Width;
+  glTexImage2D (3553, 0, 32856, _84, _83, 0, 6408, 5121, _82);
+
+  <bb 39>:
+  _87 = GLLogCall ("glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, m_Width, m_Height, 0, GL_RGBA, GL_UNSIGNED_BYTE, m_LocalBuffer)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 30);
+
+  <bb 40>:
+  _88 = _87;
+  retval.7_89 = ~_88;
+  if (retval.7_89 != 0)
+    goto <bb 41>;
+  else
+    goto <bb 42>;
+
+  <bb 41>:
+  raise (2);
+
+  <bb 42>:
+  Texture::Unbind (this_11(D));
+
+  <bb 43>:
+  _92 = this_11(D)->m_LocalBuffer;
+  if (_92 != 0B)
+    goto <bb 44>;
+  else
+    goto <bb 46>;
+
+  <bb 44>:
+  _93 = this_11(D)->m_LocalBuffer;
+  stbi_image_free (_93);
+
+  <bb 45>:
+
+  <bb 46>:
+  return;
+
+<L26>:
+  __cxa_free_exception (_96);
+  __builtin_eh_copy_values (1, 2);
+
+<L27>:
+  _100 = &this_11(D)->m_FilePath;
+  std::__cxx11::basic_string<char>::~basic_string (_100);
+  _102 = __builtin_eh_pointer (1);
+  __builtin_unwind_resume (_102);
+
+}
+
+
+
+;; Function Texture::~Texture() (_ZN7TextureD2Ev, funcdef_no=4152, decl_uid=116174, cgraph_uid=1253, symbol_order=1257)
+
+Texture::~Texture() (struct Texture * const this)
+{
+  bool D.120978;
+  struct string * D.120977;
+  bool D.120973;
+  bool retval.17;
+  unsigned int * D.120971;
+  int (*__vtbl_ptr_type) () * D.120970;
+  int (*__vtbl_ptr_type) () * _2;
+  unsigned int * _7;
+  bool _10;
+  bool _11;
+  bool retval.17_12;
+  struct string * _14;
+
+  <bb 2>:
+  _2 = &_ZTV7Texture + 16;
+  this_4(D)->_vptr.Texture = _2;
+  GLClearError ();
+  _7 = &this_4(D)->m_RendererID;
+  glDeleteTextures (1, _7);
+  _10 = GLLogCall ("glDeleteTextures(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 41);
+  _11 = _10;
+  retval.17_12 = ~_11;
+  if (retval.17_12 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  _14 = &this_4(D)->m_FilePath;
+  std::__cxx11::basic_string<char>::~basic_string (_14);
+  MEM[(struct  &)this_4(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function virtual Texture::~Texture() (_ZN7TextureD0Ev, funcdef_no=4154, decl_uid=116168, cgraph_uid=1255, symbol_order=1259)
+
+virtual Texture::~Texture() (struct Texture * const this)
+{
+  <bb 2>:
+  Texture::~Texture (this_2(D));
+  operator delete (this_2(D), 72);
+  return;
+
+}
+
+
+
+;; Function int Texture::GetWidth() const (_ZNK7Texture8GetWidthEv, funcdef_no=4155, decl_uid=116156, cgraph_uid=1256, symbol_order=1260)
+
+int Texture::GetWidth() const (const struct Texture * const this)
+{
+  int D.120979;
+  int _3;
+
+  <bb 2>:
+  _3 = this_2(D)->m_Width;
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function int Texture::GetHeight() const (_ZNK7Texture9GetHeightEv, funcdef_no=4156, decl_uid=116158, cgraph_uid=1257, symbol_order=1261)
+
+int Texture::GetHeight() const (const struct Texture * const this)
+{
+  int D.120981;
+  int _3;
+
+  <bb 2>:
+  _3 = this_2(D)->m_Height;
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function int Texture::GetBPP() const (_ZNK7Texture6GetBPPEv, funcdef_no=4157, decl_uid=116160, cgraph_uid=1258, symbol_order=1262)
+
+int Texture::GetBPP() const (const struct Texture * const this)
+{
+  int D.120983;
+  int _3;
+
+  <bb 2>:
+  _3 = this_2(D)->m_BPP;
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function void Texture::Bind(unsigned int) const (_ZNK7Texture4BindEj, funcdef_no=4158, decl_uid=116152, cgraph_uid=1259, symbol_order=1263)
+
+void Texture::Bind(unsigned int) const (const struct Texture * const this, unsigned int slot)
+{
+  bool D.120999;
+  bool D.120998;
+  bool D.120994;
+  bool retval.20;
+  unsigned int D.120992;
+  bool D.120988;
+  bool retval.19;
+  unsigned int D.120986;
+  void (*<T779>) (GLenum) __glewActiveTexture.18;
+  void (*<T779>) (GLenum) __glewActiveTexture.18_5;
+  unsigned int _7;
+  bool _10;
+  bool _11;
+  bool retval.19_12;
+  unsigned int _16;
+  bool _19;
+  bool _20;
+  bool retval.20_21;
+
+  <bb 2>:
+  GLClearError ();
+  __glewActiveTexture.18_5 = __glewActiveTexture;
+  _7 = slot_6(D) + 33984;
+  __glewActiveTexture.18_5 (_7);
+  _10 = GLLogCall ("glActiveTexture(GL_TEXTURE0 + slot)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 57);
+  _11 = _10;
+  retval.19_12 = ~_11;
+  if (retval.19_12 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  GLClearError ();
+  _16 = this_15(D)->m_RendererID;
+  glBindTexture (3553, _16);
+  _19 = GLLogCall ("glBindTexture(GL_TEXTURE_2D, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 58);
+  _20 = _19;
+  retval.20_21 = ~_20;
+  if (retval.20_21 != 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  raise (2);
+
+  <bb 6>:
+  return;
+
+}
+
+
+
+;; Function void Texture::Unbind() const (_ZNK7Texture6UnbindEv, funcdef_no=4159, decl_uid=116154, cgraph_uid=1260, symbol_order=1264)
+
+void Texture::Unbind() const (const struct Texture * const this)
+{
+  bool D.121005;
+  bool D.121001;
+  bool retval.21;
+  bool _6;
+  bool _7;
+  bool retval.21_8;
+
+  <bb 2>:
+  GLClearError ();
+  glBindTexture (3553, 0);
+  _6 = GLLogCall ("glBindTexture(GL_TEXTURE_2D, 0)", "/home/benjamin/Videos/openGLSeries/code/Texture.cpp", 62);
+  _7 = _6;
+  retval.21_8 = ~_7;
+  if (retval.21_8 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  return;
+
+}
+
+

@@ -1,0 +1,203 @@
+
+;; Function VertexBuffer::VertexBuffer(const void*, unsigned int) (_ZN12VertexBufferC2EPKvj, funcdef_no=4145, decl_uid=2032, cgraph_uid=1246, symbol_order=1250)
+
+VertexBuffer::VertexBuffer(const void*, unsigned int) (struct VertexBuffer * const this, const void * data, unsigned int size)
+{
+  bool D.120337;
+  bool D.120336;
+  bool D.120335;
+  bool D.120331;
+  bool retval.5;
+  long int D.120329;
+  void (*<T933>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.4;
+  bool D.120324;
+  bool retval.3;
+  unsigned int D.120322;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.2;
+  bool D.120317;
+  bool retval.1;
+  unsigned int * D.120315;
+  void (*<T948>) (GLsizei, GLuint *) __glewGenBuffers.0;
+  void (*<T948>) (GLsizei, GLuint *) __glewGenBuffers.0_8;
+  unsigned int * _9;
+  bool _12;
+  bool _13;
+  bool retval.1_14;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.2_17;
+  unsigned int _18;
+  bool _21;
+  bool _22;
+  bool retval.3_23;
+  void (*<T933>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.4_26;
+  long int _28;
+  bool _32;
+  bool _33;
+  bool retval.5_34;
+
+  <bb 2>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  GLClearError ();
+  __glewGenBuffers.0_8 = __glewGenBuffers;
+  _9 = &this_5(D)->m_RendererID;
+  __glewGenBuffers.0_8 (1, _9);
+  _12 = GLLogCall ("glGenBuffers(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 6);
+  _13 = _12;
+  retval.1_14 = ~_13;
+  if (retval.1_14 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  GLClearError ();
+  __glewBindBuffer.2_17 = __glewBindBuffer;
+  _18 = this_5(D)->m_RendererID;
+  __glewBindBuffer.2_17 (34962, _18);
+  _21 = GLLogCall ("glBindBuffer(GL_ARRAY_BUFFER, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 7);
+  _22 = _21;
+  retval.3_23 = ~_22;
+  if (retval.3_23 != 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  raise (2);
+
+  <bb 6>:
+  GLClearError ();
+  __glewBufferData.4_26 = __glewBufferData;
+  _28 = (long int) size_27(D);
+  __glewBufferData.4_26 (34962, _28, data_29(D), 35044);
+  _32 = GLLogCall ("glBufferData(GL_ARRAY_BUFFER, size, data, GL_STATIC_DRAW)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 8);
+  _33 = _32;
+  retval.5_34 = ~_33;
+  if (retval.5_34 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  raise (2);
+
+  <bb 8>:
+  return;
+
+}
+
+
+
+;; Function VertexBuffer::~VertexBuffer() (_ZN12VertexBufferD2Ev, funcdef_no=4148, decl_uid=2039, cgraph_uid=1249, symbol_order=1253)
+
+VertexBuffer::~VertexBuffer() (struct VertexBuffer * const this)
+{
+  bool D.120345;
+  bool D.120341;
+  bool retval.7;
+  unsigned int * D.120339;
+  void (*<T93d>) (GLsizei, const GLuint *) __glewDeleteBuffers.6;
+  void (*<T93d>) (GLsizei, const GLuint *) __glewDeleteBuffers.6_4;
+  unsigned int * _6;
+  bool _9;
+  bool _10;
+  bool retval.7_11;
+
+  <bb 2>:
+  GLClearError ();
+  __glewDeleteBuffers.6_4 = __glewDeleteBuffers;
+  _6 = &this_5(D)->m_RendererID;
+  __glewDeleteBuffers.6_4 (1, _6);
+  _9 = GLLogCall ("glDeleteBuffers(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 13);
+  _10 = _9;
+  retval.7_11 = ~_10;
+  if (retval.7_11 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function void VertexBuffer::Bind() const (_ZNK12VertexBuffer4BindEv, funcdef_no=4150, decl_uid=2024, cgraph_uid=1251, symbol_order=1255)
+
+void VertexBuffer::Bind() const (const struct VertexBuffer * const this)
+{
+  bool D.120354;
+  bool D.120350;
+  bool retval.9;
+  unsigned int D.120348;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.8;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.8_4;
+  unsigned int _6;
+  bool _9;
+  bool _10;
+  bool retval.9_11;
+
+  <bb 2>:
+  GLClearError ();
+  __glewBindBuffer.8_4 = __glewBindBuffer;
+  _6 = this_5(D)->m_RendererID;
+  __glewBindBuffer.8_4 (34962, _6);
+  _9 = GLLogCall ("glBindBuffer(GL_ARRAY_BUFFER, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 18);
+  _10 = _9;
+  retval.9_11 = ~_10;
+  if (retval.9_11 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  return;
+
+}
+
+
+
+;; Function void VertexBuffer::Unbind() const (_ZNK12VertexBuffer6UnbindEv, funcdef_no=4151, decl_uid=2026, cgraph_uid=1252, symbol_order=1256)
+
+void VertexBuffer::Unbind() const (const struct VertexBuffer * const this)
+{
+  bool D.120361;
+  bool D.120357;
+  bool retval.11;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.10;
+  void (*<T92b>) (GLenum, GLuint) __glewBindBuffer.10_4;
+  bool _7;
+  bool _8;
+  bool retval.11_9;
+
+  <bb 2>:
+  GLClearError ();
+  __glewBindBuffer.10_4 = __glewBindBuffer;
+  __glewBindBuffer.10_4 (34962, 0);
+  _7 = GLLogCall ("glBindBuffer(GL_ARRAY_BUFFER, 0)", "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp", 23);
+  _8 = _7;
+  retval.11_9 = ~_8;
+  if (retval.11_9 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  return;
+
+}
+
+

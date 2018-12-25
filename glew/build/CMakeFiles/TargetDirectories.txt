@@ -1,0 +1,11 @@
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/install/strip.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/glewinfo.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/list_install_components.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/install.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/visualinfo.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/glew_s.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/rebuild_cache.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/glew.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/uninstall.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/edit_cache.dir
+/home/benjamin/Videos/openGLSeries/code/glew/build/CMakeFiles/install/local.dir

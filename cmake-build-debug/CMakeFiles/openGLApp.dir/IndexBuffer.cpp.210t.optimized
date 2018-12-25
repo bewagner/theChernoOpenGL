@@ -1,0 +1,210 @@
+
+;; Function IndexBuffer::IndexBuffer(const unsigned int*, unsigned int) (_ZN11IndexBufferC2EPKjj, funcdef_no=4145, decl_uid=2035, cgraph_uid=1246, symbol_order=1250)
+
+IndexBuffer::IndexBuffer(const unsigned int*, unsigned int) (struct IndexBuffer * const this, const unsigned int * data, unsigned int count)
+{
+  bool D.120339;
+  bool D.120338;
+  bool D.120337;
+  bool D.120333;
+  bool retval.5;
+  long int D.120331;
+  long unsigned int D.120330;
+  long unsigned int D.120329;
+  void (*<T935>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.4;
+  bool D.120324;
+  bool retval.3;
+  unsigned int D.120322;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.2;
+  bool D.120317;
+  bool retval.1;
+  unsigned int * D.120315;
+  void (*<T94a>) (GLsizei, GLuint *) __glewGenBuffers.0;
+  void (*<T94a>) (GLsizei, GLuint *) __glewGenBuffers.0_10;
+  unsigned int * _11;
+  bool _14;
+  bool _15;
+  bool retval.1_16;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.2_19;
+  unsigned int _20;
+  bool _23;
+  bool _24;
+  bool retval.3_25;
+  void (*<T935>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.4_28;
+  long unsigned int _29;
+  long unsigned int _30;
+  long int _31;
+  bool _35;
+  bool _36;
+  bool retval.5_37;
+
+  <bb 2>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  this_5(D)->m_Count = count_7(D);
+  GLClearError ();
+  __glewGenBuffers.0_10 = __glewGenBuffers;
+  _11 = &this_5(D)->m_RendererID;
+  __glewGenBuffers.0_10 (1, _11);
+  _14 = GLLogCall ("glGenBuffers(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 6);
+  _15 = _14;
+  retval.1_16 = ~_15;
+  if (retval.1_16 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  GLClearError ();
+  __glewBindBuffer.2_19 = __glewBindBuffer;
+  _20 = this_5(D)->m_RendererID;
+  __glewBindBuffer.2_19 (34963, _20);
+  _23 = GLLogCall ("glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 7);
+  _24 = _23;
+  retval.3_25 = ~_24;
+  if (retval.3_25 != 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  raise (2);
+
+  <bb 6>:
+  GLClearError ();
+  __glewBufferData.4_28 = __glewBufferData;
+  _29 = (long unsigned int) count_7(D);
+  _30 = _29 * 4;
+  _31 = (long int) _30;
+  __glewBufferData.4_28 (34963, _31, data_32(D), 35044);
+  _35 = GLLogCall ("glBufferData(GL_ELEMENT_ARRAY_BUFFER, count * sizeof(GLuint), data, GL_STATIC_DRAW)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 8);
+  _36 = _35;
+  retval.5_37 = ~_36;
+  if (retval.5_37 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  raise (2);
+
+  <bb 8>:
+  return;
+
+}
+
+
+
+;; Function IndexBuffer::~IndexBuffer() (_ZN11IndexBufferD2Ev, funcdef_no=4148, decl_uid=2042, cgraph_uid=1249, symbol_order=1253)
+
+IndexBuffer::~IndexBuffer() (struct IndexBuffer * const this)
+{
+  bool D.120347;
+  bool D.120343;
+  bool retval.7;
+  unsigned int * D.120341;
+  void (*<T93f>) (GLsizei, const GLuint *) __glewDeleteBuffers.6;
+  void (*<T93f>) (GLsizei, const GLuint *) __glewDeleteBuffers.6_4;
+  unsigned int * _6;
+  bool _9;
+  bool _10;
+  bool retval.7_11;
+
+  <bb 2>:
+  GLClearError ();
+  __glewDeleteBuffers.6_4 = __glewDeleteBuffers;
+  _6 = &this_5(D)->m_RendererID;
+  __glewDeleteBuffers.6_4 (1, _6);
+  _9 = GLLogCall ("glDeleteBuffers(1, &m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 13);
+  _10 = _9;
+  retval.7_11 = ~_10;
+  if (retval.7_11 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function void IndexBuffer::Bind() const (_ZNK11IndexBuffer4BindEv, funcdef_no=4150, decl_uid=2025, cgraph_uid=1251, symbol_order=1255)
+
+void IndexBuffer::Bind() const (const struct IndexBuffer * const this)
+{
+  bool D.120356;
+  bool D.120352;
+  bool retval.9;
+  unsigned int D.120350;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.8;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.8_4;
+  unsigned int _6;
+  bool _9;
+  bool _10;
+  bool retval.9_11;
+
+  <bb 2>:
+  GLClearError ();
+  __glewBindBuffer.8_4 = __glewBindBuffer;
+  _6 = this_5(D)->m_RendererID;
+  __glewBindBuffer.8_4 (34963, _6);
+  _9 = GLLogCall ("glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_RendererID)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 18);
+  _10 = _9;
+  retval.9_11 = ~_10;
+  if (retval.9_11 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  return;
+
+}
+
+
+
+;; Function void IndexBuffer::Unbind() const (_ZNK11IndexBuffer6UnbindEv, funcdef_no=4151, decl_uid=2027, cgraph_uid=1252, symbol_order=1256)
+
+void IndexBuffer::Unbind() const (const struct IndexBuffer * const this)
+{
+  bool D.120363;
+  bool D.120359;
+  bool retval.11;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.10;
+  void (*<T92d>) (GLenum, GLuint) __glewBindBuffer.10_4;
+  bool _7;
+  bool _8;
+  bool retval.11_9;
+
+  <bb 2>:
+  GLClearError ();
+  __glewBindBuffer.10_4 = __glewBindBuffer;
+  __glewBindBuffer.10_4 (34963, 0);
+  _7 = GLLogCall ("glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0)", "/home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp", 23);
+  _8 = _7;
+  retval.11_9 = ~_8;
+  if (retval.11_9 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  raise (2);
+
+  <bb 4>:
+  return;
+
+}
+
+

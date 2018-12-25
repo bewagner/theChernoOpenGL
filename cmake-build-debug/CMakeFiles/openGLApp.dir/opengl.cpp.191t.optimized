@@ -1,0 +1,871 @@
+
+;; Function constexpr std::_Ios_Openmode std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) (_ZStorSt13_Ios_OpenmodeS_, funcdef_no=1028, decl_uid=42279, cgraph_uid=327, symbol_order=328)
+
+constexpr std::_Ios_Openmode std::operator|(std::_Ios_Openmode, std::_Ios_Openmode) (_Ios_Openmode __a, _Ios_Openmode __b)
+{
+  _Ios_Openmode D.60048;
+  _Ios_Openmode _3;
+
+  <bb 2>:
+  _3 = __a_1(D) | __b_2(D);
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function ShaderProgramSource::ShaderProgramSource() (_ZN19ShaderProgramSourceC2Ev, funcdef_no=1599, decl_uid=56980, cgraph_uid=436, symbol_order=438)
+
+ShaderProgramSource::ShaderProgramSource() (struct ShaderProgramSource * const this)
+{
+  struct string * D.60059;
+  struct string * D.60058;
+  struct string * D.60057;
+  struct string * D.60056;
+  struct string * _2;
+  struct string * _5;
+
+  <bb 2>:
+  _2 = &this_1(D)->VertexSource;
+  std::__cxx11::basic_string<char>::basic_string (_2);
+  _5 = &this_1(D)->FragmentSource;
+  std::__cxx11::basic_string<char>::basic_string (_5);
+  return;
+
+}
+
+
+
+;; Function ShaderProgramSource::~ShaderProgramSource() (_ZN19ShaderProgramSourceD2Ev, funcdef_no=1602, decl_uid=57085, cgraph_uid=439, symbol_order=441)
+
+ShaderProgramSource::~ShaderProgramSource() (struct ShaderProgramSource * const this)
+{
+  struct string * D.60061;
+  struct string * D.60060;
+  struct string * _2;
+  struct string * _5;
+
+  <bb 2>:
+  _2 = &this_1(D)->FragmentSource;
+  std::__cxx11::basic_string<char>::~basic_string (_2);
+  _5 = &this_1(D)->VertexSource;
+  std::__cxx11::basic_string<char>::~basic_string (_5);
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function ShaderProgramSource ParseShader(const string&) (_ZL11ParseShaderRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, funcdef_no=1597, decl_uid=56985, cgraph_uid=444, symbol_order=446)
+
+Merging blocks 39 and 40
+ShaderProgramSource ParseShader(const string&) (const struct string & file)
+{
+  void * D.60250;
+  struct basic_ostream & D.60032;
+  long unsigned int D.60031;
+  long unsigned int D.60030;
+  long unsigned int D.60029;
+  bool D.60028;
+  struct basic_istream & D.60027;
+  struct stringstream * D.56997;
+  struct stringstream * D.56996;
+  struct ShaderProgramSource result [value-expr: *<retval>];
+  struct string line;
+  ShaderType type;
+  struct stringstream ss[2];
+  struct ifstream stream;
+  int (*__vtbl_ptr_type) () D.60024;
+  int (*__vtbl_ptr_type) () * D.60023;
+  struct string * D.60019;
+  struct __string_type D.57096;
+  struct string * D.60018;
+  struct __string_type D.57095;
+  struct basic_ostream & D.60017;
+  struct basic_ostream * D.60016;
+  long unsigned int D.60011;
+  bool retval.4;
+  long unsigned int D.60006;
+  bool retval.3;
+  long unsigned int D.60002;
+  bool retval.2;
+  struct basic_ios * D.59999;
+  sizetype D.59998;
+  long int D.59997;
+  int (*__vtbl_ptr_type) () * D.59996;
+  int (*__vtbl_ptr_type) () * D.59995;
+  struct basic_istream & D.59994;
+  bool retval.1;
+  int (*__vtbl_ptr_type) () D.59990;
+  int (*__vtbl_ptr_type) () * D.59989;
+  sizetype D.59985;
+  sizetype D.59984;
+  long int D.59983;
+  _Ios_Openmode D.59980;
+  long int D.56995;
+  struct stringstream * D.56994;
+  struct stringstream * D.56993;
+  struct stringstream * retval.0;
+  struct stringstream * _1;
+  long int _2;
+  struct stringstream * _3;
+  struct stringstream * _4;
+  struct stringstream * _5;
+  struct stringstream * _22;
+  struct stringstream * _23;
+  long int _24;
+  _Ios_Openmode _26;
+  struct stringstream * _28;
+  long int _29;
+  long int _30;
+  sizetype _31;
+  sizetype _32;
+  struct stringstream * _33;
+  struct stringstream * _34;
+  int (*__vtbl_ptr_type) () * _35;
+  int (*__vtbl_ptr_type) () _36;
+  struct stringstream * retval.0_38;
+  struct basic_istream & _42;
+  struct basic_istream & _43;
+  int (*__vtbl_ptr_type) () * _44;
+  int (*__vtbl_ptr_type) () * _45;
+  long int _46;
+  sizetype _47;
+  struct basic_ios * _48;
+  bool _50;
+  bool retval.1_51;
+  long unsigned int _53;
+  long unsigned int _54;
+  bool retval.2_55;
+  long unsigned int _57;
+  long unsigned int _58;
+  bool retval.3_59;
+  long unsigned int _61;
+  long unsigned int _62;
+  bool retval.4_63;
+  struct basic_ostream * _66;
+  struct basic_ostream & _68;
+  struct basic_ostream & _69;
+  struct string * _74;
+  struct string * _79;
+  struct stringstream * _84;
+  struct stringstream * _85;
+  int (*__vtbl_ptr_type) () * _86;
+  int (*__vtbl_ptr_type) () _87;
+  struct stringstream * _99;
+  struct stringstream * _100;
+  int (*__vtbl_ptr_type) () * _101;
+  int (*__vtbl_ptr_type) () _102;
+
+  <bb 2>:
+  std::basic_ifstream<char>::basic_ifstream (&stream, file_20(D), 8);
+  _22 = &ss;
+  _23 = _22;
+  _24 = 1;
+
+  <bb 3>:
+  # _1 = PHI <_23(2), _28(5)>
+  # _2 = PHI <_24(2), _29(5)>
+  if (_2 == -1)
+    goto <bb 6>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  _26 = std::operator| (16, 8);
+  std::__cxx11::basic_stringstream<char>::basic_stringstream (_1, _26);
+
+  <bb 5>:
+  _28 = _1 + 392;
+  _29 = _2 + -1;
+  goto <bb 3>;
+
+  <bb 6>:
+  retval.0_38 = _22;
+  type_39 = -1;
+  std::__cxx11::basic_string<char>::basic_string (&line);
+
+  <bb 7>:
+  # type_6 = PHI <type_39(6), type_7(20)>
+  _42 = std::getline<char, std::char_traits<char>, std::allocator<char> > (&stream.D.54486, &line);
+
+  <bb 8>:
+  _43 = _42;
+  _44 = _43->_vptr.basic_istream;
+  _45 = _44 + 18446744073709551592;
+  _46 = MEM[(long int *)_45];
+  _47 = (sizetype) _46;
+  _48 = _43 + _47;
+  _50 = std::basic_ios<char>::operator bool (_48);
+
+  <bb 9>:
+  retval.1_51 = _50;
+  if (retval.1_51 != 0)
+    goto <bb 10>;
+  else
+    goto <bb 21>;
+
+  <bb 10>:
+  _53 = std::__cxx11::basic_string<char>::find (&line, "#shader", 0);
+
+  <bb 11>:
+  _54 = _53;
+  retval.2_55 = _54 != 18446744073709551615;
+  if (retval.2_55 != 0)
+    goto <bb 12>;
+  else
+    goto <bb 18>;
+
+  <bb 12>:
+  _57 = std::__cxx11::basic_string<char>::find (&line, "vertex", 0);
+
+  <bb 13>:
+  _58 = _57;
+  retval.3_59 = _58 != 18446744073709551615;
+  if (retval.3_59 != 0)
+    goto <bb 14>;
+  else
+    goto <bb 15>;
+
+  <bb 14>:
+  type_65 = 0;
+  goto <bb 20>;
+
+  <bb 15>:
+  _61 = std::__cxx11::basic_string<char>::find (&line, "fragment", 0);
+
+  <bb 16>:
+  _62 = _61;
+  retval.4_63 = _62 != 18446744073709551615;
+  if (retval.4_63 != 0)
+    goto <bb 17>;
+  else
+    goto <bb 20>;
+
+  <bb 17>:
+  type_64 = 1;
+  goto <bb 20>;
+
+  <bb 18>:
+  _66 = &ss[type_6].D.56443.D.50684;
+  _68 = std::operator<< <char, std::char_traits<char>, std::allocator<char> > (_66, &line);
+
+  <bb 19>:
+  _69 = _68;
+  std::basic_ostream<char>::operator<< (_69, endl);
+
+  <bb 20>:
+  # type_7 = PHI <type_6(16), type_6(19), type_65(14), type_64(17)>
+  goto <bb 7>;
+
+  <bb 21>:
+  ShaderProgramSource::ShaderProgramSource (result_71(D));
+  D.57095 = std::__cxx11::basic_stringstream<char>::str (&ss[0]); [return slot optimization]
+
+  <bb 22>:
+  _74 = &result_71(D)->VertexSource;
+  std::__cxx11::basic_string<char>::operator= (_74, &D.57095);
+
+  <bb 23>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57095);
+  D.57095 ={v} {CLOBBER};
+  D.57096 = std::__cxx11::basic_stringstream<char>::str (&ss[1]); [return slot optimization]
+
+  <bb 24>:
+  _79 = &result_71(D)->FragmentSource;
+  std::__cxx11::basic_string<char>::operator= (_79, &D.57096);
+
+  <bb 25>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57096);
+  D.57096 ={v} {CLOBBER};
+
+  <bb 26>:
+  std::__cxx11::basic_string<char>::~basic_string (&line);
+  _84 = &ss + 784;
+
+  <bb 27>:
+  # _4 = PHI <_84(26), _85(28)>
+  if (_4 == &ss)
+    goto <bb 29>;
+  else
+    goto <bb 28>;
+
+  <bb 28>:
+  _85 = _4 + 18446744073709551224;
+  _86 = _85->D.56443.D.50683._vptr.basic_istream;
+  _87 = *_86;
+  OBJ_TYPE_REF(_87;(struct basic_stringstream)_85->0) (_85);
+  goto <bb 27>;
+
+  <bb 29>:
+  std::basic_ifstream<char>::~basic_ifstream (&stream);
+  stream ={v} {CLOBBER};
+  ss ={v} {CLOBBER};
+  line ={v} {CLOBBER};
+
+<L22>:
+  return result_71(D);
+
+<L23>:
+  if (_22 != 0B)
+    goto <bb 32>;
+  else
+    goto <bb 35>;
+
+  <bb 32>:
+  _30 = 1 - _2;
+  _31 = (sizetype) _30;
+  _32 = _31 * 392;
+  _33 = _22 + _32;
+
+  <bb 33>:
+  # _3 = PHI <_33(32), _34(34)>
+  if (_3 == _22)
+    goto <bb 35>;
+  else
+    goto <bb 34>;
+
+  <bb 34>:
+  _34 = _3 + 18446744073709551224;
+  _35 = _34->D.56443.D.50683._vptr.basic_istream;
+  _36 = *_35;
+  OBJ_TYPE_REF(_36;(struct basic_stringstream)_34->0) (_34);
+  goto <bb 33>;
+
+  <bb 35>:
+  __builtin_eh_copy_values (2, 3);
+  goto <bb 43>;
+
+<L30>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57095);
+  D.57095 ={v} {CLOBBER};
+  __builtin_eh_copy_values (7, 8);
+  goto <bb 38> (<L32>);
+
+<L31>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57096);
+  D.57096 ={v} {CLOBBER};
+  __builtin_eh_copy_values (7, 10);
+
+<L32>:
+  ShaderProgramSource::~ShaderProgramSource (result_71(D));
+  __builtin_eh_copy_values (6, 7);
+
+<L33>:
+  std::__cxx11::basic_string<char>::~basic_string (&line);
+  __builtin_eh_copy_values (5, 6);
+  _99 = &ss + 784;
+
+  <bb 40>:
+  # _5 = PHI <_99(39), _100(41)>
+  if (_5 == &ss)
+    goto <bb 42>;
+  else
+    goto <bb 41>;
+
+  <bb 41>:
+  _100 = _5 + 18446744073709551224;
+  _101 = _100->D.56443.D.50683._vptr.basic_istream;
+  _102 = *_101;
+  OBJ_TYPE_REF(_102;(struct basic_stringstream)_100->0) (_100);
+  goto <bb 40>;
+
+  <bb 42>:
+  __builtin_eh_copy_values (2, 5);
+
+  <bb 43>:
+  std::basic_ifstream<char>::~basic_ifstream (&stream);
+  _18 = __builtin_eh_pointer (2);
+  __builtin_unwind_resume (_18);
+
+}
+
+
+
+;; Function unsigned int CompileShader(unsigned int, const string&) (_ZL13CompileShaderjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE, funcdef_no=1607, decl_uid=57107, cgraph_uid=445, symbol_order=447)
+
+unsigned int CompileShader(unsigned int, const string&) (unsigned int type, const struct string & source)
+{
+  struct basic_ostream & D.60092;
+  struct basic_ostream & D.60091;
+  struct basic_ostream & D.60090;
+  struct basic_ostream & D.60089;
+  unsigned int D.60088;
+  char * message;
+  int length;
+  int result;
+  const char * src;
+  unsigned int shader;
+  unsigned int D.60086;
+  void (*<T969>) (GLuint) __glewDeleteShader.16;
+  struct basic_ostream & D.60084;
+  struct basic_ostream & D.60083;
+  struct basic_ostream & D.60082;
+  struct basic_ostream & D.60081;
+  const char * iftmp.15;
+  int length.14;
+  void (*<T9a1>) (GLuint, GLsizei, GLsizei *, GLchar *) __glewGetShaderInfoLog.13;
+  long unsigned int D.60074;
+  long unsigned int D.60073;
+  int length.12;
+  void (*<T93d>) (GLuint, GLenum, GLint *) __glewGetShaderiv.11;
+  int result.10;
+  void (*<T93d>) (GLuint, GLenum, GLint *) __glewGetShaderiv.9;
+  void (*<T969>) (GLuint) __glewCompileShader.8;
+  void (*<T9dd>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.7;
+  const char * src.6;
+  GLuint (*<T972>) (GLenum) __glewCreateShader.5;
+  const char * iftmp.15_1;
+  unsigned int _2;
+  GLuint (*<T972>) (GLenum) __glewCreateShader.5_7;
+  unsigned int _10;
+  const char * src.6_14;
+  void (*<T9dd>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.7_16;
+  void (*<T969>) (GLuint) __glewCompileShader.8_18;
+  void (*<T93d>) (GLuint, GLenum, GLint *) __glewGetShaderiv.9_20;
+  int result.10_22;
+  void (*<T93d>) (GLuint, GLenum, GLint *) __glewGetShaderiv.11_23;
+  int length.12_25;
+  long unsigned int _26;
+  long unsigned int _27;
+  void (*<T9a1>) (GLuint, GLsizei, GLsizei *, GLchar *) __glewGetShaderInfoLog.13_30;
+  int length.14_31;
+  const char * iftmp.15_33;
+  const char * iftmp.15_34;
+  struct basic_ostream & _36;
+  struct basic_ostream & _37;
+  struct basic_ostream & _39;
+  struct basic_ostream & _40;
+  struct basic_ostream & _42;
+  struct basic_ostream & _43;
+  struct basic_ostream & _46;
+  struct basic_ostream & _47;
+  void (*<T969>) (GLuint) __glewDeleteShader.16_49;
+  unsigned int _51;
+  unsigned int _54;
+
+  <bb 2>:
+  __glewCreateShader.5_7 = __glewCreateShader;
+  _10 = __glewCreateShader.5_7 (type_8(D));
+  shader_11 = _10;
+  src.6_14 = std::__cxx11::basic_string<char>::c_str (source_12(D));
+  src = src.6_14;
+  __glewShaderSource.7_16 = __glewShaderSource;
+  __glewShaderSource.7_16 (shader_11, 1, &src, 0B);
+  __glewCompileShader.8_18 = __glewCompileShader;
+  __glewCompileShader.8_18 (shader_11);
+  __glewGetShaderiv.9_20 = __glewGetShaderiv;
+  __glewGetShaderiv.9_20 (shader_11, 35713, &result);
+  result.10_22 = result;
+  if (result.10_22 == 0)
+    goto <bb 3>;
+  else
+    goto <bb 7>;
+
+  <bb 3>:
+  __glewGetShaderiv.11_23 = __glewGetShaderiv;
+  __glewGetShaderiv.11_23 (shader_11, 35716, &length);
+  length.12_25 = length;
+  _26 = (long unsigned int) length.12_25;
+  _27 = _26;
+  message_29 = __builtin_alloca (_27);
+  __glewGetShaderInfoLog.13_30 = __glewGetShaderInfoLog;
+  length.14_31 = length;
+  __glewGetShaderInfoLog.13_30 (shader_11, length.14_31, &length, message_29);
+  if (type_8(D) == 35633)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  iftmp.15_33 = "vertex";
+  goto <bb 6>;
+
+  <bb 5>:
+  iftmp.15_34 = "fragment";
+
+  <bb 6>:
+  # iftmp.15_1 = PHI <iftmp.15_33(4), iftmp.15_34(5)>
+  _36 = std::operator<< <std::char_traits<char> > (&cout, "Failed to compile ");
+  _37 = _36;
+  _39 = std::operator<< <std::char_traits<char> > (_37, iftmp.15_1);
+  _40 = _39;
+  _42 = std::operator<< <std::char_traits<char> > (_40, " shader.");
+  _43 = _42;
+  std::basic_ostream<char>::operator<< (_43, endl);
+  _46 = std::operator<< <std::char_traits<char> > (&cout, message_29);
+  _47 = _46;
+  std::basic_ostream<char>::operator<< (_47, endl);
+  __glewDeleteShader.16_49 = __glewDeleteShader;
+  __glewDeleteShader.16_49 (shader_11);
+  _51 = 0;
+  length ={v} {CLOBBER};
+  goto <bb 8>;
+
+  <bb 7>:
+  _54 = shader_11;
+
+  <bb 8>:
+  # _2 = PHI <_51(6), _54(7)>
+  src ={v} {CLOBBER};
+  result ={v} {CLOBBER};
+
+<L7>:
+  return _2;
+
+}
+
+
+
+;; Function unsigned int CreateShader(const string&, const string&) (_ZL12CreateShaderRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_, funcdef_no=1608, decl_uid=57132, cgraph_uid=446, symbol_order=448)
+
+unsigned int CreateShader(const string&, const string&) (const struct string & vertexShader, const struct string & fragmentShader)
+{
+  unsigned int D.60108;
+  unsigned int D.60107;
+  unsigned int D.60106;
+  unsigned int fs;
+  unsigned int vs;
+  unsigned int program;
+  unsigned int D.60104;
+  void (*<T969>) (GLuint) __glewDeleteShader.23;
+  void (*<T969>) (GLuint) __glewDeleteShader.22;
+  void (*<T969>) (GLuint) __glewValidateProgram.21;
+  void (*<T969>) (GLuint) __glewLinkProgram.20;
+  void (*<T95a>) (GLuint, GLuint) __glewAttachShader.19;
+  void (*<T95a>) (GLuint, GLuint) __glewAttachShader.18;
+  GLuint (*<T96d>) (void) __glewCreateProgram.17;
+  GLuint (*<T96d>) (void) __glewCreateProgram.17_2;
+  unsigned int _4;
+  unsigned int _8;
+  unsigned int _12;
+  void (*<T95a>) (GLuint, GLuint) __glewAttachShader.18_14;
+  void (*<T95a>) (GLuint, GLuint) __glewAttachShader.19_16;
+  void (*<T969>) (GLuint) __glewLinkProgram.20_18;
+  void (*<T969>) (GLuint) __glewValidateProgram.21_20;
+  void (*<T969>) (GLuint) __glewDeleteShader.22_22;
+  void (*<T969>) (GLuint) __glewDeleteShader.23_24;
+  unsigned int _26;
+
+  <bb 2>:
+  __glewCreateProgram.17_2 = __glewCreateProgram;
+  _4 = __glewCreateProgram.17_2 ();
+  program_5 = _4;
+  _8 = CompileShader (35633, vertexShader_6(D));
+  vs_9 = _8;
+  _12 = CompileShader (35632, fragmentShader_10(D));
+  fs_13 = _12;
+  __glewAttachShader.18_14 = __glewAttachShader;
+  __glewAttachShader.18_14 (program_5, vs_9);
+  __glewAttachShader.19_16 = __glewAttachShader;
+  __glewAttachShader.19_16 (program_5, fs_13);
+  __glewLinkProgram.20_18 = __glewLinkProgram;
+  __glewLinkProgram.20_18 (program_5);
+  __glewValidateProgram.21_20 = __glewValidateProgram;
+  __glewValidateProgram.21_20 (program_5);
+  __glewDeleteShader.22_22 = __glewDeleteShader;
+  __glewDeleteShader.22_22 (vs_9);
+  __glewDeleteShader.23_24 = __glewDeleteShader;
+  __glewDeleteShader.23_24 (fs_13);
+  _26 = program_5;
+
+<L0>:
+  return _26;
+
+}
+
+
+
+;; Function int main() (main, funcdef_no=1609, decl_uid=57137, cgraph_uid=447, symbol_order=449)
+
+int main() ()
+{
+  void * D.60292;
+  void * D.60291;
+  int D.60153;
+  unsigned int D.60152;
+  struct basic_ostream & D.60149;
+  unsigned int D.60148;
+  struct GLFWwindow * D.60147;
+  int D.60146;
+  unsigned int shader;
+  struct ShaderProgramSource source;
+  unsigned int ibo;
+  unsigned int buffer;
+  unsigned int indices[6];
+  float positions[8];
+  struct GLFWwindow * window;
+  void (*<T969>) (GLuint) __glewDeleteProgram.38;
+  int D.60142;
+  bool retval.37;
+  void (*<T969>) (GLuint) __glewUseProgram.36;
+  struct allocator D.57149;
+  const struct string D.57150;
+  long int D.60138;
+  long unsigned int D.60137;
+  void (*<T911>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.35;
+  unsigned int ibo.34;
+  void (*<T909>) (GLenum, GLuint) __glewBindBuffer.33;
+  void (*<T926>) (GLsizei, GLuint *) __glewGenBuffers.32;
+  int D.60132;
+  unsigned int D.60131;
+  unsigned int D.60130;
+  void (*<Tac4>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.31;
+  void (*<T969>) (GLuint) __glewEnableVertexAttribArray.30;
+  long int D.60127;
+  long unsigned int D.60126;
+  void (*<T911>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.29;
+  unsigned int buffer.28;
+  void (*<T909>) (GLenum, GLuint) __glewBindBuffer.27;
+  void (*<T926>) (GLsizei, GLuint *) __glewGenBuffers.26;
+  struct basic_ostream & D.60120;
+  unsigned int D.60117;
+  bool retval.25;
+  int D.60113;
+  int D.60110;
+  bool retval.24;
+  int _1;
+  int _10;
+  int _11;
+  bool retval.24_12;
+  int _13;
+  struct GLFWwindow * _15;
+  int _18;
+  unsigned int _21;
+  unsigned int _22;
+  bool retval.25_23;
+  struct basic_ostream & _25;
+  struct basic_ostream & _26;
+  void (*<T926>) (GLsizei, GLuint *) __glewGenBuffers.26_42;
+  void (*<T909>) (GLenum, GLuint) __glewBindBuffer.27_44;
+  unsigned int buffer.28_45;
+  void (*<T911>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.29_47;
+  long unsigned int _48;
+  long int _49;
+  void (*<T969>) (GLuint) __glewEnableVertexAttribArray.30_51;
+  void (*<Tac4>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.31_53;
+  unsigned int _54;
+  unsigned int _55;
+  int _56;
+  void (*<T926>) (GLsizei, GLuint *) __glewGenBuffers.32_58;
+  void (*<T909>) (GLenum, GLuint) __glewBindBuffer.33_60;
+  unsigned int ibo.34_61;
+  void (*<T911>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.35_63;
+  long unsigned int _64;
+  long int _65;
+  unsigned int _75;
+  void (*<T969>) (GLuint) __glewUseProgram.36_77;
+  int _80;
+  int _81;
+  bool retval.37_82;
+  void (*<T969>) (GLuint) __glewDeleteProgram.38_87;
+  int _90;
+
+  <bb 2>:
+  _10 = glfwInit ();
+  _11 = _10;
+  retval.24_12 = _11 == 0;
+  if (retval.24_12 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _13 = -1;
+  goto <bb 22>;
+
+  <bb 4>:
+  _15 = glfwCreateWindow (640, 640, "OpenGL Tutorial", 0B, 0B);
+  window_16 = _15;
+  if (window_16 == 0B)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  glfwTerminate ();
+  _18 = -1;
+  goto <bb 22>;
+
+  <bb 6>:
+  glfwMakeContextCurrent (window_16);
+  _21 = glewInit ();
+  _22 = _21;
+  retval.25_23 = _22 != 0;
+  if (retval.25_23 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  _25 = std::operator<< <std::char_traits<char> > (&cout, "Glew loading error!");
+  _26 = _25;
+  std::basic_ostream<char>::operator<< (_26, endl);
+
+  <bb 8>:
+  positions[0] = -5.0e-1;
+  positions[1] = -5.0e-1;
+  positions[2] = 5.0e-1;
+  positions[3] = -5.0e-1;
+  positions[4] = 5.0e-1;
+  positions[5] = 5.0e-1;
+  positions[6] = -5.0e-1;
+  positions[7] = 5.0e-1;
+  indices[0] = 0;
+  indices[1] = 1;
+  indices[2] = 2;
+  indices[3] = 2;
+  indices[4] = 3;
+  indices[5] = 0;
+  __glewGenBuffers.26_42 = __glewGenBuffers;
+  __glewGenBuffers.26_42 (1, &buffer);
+  __glewBindBuffer.27_44 = __glewBindBuffer;
+  buffer.28_45 = buffer;
+  __glewBindBuffer.27_44 (34962, buffer.28_45);
+  __glewBufferData.29_47 = __glewBufferData;
+  _48 = 32;
+  _49 = (long int) _48;
+  __glewBufferData.29_47 (34962, _49, &positions, 35044);
+  __glewEnableVertexAttribArray.30_51 = __glewEnableVertexAttribArray;
+  __glewEnableVertexAttribArray.30_51 (0);
+  __glewVertexAttribPointer.31_53 = __glewVertexAttribPointer;
+  _54 = 4;
+  _55 = _54 * 2;
+  _56 = (int) _55;
+  __glewVertexAttribPointer.31_53 (0, 2, 5126, 0, _56, 0B);
+  __glewGenBuffers.32_58 = __glewGenBuffers;
+  __glewGenBuffers.32_58 (1, &ibo);
+  __glewBindBuffer.33_60 = __glewBindBuffer;
+  ibo.34_61 = ibo;
+  __glewBindBuffer.33_60 (34963, ibo.34_61);
+  __glewBufferData.35_63 = __glewBufferData;
+  _64 = 24;
+  _65 = (long int) _64;
+  __glewBufferData.35_63 (34963, _65, &indices, 35044);
+  std::allocator<char>::allocator (&D.57149);
+  std::__cxx11::basic_string<char>::basic_string (&D.57150, "/home/benjamin/Videos/openGLSeries/code/res/shaders/Basic.shader", &D.57149);
+
+  <bb 9>:
+  source = ParseShader (&D.57150); [return slot optimization]
+
+  <bb 10>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57150);
+  D.57150 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.57149);
+  D.57149 ={v} {CLOBBER};
+  _75 = CreateShader (&source.VertexSource, &source.FragmentSource);
+
+  <bb 11>:
+  shader_76 = _75;
+  __glewUseProgram.36_77 = __glewUseProgram;
+  __glewUseProgram.36_77 (shader_76);
+
+  <bb 12>:
+  _80 = glfwWindowShouldClose (window_16);
+
+  <bb 13>:
+  _81 = _80;
+  retval.37_82 = _81 == 0;
+  if (retval.37_82 != 0)
+    goto <bb 14>;
+  else
+    goto <bb 19>;
+
+  <bb 14>:
+  glClear (16384);
+
+  <bb 15>:
+  glDrawElements (4, 6, 5125, 0B);
+
+  <bb 16>:
+  glfwSwapBuffers (window_16);
+
+  <bb 17>:
+  glfwPollEvents ();
+
+  <bb 18>:
+  goto <bb 12>;
+
+  <bb 19>:
+  __glewDeleteProgram.38_87 = __glewDeleteProgram;
+  __glewDeleteProgram.38_87 (shader_76);
+
+  <bb 20>:
+  glfwTerminate ();
+
+  <bb 21>:
+  _90 = 0;
+  ShaderProgramSource::~ShaderProgramSource (&source);
+
+  <bb 22>:
+  # _1 = PHI <_13(3), _18(5), _90(21)>
+  positions ={v} {CLOBBER};
+  indices ={v} {CLOBBER};
+  buffer ={v} {CLOBBER};
+  ibo ={v} {CLOBBER};
+  source ={v} {CLOBBER};
+
+<L12>:
+  return _1;
+
+<L13>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.57150);
+  D.57150 ={v} {CLOBBER};
+  __builtin_eh_copy_values (2, 3);
+
+<L14>:
+  std::allocator<char>::~allocator (&D.57149);
+  D.57149 ={v} {CLOBBER};
+  _7 = __builtin_eh_pointer (2);
+  __builtin_unwind_resume (_7);
+
+<L15>:
+  ShaderProgramSource::~ShaderProgramSource (&source);
+  _102 = __builtin_eh_pointer (8);
+  __builtin_unwind_resume (_102);
+
+}
+
+
+
+;; Function void __static_initialization_and_destruction_0(int, int) (_Z41__static_initialization_and_destruction_0ii, funcdef_no=2057, decl_uid=59875, cgraph_uid=895, symbol_order=955)
+
+void __static_initialization_and_destruction_0(int, int) (int __initialize_p, int __priority)
+{
+  <bb 2>:
+  if (__initialize_p_2(D) == 1)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  if (__priority_4(D) == 65535)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__comp_dtor , &__ioinit, &__dso_handle);
+
+  <bb 5>:
+  return;
+
+}
+
+
+
+;; Function (static initializers for /home/benjamin/Videos/openGLSeries/code/opengl.cpp) (_GLOBAL__sub_I_main, funcdef_no=2058, decl_uid=59884, cgraph_uid=896, symbol_order=1083)
+
+(static initializers for /home/benjamin/Videos/openGLSeries/code/opengl.cpp) ()
+{
+  <bb 2>:
+  __static_initialization_and_destruction_0 (1, 65535);
+  return;
+
+}
+
+

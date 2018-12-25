@@ -1,0 +1,81 @@
+
+;; Function int main() (main, funcdef_no=0, decl_uid=15312, cgraph_uid=0, symbol_order=0)
+
+int main() ()
+{
+  int D.15332;
+  struct GLFWwindow * D.15331;
+  int D.15330;
+  struct GLFWwindow * window;
+  int D.15327;
+  bool retval.1;
+  int D.15322;
+  int D.15319;
+  bool retval.0;
+  int _1;
+  int _6;
+  int _7;
+  bool retval.0_8;
+  int _9;
+  struct GLFWwindow * _11;
+  int _14;
+  int _17;
+  int _18;
+  bool retval.1_19;
+  int _24;
+
+  <bb 2>:
+  _6 = glfwInit ();
+  _7 = _6;
+  retval.0_8 = _7 == 0;
+  if (retval.0_8 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _9 = -1;
+  goto <bb 10> (<L7>);
+
+  <bb 4>:
+  _11 = glfwCreateWindow (640, 480, "Hello World", 0B, 0B);
+  window_12 = _11;
+  if (window_12 == 0B)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  glfwTerminate ();
+  _14 = -1;
+  goto <bb 10> (<L7>);
+
+  <bb 6>:
+  glfwMakeContextCurrent (window_12);
+
+  <bb 7>:
+  _17 = glfwWindowShouldClose (window_12);
+  _18 = _17;
+  retval.1_19 = _18 == 0;
+  if (retval.1_19 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  glClear (16384);
+  glfwSwapBuffers (window_12);
+  glfwPollEvents ();
+  goto <bb 7>;
+
+  <bb 9>:
+  glfwTerminate ();
+  _24 = 0;
+
+  # _1 = PHI <_9(3), _14(5), _24(9)>
+<L7>:
+  return _1;
+
+}
+
+

@@ -1,0 +1,1408 @@
+
+;; Function void* operator new(std::size_t, void*) (_ZnwmPv, funcdef_no=307, decl_uid=8716, cgraph_uid=41, symbol_order=42)
+
+void* operator new(std::size_t, void*) (size_t D.8714, void * __p)
+{
+  void * D.33367;
+  void * _2;
+
+  <bb 2>:
+  _2 = __p_1(D);
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (_ZN19VertexBufferElement13GetSizeOfTypeEj, funcdef_no=759, decl_uid=30682, cgraph_uid=136, symbol_order=137)
+
+static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (unsigned int type)
+{
+  unsigned int D.33535;
+  unsigned int _1;
+  unsigned int _4;
+  unsigned int _6;
+  unsigned int _7;
+  unsigned int _9;
+
+  <bb 2>:
+  switch (type_3(D)) <default: <L3>, case 5121: <L2>, case 5125: <L1>, case 5126: <L0>>
+
+<L0>:
+  _4 = 4;
+  goto <bb 7> (<L4>);
+
+<L1>:
+  _6 = 4;
+  goto <bb 7> (<L4>);
+
+<L2>:
+  _7 = 1;
+  goto <bb 7> (<L4>);
+
+<L3>:
+  raise (2);
+  _9 = 0;
+
+  # _1 = PHI <_4(3), _6(4), _7(5), _9(6)>
+<L4>:
+  return _1;
+
+}
+
+
+
+;; Function VertexBufferLayout::~VertexBufferLayout() (_ZN18VertexBufferLayoutD2Ev, funcdef_no=767, decl_uid=31786, cgraph_uid=143, symbol_order=144)
+
+VertexBufferLayout::~VertexBufferLayout() (struct VertexBufferLayout * const this)
+{
+  struct vector * D.33320;
+  struct vector * _2;
+
+  <bb 2>:
+  _2 = &this_1(D)->m_Elements;
+  std::vector<VertexBufferElement>::~vector (_2);
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function void VertexBufferLayout::Push(unsigned int) [with T = float] (_ZN18VertexBufferLayout4PushIfEEvj, funcdef_no=769, decl_uid=31916, cgraph_uid=145, symbol_order=146)
+
+void VertexBufferLayout::Push(unsigned int) [with T = float] (struct VertexBufferLayout * const this, unsigned int count)
+{
+  unsigned int D.33346;
+  unsigned int D.33345;
+  unsigned int D.33344;
+  unsigned int D.31930;
+  struct vector * D.33343;
+  struct value_type D.31920;
+  struct vector * _7;
+  unsigned int _11;
+  unsigned int _12;
+  unsigned int _13;
+  unsigned int _14;
+
+  <bb 2>:
+  D.31920.type = 5126;
+  D.31920.count = count_3(D);
+  D.31920.normalized = 0;
+  _7 = &this_6(D)->m_Elements;
+  std::vector<VertexBufferElement>::push_back (_7, &D.31920);
+  D.31920 ={v} {CLOBBER};
+  _11 = VertexBufferElement::GetSizeOfType (5126);
+  _12 = _11 * count_3(D);
+  _13 = this_6(D)->m_Stride;
+  _14 = _13 + _12;
+  this_6(D)->m_Stride = _14;
+  return;
+
+}
+
+
+
+;; Function void VertexBufferLayout::Push(unsigned int) [with T = unsigned int] (_ZN18VertexBufferLayout4PushIjEEvj, funcdef_no=770, decl_uid=31934, cgraph_uid=146, symbol_order=147)
+
+void VertexBufferLayout::Push(unsigned int) [with T = unsigned int] (struct VertexBufferLayout * const this, unsigned int count)
+{
+  unsigned int D.33541;
+  unsigned int D.33540;
+  unsigned int D.33539;
+  unsigned int D.31939;
+  struct vector * D.33538;
+  struct value_type D.31938;
+  struct vector * _7;
+  unsigned int _11;
+  unsigned int _12;
+  unsigned int _13;
+  unsigned int _14;
+
+  <bb 2>:
+  D.31938.type = 5125;
+  D.31938.count = count_3(D);
+  D.31938.normalized = 0;
+  _7 = &this_6(D)->m_Elements;
+  std::vector<VertexBufferElement>::push_back (_7, &D.31938);
+  D.31938 ={v} {CLOBBER};
+  _11 = VertexBufferElement::GetSizeOfType (5125);
+  _12 = _11 * count_3(D);
+  _13 = this_6(D)->m_Stride;
+  _14 = _13 + _12;
+  this_6(D)->m_Stride = _14;
+  return;
+
+}
+
+
+
+;; Function void VertexBufferLayout::Push(unsigned int) [with T = unsigned char] (_ZN18VertexBufferLayout4PushIhEEvj, funcdef_no=771, decl_uid=31943, cgraph_uid=147, symbol_order=148)
+
+void VertexBufferLayout::Push(unsigned int) [with T = unsigned char] (struct VertexBufferLayout * const this, unsigned int count)
+{
+  unsigned int D.33546;
+  unsigned int D.33545;
+  unsigned int D.33544;
+  unsigned int D.31948;
+  struct vector * D.33543;
+  struct value_type D.31947;
+  struct vector * _7;
+  unsigned int _11;
+  unsigned int _12;
+  unsigned int _13;
+  unsigned int _14;
+
+  <bb 2>:
+  D.31947.type = 5121;
+  D.31947.count = count_3(D);
+  D.31947.normalized = 1;
+  _7 = &this_6(D)->m_Elements;
+  std::vector<VertexBufferElement>::push_back (_7, &D.31947);
+  D.31947 ={v} {CLOBBER};
+  _11 = VertexBufferElement::GetSizeOfType (5121);
+  _12 = _11 * count_3(D);
+  _13 = this_6(D)->m_Stride;
+  _14 = _13 + _12;
+  this_6(D)->m_Stride = _14;
+  return;
+
+}
+
+
+
+;; Function std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=779, decl_uid=31758, cgraph_uid=155, symbol_order=156)
+
+std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this)
+{
+  struct _Vector_base * D.33326;
+  struct VertexBufferElement * D.33325;
+  struct VertexBufferElement * D.33324;
+  struct _Tp_alloc_type & D.33323;
+  struct _Vector_base * D.33322;
+  struct _Vector_base * _2;
+  struct _Tp_alloc_type & _5;
+  struct VertexBufferElement * _6;
+  struct VertexBufferElement * _7;
+  struct _Vector_base * _9;
+
+  <bb 2>:
+  _2 = &this_1(D)->D.31761;
+  _5 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_2);
+  _6 = this_1(D)->D.31761._M_impl._M_finish;
+  _7 = this_1(D)->D.31761._M_impl._M_start;
+  std::_Destroy<VertexBufferElement*, VertexBufferElement> (_7, _6, _5);
+  _9 = &this_1(D)->D.31761;
+  std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::~_Vector_base (_9);
+  MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function constexpr typename std::remove_reference< <template-parameter-1-1> >::type&& std::move(_Tp&&) [with _Tp = VertexBufferElement&; typename std::remove_reference< <template-parameter-1-1> >::type = VertexBufferElement] (_ZSt4moveIR19VertexBufferElementEONSt16remove_referenceIT_E4typeEOS3_, funcdef_no=785, decl_uid=32224, cgraph_uid=160, symbol_order=161)
+
+constexpr typename std::remove_reference< <template-parameter-1-1> >::type&& std::move(_Tp&&) [with _Tp = VertexBufferElement&; typename std::remove_reference< <template-parameter-1-1> >::type = VertexBufferElement] (struct VertexBufferElement & __t)
+{
+  struct type & D.33349;
+  struct type & _2;
+
+  <bb 2>:
+  _2 = __t_1(D);
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::value_type = VertexBufferElement] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE9push_backEOS0_, funcdef_no=784, decl_uid=31353, cgraph_uid=161, symbol_order=162)
+
+void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::value_type = VertexBufferElement] (struct vector * const this, struct value_type & __x)
+{
+  struct type & D.33348;
+  struct type & _4;
+
+  <bb 2>:
+  _4 = std::move<VertexBufferElement&> (__x_2(D));
+  std::vector<VertexBufferElement>::emplace_back<VertexBufferElement> (this_5(D), _4);
+  return;
+
+}
+
+
+
+;; Function std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl() (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE12_Vector_implD2Ev, funcdef_no=790, decl_uid=32042, cgraph_uid=165, symbol_order=166)
+
+std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl() (struct _Vector_impl * const this)
+{
+  <bb 2>:
+  std::allocator<VertexBufferElement>::~allocator (this_2(D));
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=795, decl_uid=31138, cgraph_uid=171, symbol_order=172)
+
+std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this)
+{
+  struct _Vector_impl * D.33337;
+  struct VertexBufferElement * D.33336;
+  long unsigned int D.33335;
+  long int D.33334;
+  long int D.33333;
+  long int D.33332;
+  struct VertexBufferElement * D.33331;
+  long int D.33330;
+  struct VertexBufferElement * D.33329;
+  struct VertexBufferElement * _3;
+  long int _4;
+  struct VertexBufferElement * _5;
+  long int _6;
+  long int _7;
+  long int _8;
+  long unsigned int _9;
+  struct VertexBufferElement * _10;
+  struct _Vector_impl * _12;
+
+  <bb 2>:
+  _3 = this_2(D)->_M_impl._M_end_of_storage;
+  _4 = (long int) _3;
+  _5 = this_2(D)->_M_impl._M_start;
+  _6 = (long int) _5;
+  _7 = _4 - _6;
+  _8 = _7 /[ex] 12;
+  _9 = (long unsigned int) _8;
+  _10 = this_2(D)->_M_impl._M_start;
+  std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_deallocate (this_2(D), _10, _9);
+  _12 = &this_2(D)->_M_impl;
+  std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl (_12);
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=797, decl_uid=30846, cgraph_uid=173, symbol_order=174)
+
+std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<VertexBufferElement>] (struct _Vector_base * const this)
+{
+  struct _Tp_alloc_type & D.33327;
+  struct _Tp_alloc_type & _2;
+
+  <bb 2>:
+  _2 = &this_1(D)->_M_impl;
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt8_DestroyIP19VertexBufferElementS0_EvT_S2_RSaIT0_E, funcdef_no=798, decl_uid=32058, cgraph_uid=174, symbol_order=175)
+
+void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct allocator & D.32061)
+{
+  <bb 2>:
+  std::_Destroy<VertexBufferElement*> (__first_2(D), __last_3(D));
+  return;
+
+}
+
+
+
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE4sizeEv, funcdef_no=799, decl_uid=31303, cgraph_uid=175, symbol_order=176)
+
+std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (const struct vector * const this)
+{
+  long int D.33533;
+  long int D.33532;
+  long int D.33531;
+  struct VertexBufferElement * D.33530;
+  long int D.33529;
+  struct VertexBufferElement * D.33528;
+  size_type D.33527;
+  struct VertexBufferElement * _3;
+  long int _4;
+  struct VertexBufferElement * _5;
+  long int _6;
+  long int _7;
+  long int _8;
+  size_type _9;
+
+  <bb 2>:
+  _3 = this_2(D)->D.31761._M_impl._M_finish;
+  _4 = (long int) _3;
+  _5 = this_2(D)->D.31761._M_impl._M_start;
+  _6 = (long int) _5;
+  _7 = _4 - _6;
+  _8 = _7 /[ex] 12;
+  _9 = (size_type) _8;
+
+<L0>:
+  return _9;
+
+}
+
+
+
+;; Function const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<VertexBufferElement>] (_ZNKSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=801, decl_uid=30848, cgraph_uid=177, symbol_order=178)
+
+const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type = std::allocator<VertexBufferElement>] (const struct _Vector_base * const this)
+{
+  const struct _Tp_alloc_type & D.33444;
+  const struct _Tp_alloc_type & _2;
+
+  <bb 2>:
+  _2 = &this_1(D)->_M_impl;
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBufferElement] (_ZNSaI19VertexBufferElementED2Ev, funcdef_no=803, decl_uid=31044, cgraph_uid=179, symbol_order=180)
+
+std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBufferElement] (struct allocator * const this)
+{
+  void * D.33342;
+
+  <bb 2>:
+  __gnu_cxx::new_allocator<VertexBufferElement>::~new_allocator (this_2(D));
+  return;
+
+}
+
+
+
+;; Function constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = VertexBufferElement; typename std::remove_reference<_From>::type = VertexBufferElement] (_ZSt7forwardI19VertexBufferElementEOT_RNSt16remove_referenceIS1_E4typeE, funcdef_no=812, decl_uid=32291, cgraph_uid=187, symbol_order=188)
+
+constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = VertexBufferElement; typename std::remove_reference<_From>::type = VertexBufferElement] (struct type & __t)
+{
+  struct VertexBufferElement & D.33369;
+  struct VertexBufferElement & _2;
+
+  <bb 2>:
+  _2 = __t_1(D);
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {VertexBufferElement}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE12emplace_backIJS0_EEEvDpOT_, funcdef_no=811, decl_uid=32227, cgraph_uid=188, symbol_order=189)
+
+void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {VertexBufferElement}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this, struct VertexBufferElement & __args#0)
+{
+  struct VertexBufferElement & D.33361;
+  struct VertexBufferElement * D.33359;
+  struct VertexBufferElement * D.33358;
+  struct _Vector_impl * D.33357;
+  struct VertexBufferElement * D.33356;
+  struct VertexBufferElement & D.33355;
+  struct VertexBufferElement * D.33352;
+  struct VertexBufferElement * D.33351;
+  struct VertexBufferElement * _4;
+  struct VertexBufferElement * _5;
+  struct VertexBufferElement & _8;
+  struct VertexBufferElement * _9;
+  struct _Vector_impl * _10;
+  struct VertexBufferElement * _12;
+  struct VertexBufferElement * _13;
+  struct VertexBufferElement & _16;
+
+  <bb 2>:
+  _4 = this_3(D)->D.31761._M_impl._M_finish;
+  _5 = this_3(D)->D.31761._M_impl._M_end_of_storage;
+  if (_4 != _5)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _8 = std::forward<VertexBufferElement> (__args#0_6(D));
+  _9 = this_3(D)->D.31761._M_impl._M_finish;
+  _10 = &this_3(D)->D.31761._M_impl;
+  std::allocator_traits<std::allocator<VertexBufferElement> >::construct<VertexBufferElement, VertexBufferElement> (_10, _9, _8);
+  _12 = this_3(D)->D.31761._M_impl._M_finish;
+  _13 = _12 + 12;
+  this_3(D)->D.31761._M_impl._M_finish = _13;
+  goto <bb 5>;
+
+  <bb 4>:
+  _16 = std::forward<VertexBufferElement> (__args#0_6(D));
+  std::vector<VertexBufferElement>::_M_emplace_back_aux<VertexBufferElement> (this_3(D), _16);
+
+  <bb 5>:
+  return;
+
+}
+
+
+
+;; Function void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::pointer = VertexBufferElement*; std::size_t = long unsigned int] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE13_M_deallocateEPS0_m, funcdef_no=817, decl_uid=31084, cgraph_uid=193, symbol_order=194)
+
+void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::pointer = VertexBufferElement*; std::size_t = long unsigned int] (struct _Vector_base * const this, struct VertexBufferElement * __p, size_t __n)
+{
+  struct _Vector_impl * D.33340;
+  struct _Vector_impl * _5;
+
+  <bb 2>:
+  if (__p_2(D) != 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _5 = &this_4(D)->_M_impl;
+  std::allocator_traits<std::allocator<VertexBufferElement> >::deallocate (_5, __p_2(D), __n_6(D));
+
+  <bb 4>:
+  return;
+
+}
+
+
+
+;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZSt8_DestroyIP19VertexBufferElementEvT_S2_, funcdef_no=818, decl_uid=32256, cgraph_uid=194, symbol_order=195)
+
+void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last)
+{
+  <bb 2>:
+  std::_Destroy_aux<true>::__destroy<VertexBufferElement*> (__first_2(D), __last_3(D));
+  return;
+
+}
+
+
+
+;; Function __gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementED2Ev, funcdef_no=824, decl_uid=30980, cgraph_uid=200, symbol_order=201)
+
+__gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement] (struct new_allocator * const this)
+{
+  <bb 2>:
+  return;
+
+}
+
+
+
+;; Function static void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {VertexBufferElement}; _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE9constructIS0_JS0_EEEvRS1_PT_DpOT0_, funcdef_no=834, decl_uid=32294, cgraph_uid=210, symbol_order=211)
+
+static void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {VertexBufferElement}; _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (struct allocator_type & __a, struct VertexBufferElement * __p, struct VertexBufferElement & __args#0)
+{
+  struct VertexBufferElement & D.33362;
+  struct VertexBufferElement & _4;
+
+  <bb 2>:
+  _4 = std::forward<VertexBufferElement> (__args#0_2(D));
+  __gnu_cxx::new_allocator<VertexBufferElement>::construct<VertexBufferElement, VertexBufferElement> (__a_5(D), __p_6(D), _4);
+  return;
+
+}
+
+
+
+;; Function void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {VertexBufferElement}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE19_M_emplace_back_auxIJS0_EEEvDpOT_, funcdef_no=835, decl_uid=32327, cgraph_uid=211, symbol_order=212)
+
+Merging blocks 4 and 5
+void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {VertexBufferElement}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this, struct VertexBufferElement & __args#0)
+{
+  void * D.33634;
+  struct VertexBufferElement * D.33409;
+  struct VertexBufferElement * D.33408;
+  const size_type D.33407;
+  struct VertexBufferElement * __new_finish;
+  struct VertexBufferElement * __new_start;
+  const size_type __len;
+  struct VertexBufferElement * D.33406;
+  long unsigned int D.33405;
+  struct _Vector_base * D.33404;
+  struct VertexBufferElement * D.33403;
+  long unsigned int D.33402;
+  long int D.33401;
+  long int D.33400;
+  long int D.33399;
+  struct VertexBufferElement * D.33398;
+  long int D.33397;
+  struct VertexBufferElement * D.33396;
+  struct VertexBufferElement * D.33395;
+  struct VertexBufferElement * D.33394;
+  struct _Tp_alloc_type & D.33393;
+  struct _Vector_base * D.33392;
+  struct _Vector_base * D.33391;
+  struct _Tp_alloc_type & D.33390;
+  struct _Vector_base * D.33389;
+  struct _Vector_impl * D.33387;
+  struct VertexBufferElement * D.33386;
+  long unsigned int D.33385;
+  long unsigned int D.33384;
+  void * D.33381;
+  struct VertexBufferElement * D.33380;
+  struct VertexBufferElement * D.33379;
+  struct _Tp_alloc_type & D.33378;
+  struct _Vector_base * D.33377;
+  struct _Vector_impl * D.33376;
+  struct VertexBufferElement * D.33375;
+  long unsigned int D.33374;
+  long unsigned int D.33373;
+  struct VertexBufferElement & D.33372;
+  struct _Vector_base * D.33371;
+  const size_type _8;
+  struct _Vector_base * _10;
+  struct VertexBufferElement * _12;
+  struct VertexBufferElement & _17;
+  long unsigned int _19;
+  long unsigned int _20;
+  struct VertexBufferElement * _21;
+  struct _Vector_impl * _22;
+  struct _Vector_base * _25;
+  struct _Tp_alloc_type & _27;
+  struct VertexBufferElement * _28;
+  struct VertexBufferElement * _29;
+  struct VertexBufferElement * _31;
+  struct _Vector_base * _34;
+  struct _Tp_alloc_type & _36;
+  struct VertexBufferElement * _37;
+  struct VertexBufferElement * _38;
+  struct VertexBufferElement * _40;
+  long int _41;
+  struct VertexBufferElement * _42;
+  long int _43;
+  long int _44;
+  long int _45;
+  long unsigned int _46;
+  struct VertexBufferElement * _47;
+  struct _Vector_base * _48;
+  long unsigned int _52;
+  struct VertexBufferElement * _53;
+  void * _55;
+  long unsigned int _58;
+  long unsigned int _59;
+  struct VertexBufferElement * _60;
+  struct _Vector_impl * _61;
+  struct _Vector_base * _63;
+  struct _Tp_alloc_type & _65;
+  struct _Vector_base * _67;
+
+  <bb 2>:
+  _8 = std::vector<VertexBufferElement>::_M_check_len (this_6(D), 1, "vector::_M_emplace_back_aux");
+  __len_9 = _8;
+  _10 = &this_6(D)->D.31761;
+  _12 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_allocate (_10, __len_9);
+  __new_start_13 = _12;
+  __new_finish_14 = __new_start_13;
+  _17 = std::forward<VertexBufferElement> (__args#0_15(D));
+  _19 = std::vector<VertexBufferElement>::size (this_6(D));
+  _20 = _19 * 12;
+  _21 = __new_start_13 + _20;
+  _22 = &this_6(D)->D.31761._M_impl;
+  std::allocator_traits<std::allocator<VertexBufferElement> >::construct<VertexBufferElement, VertexBufferElement> (_22, _21, _17);
+  __new_finish_24 = 0B;
+  _25 = &this_6(D)->D.31761;
+  _27 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_25);
+  _28 = this_6(D)->D.31761._M_impl._M_finish;
+  _29 = this_6(D)->D.31761._M_impl._M_start;
+  _31 = std::__uninitialized_move_if_noexcept_a<VertexBufferElement*, VertexBufferElement*, std::allocator<VertexBufferElement> > (_29, _28, __new_start_13, _27);
+
+  <bb 3>:
+  __new_finish_32 = _31;
+  __new_finish_33 = __new_finish_32 + 12;
+  _34 = &this_6(D)->D.31761;
+  _36 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_34);
+  _37 = this_6(D)->D.31761._M_impl._M_finish;
+  _38 = this_6(D)->D.31761._M_impl._M_start;
+  std::_Destroy<VertexBufferElement*, VertexBufferElement> (_38, _37, _36);
+  _40 = this_6(D)->D.31761._M_impl._M_end_of_storage;
+  _41 = (long int) _40;
+  _42 = this_6(D)->D.31761._M_impl._M_start;
+  _43 = (long int) _42;
+  _44 = _41 - _43;
+  _45 = _44 /[ex] 12;
+  _46 = (long unsigned int) _45;
+  _47 = this_6(D)->D.31761._M_impl._M_start;
+  _48 = &this_6(D)->D.31761;
+  std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_deallocate (_48, _47, _46);
+  this_6(D)->D.31761._M_impl._M_start = __new_start_13;
+  this_6(D)->D.31761._M_impl._M_finish = __new_finish_33;
+  _52 = __len_9 * 12;
+  _53 = __new_start_13 + _52;
+  this_6(D)->D.31761._M_impl._M_end_of_storage = _53;
+  return;
+
+  # __new_finish_1 = PHI <__new_finish_24(2)>
+<L0>:
+  _55 = __builtin_eh_pointer (1);
+  __cxa_begin_catch (_55);
+  if (__new_finish_1 == 0B)
+    goto <bb 5>;
+  else
+    goto <bb 7>;
+
+  <bb 5>:
+  _58 = std::vector<VertexBufferElement>::size (this_6(D));
+  _59 = _58 * 12;
+  _60 = __new_start_13 + _59;
+  _61 = &this_6(D)->D.31761._M_impl;
+  std::allocator_traits<std::allocator<VertexBufferElement> >::destroy<VertexBufferElement> (_61, _60);
+
+  <bb 6>:
+  goto <bb 8>;
+
+  <bb 7>:
+  _63 = &this_6(D)->D.31761;
+  _65 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_63);
+  std::_Destroy<VertexBufferElement*, VertexBufferElement> (__new_start_13, __new_finish_1, _65);
+
+  <bb 8>:
+  _67 = &this_6(D)->D.31761;
+  std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_deallocate (_67, __new_start_13, __len_9);
+
+  <bb 9>:
+  __cxa_rethrow ();
+
+<L5>:
+  __cxa_end_catch ();
+  _71 = __builtin_eh_pointer (2);
+  __builtin_unwind_resume (_71);
+
+}
+
+
+
+;; Function static void std::allocator_traits<std::allocator<_Tp1> >::deallocate(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, std::allocator_traits<std::allocator<_Tp1> >::pointer, std::allocator_traits<std::allocator<_Tp1> >::size_type) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>; std::allocator_traits<std::allocator<_Tp1> >::pointer = VertexBufferElement*; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE10deallocateERS1_PS0_m, funcdef_no=839, decl_uid=30728, cgraph_uid=215, symbol_order=216)
+
+static void std::allocator_traits<std::allocator<_Tp1> >::deallocate(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, std::allocator_traits<std::allocator<_Tp1> >::pointer, std::allocator_traits<std::allocator<_Tp1> >::size_type) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>; std::allocator_traits<std::allocator<_Tp1> >::pointer = VertexBufferElement*; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int] (struct allocator_type & __a, struct VertexBufferElement * __p, size_type __n)
+{
+  <bb 2>:
+  __gnu_cxx::new_allocator<VertexBufferElement>::deallocate (__a_2(D), __p_3(D), __n_4(D));
+  return;
+
+}
+
+
+
+;; Function static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZNSt12_Destroy_auxILb1EE9__destroyIP19VertexBufferElementEEvT_S4_, funcdef_no=840, decl_uid=32346, cgraph_uid=216, symbol_order=217)
+
+static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (struct VertexBufferElement * D.32347, struct VertexBufferElement * D.32348)
+{
+  <bb 2>:
+  GIMPLE_NOP
+  return;
+
+}
+
+
+
+;; Function std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::pointer = VertexBufferElement*; std::size_t = long unsigned int] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE11_M_allocateEm, funcdef_no=844, decl_uid=31081, cgraph_uid=220, symbol_order=221)
+
+std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::_Vector_base<_Tp, _Alloc>::pointer = VertexBufferElement*; std::size_t = long unsigned int] (struct _Vector_base * const this, size_t __n)
+{
+  struct VertexBufferElement * D.33457;
+  struct _Vector_impl * D.33454;
+  struct VertexBufferElement * iftmp.5;
+  struct VertexBufferElement * D.33450;
+  struct VertexBufferElement * iftmp.5_1;
+  struct _Vector_impl * _5;
+  struct VertexBufferElement * _8;
+  struct VertexBufferElement * iftmp.5_9;
+  struct VertexBufferElement * iftmp.5_10;
+  struct VertexBufferElement * _11;
+
+  <bb 2>:
+  if (__n_3(D) != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _5 = &this_4(D)->_M_impl;
+  _8 = std::allocator_traits<std::allocator<VertexBufferElement> >::allocate (_5, __n_3(D));
+  iftmp.5_9 = _8;
+  goto <bb 5>;
+
+  <bb 4>:
+  iftmp.5_10 = 0B;
+
+  <bb 5>:
+  # iftmp.5_1 = PHI <iftmp.5_9(3), iftmp.5_10(4)>
+  _11 = iftmp.5_1;
+
+<L3>:
+  return _11;
+
+}
+
+
+
+;; Function void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {VertexBufferElement}; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE9constructIS1_JS1_EEEvPT_DpOT0_, funcdef_no=846, decl_uid=32528, cgraph_uid=222, symbol_order=223)
+
+void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {VertexBufferElement}; _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p, struct VertexBufferElement & __args#0)
+{
+  struct VertexBufferElement * iftmp.0;
+  void * D.32614;
+  void * D.32613;
+  struct VertexBufferElement * D.32615;
+  struct VertexBufferElement * _5;
+  void * _7;
+  void * _9;
+  struct VertexBufferElement * iftmp.0_11;
+  struct VertexBufferElement * iftmp.0_12;
+
+  <bb 2>:
+  _5 = std::forward<VertexBufferElement> (__args#0_3(D));
+  _7 = __p_6(D);
+  _9 = operator new (12, _7);
+  if (_9 != 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  MEM[(struct VertexBufferElement *)_9] = *_5;
+  iftmp.0_11 = _9;
+  goto <bb 5>;
+
+  <bb 4>:
+  iftmp.0_12 = _9;
+
+  <bb 5>:
+  return;
+
+}
+
+
+
+;; Function constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int] (_ZSt3maxImERKT_S2_S2_, funcdef_no=848, decl_uid=32618, cgraph_uid=223, symbol_order=224)
+
+constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int] (const long unsigned int & __a, const long unsigned int & __b)
+{
+  const long unsigned int & D.33438;
+  long unsigned int D.33435;
+  long unsigned int D.33434;
+  const long unsigned int & _1;
+  long unsigned int _4;
+  long unsigned int _6;
+  const long unsigned int & _7;
+  const long unsigned int & _8;
+
+  <bb 2>:
+  _4 = *__a_3(D);
+  _6 = *__b_5(D);
+  if (_4 < _6)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _7 = __b_5(D);
+  goto <bb 5> (<L2>);
+
+  <bb 4>:
+  _8 = __a_3(D);
+
+  # _1 = PHI <_7(3), _8(4)>
+<L2>:
+  return _1;
+
+}
+
+
+
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::vector<_Tp, _Alloc>::size_type, const char*) const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE12_M_check_lenEmPKc, funcdef_no=847, decl_uid=31636, cgraph_uid=224, symbol_order=225)
+
+std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::vector<_Tp, _Alloc>::size_type, const char*) const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (const struct vector * const this, size_type __n, const char * __s)
+{
+  const size_type __len;
+  long unsigned int D.33432;
+  long unsigned int D.33430;
+  size_type iftmp.4;
+  size_type D.33425;
+  long unsigned int D.33424;
+  const long unsigned int & D.33423;
+  long unsigned int D.33422;
+  const long unsigned int D.32621;
+  long unsigned int D.33421;
+  const char * __s.3;
+  long unsigned int __n.2;
+  long unsigned int D.33416;
+  long unsigned int D.33415;
+  long unsigned int D.33414;
+  bool retval.1;
+  size_type iftmp.4_1;
+  long unsigned int _7;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int __n.2_11;
+  bool retval.1_12;
+  long unsigned int _14;
+  long unsigned int _16;
+  const long unsigned int & _19;
+  long unsigned int _20;
+  long unsigned int _24;
+  long unsigned int _26;
+  size_type iftmp.4_27;
+  size_type iftmp.4_29;
+  size_type _30;
+  const char * __s.3_31;
+
+  <bb 2>:
+  _7 = std::vector<VertexBufferElement>::max_size (this_5(D));
+  _9 = std::vector<VertexBufferElement>::size (this_5(D));
+  _10 = _7 - _9;
+  __n.2_11 = __n;
+  retval.1_12 = _10 < __n.2_11;
+  if (retval.1_12 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  __s.3_31 = __s;
+  std::__throw_length_error (__s.3_31);
+
+  <bb 4>:
+  _14 = std::vector<VertexBufferElement>::size (this_5(D));
+  _16 = std::vector<VertexBufferElement>::size (this_5(D));
+  D.32621 = _16;
+  _19 = std::max<long unsigned int> (&D.32621, &__n);
+  _20 = *_19;
+  __len_21 = _14 + _20;
+  D.32621 ={v} {CLOBBER};
+  _24 = std::vector<VertexBufferElement>::size (this_5(D));
+  if (_24 > __len_21)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  _26 = std::vector<VertexBufferElement>::max_size (this_5(D));
+  if (_26 < __len_21)
+    goto <bb 6>;
+  else
+    goto <bb 7>;
+
+  <bb 6>:
+  iftmp.4_29 = std::vector<VertexBufferElement>::max_size (this_5(D));
+  goto <bb 8>;
+
+  <bb 7>:
+  iftmp.4_27 = __len_21;
+
+  <bb 8>:
+  # iftmp.4_1 = PHI <iftmp.4_29(6), iftmp.4_27(7)>
+  _30 = iftmp.4_1;
+
+<L6>:
+  return _30;
+
+}
+
+
+
+;; Function _ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = VertexBufferElement*; _ForwardIterator = VertexBufferElement*; _Allocator = std::allocator<VertexBufferElement>] (_ZSt34__uninitialized_move_if_noexcept_aIP19VertexBufferElementS1_SaIS0_EET0_T_S4_S3_RT1_, funcdef_no=849, decl_uid=32536, cgraph_uid=225, symbol_order=226)
+
+_ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = VertexBufferElement*; _ForwardIterator = VertexBufferElement*; _Allocator = std::allocator<VertexBufferElement>] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result, struct allocator & __alloc)
+{
+  struct VertexBufferElement * D.33473;
+  struct move_iterator D.33471;
+  struct move_iterator D.33470;
+  struct VertexBufferElement * D.33469;
+  struct VertexBufferElement * _9;
+  struct VertexBufferElement * _10;
+
+  <bb 2>:
+  D.33470 = std::__make_move_if_noexcept_iterator<VertexBufferElement*, std::move_iterator<VertexBufferElement*> > (__last_2(D));
+  D.33471 = std::__make_move_if_noexcept_iterator<VertexBufferElement*, std::move_iterator<VertexBufferElement*> > (__first_4(D));
+  _9 = std::__uninitialized_copy_a<std::move_iterator<VertexBufferElement*>, VertexBufferElement*, VertexBufferElement> (D.33471, D.33470, __result_6(D), __alloc_7(D));
+  _10 = _9;
+
+<L0>:
+  return _10;
+
+}
+
+
+
+;; Function static void std::allocator_traits<std::allocator<_Tp1> >::destroy(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE7destroyIS0_EEvRS1_PT_, funcdef_no=850, decl_uid=32543, cgraph_uid=226, symbol_order=227)
+
+static void std::allocator_traits<std::allocator<_Tp1> >::destroy(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (struct allocator_type & __a, struct VertexBufferElement * __p)
+{
+  <bb 2>:
+  __gnu_cxx::new_allocator<VertexBufferElement>::destroy<VertexBufferElement> (__a_2(D), __p_3(D));
+  return;
+
+}
+
+
+
+;; Function void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::pointer = VertexBufferElement*; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE10deallocateEPS1_m, funcdef_no=854, decl_uid=30929, cgraph_uid=230, symbol_order=231)
+
+void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::pointer = VertexBufferElement*; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (struct new_allocator * const this, struct VertexBufferElement * __p, size_type D.30932)
+{
+  <bb 2>:
+  operator delete (__p_2(D));
+  return;
+
+}
+
+
+
+;; Function static _Tp* std::allocator_traits<std::allocator<_Tp1> >::allocate(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, std::allocator_traits<std::allocator<_Tp1> >::size_type) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::pointer = VertexBufferElement*; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8allocateERS1_m, funcdef_no=855, decl_uid=30721, cgraph_uid=231, symbol_order=232)
+
+static _Tp* std::allocator_traits<std::allocator<_Tp1> >::allocate(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, std::allocator_traits<std::allocator<_Tp1> >::size_type) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::pointer = VertexBufferElement*; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int] (struct allocator_type & __a, size_type __n)
+{
+  struct VertexBufferElement * D.33460;
+  struct VertexBufferElement * D.33458;
+  struct VertexBufferElement * _5;
+  struct VertexBufferElement * _6;
+
+  <bb 2>:
+  _5 = __gnu_cxx::new_allocator<VertexBufferElement>::allocate (__a_2(D), __n_3(D), 0B);
+  _6 = _5;
+
+<L0>:
+  return _6;
+
+}
+
+
+
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE8max_sizeEv, funcdef_no=857, decl_uid=31305, cgraph_uid=233, symbol_order=234)
+
+std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>; std::vector<_Tp, _Alloc>::size_type = long unsigned int] (const struct vector * const this)
+{
+  const struct _Tp_alloc_type & D.33442;
+  const struct _Vector_base * D.33441;
+  size_type D.33440;
+  const struct _Vector_base * _2;
+  const struct _Tp_alloc_type & _5;
+  size_type _7;
+
+  <bb 2>:
+  _2 = &this_1(D)->D.31761;
+  _5 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_2);
+  _7 = std::allocator_traits<std::allocator<VertexBufferElement> >::max_size (_5);
+
+<L0>:
+  return _7;
+
+}
+
+
+
+;; Function _ReturnType std::__make_move_if_noexcept_iterator(_Iterator) [with _Iterator = VertexBufferElement*; _ReturnType = std::move_iterator<VertexBufferElement*>] (_ZSt32__make_move_if_noexcept_iteratorIP19VertexBufferElementSt13move_iteratorIS1_EET0_T_, funcdef_no=858, decl_uid=32884, cgraph_uid=234, symbol_order=235)
+
+_ReturnType std::__make_move_if_noexcept_iterator(_Iterator) [with _Iterator = VertexBufferElement*; _ReturnType = std::move_iterator<VertexBufferElement*>] (struct VertexBufferElement * __i)
+{
+  struct move_iterator D.33054;
+  struct move_iterator D.33474;
+
+  <bb 2>:
+  std::move_iterator<VertexBufferElement*>::move_iterator (&D.33054, __i_2(D));
+  D.33474 = D.33054;
+  D.33054 ={v} {CLOBBER};
+
+<L1>:
+  return D.33474;
+
+}
+
+
+
+;; Function _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt22__uninitialized_copy_aISt13move_iteratorIP19VertexBufferElementES2_S1_ET0_T_S5_S4_RSaIT1_E, funcdef_no=859, decl_uid=32981, cgraph_uid=235, symbol_order=236)
+
+_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result, struct allocator & D.32985)
+{
+  struct VertexBufferElement * D.33479;
+  struct VertexBufferElement * D.33477;
+  struct VertexBufferElement * _4;
+  struct VertexBufferElement * _5;
+
+  <bb 2>:
+  _4 = std::uninitialized_copy<std::move_iterator<VertexBufferElement*>, VertexBufferElement*> (__first, __last, __result_2(D));
+  _5 = _4;
+
+<L0>:
+  return _5;
+
+}
+
+
+
+;; Function void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE7destroyIS1_EEvPT_, funcdef_no=860, decl_uid=33019, cgraph_uid=236, symbol_order=237)
+
+void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p)
+{
+  <bb 2>:
+  GIMPLE_NOP
+  return;
+
+}
+
+
+
+;; Function _Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::pointer = VertexBufferElement*; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE8allocateEmPKv, funcdef_no=861, decl_uid=30925, cgraph_uid=237, symbol_order=238)
+
+_Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::pointer = VertexBufferElement*; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (struct new_allocator * const this, size_type __n, const void * D.30928)
+{
+  struct VertexBufferElement * D.33468;
+  long unsigned int D.33466;
+  struct VertexBufferElement * D.33465;
+  long unsigned int D.33462;
+  bool retval.6;
+  long unsigned int _4;
+  bool retval.6_6;
+  long unsigned int _7;
+  struct VertexBufferElement * _9;
+  struct VertexBufferElement * _10;
+
+  <bb 2>:
+  _4 = __gnu_cxx::new_allocator<VertexBufferElement>::max_size (this_2(D));
+  retval.6_6 = _4 < __n_5(D);
+  if (retval.6_6 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  std::__throw_bad_alloc ();
+
+  <bb 4>:
+  _7 = __n_5(D) * 12;
+  _9 = operator new (_7);
+  _10 = _9;
+
+<L2>:
+  return _10;
+
+}
+
+
+
+;; Function static std::allocator_traits<std::allocator<_Tp1> >::size_type std::allocator_traits<std::allocator<_Tp1> >::max_size(const allocator_type&) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8max_sizeERKS1_, funcdef_no=864, decl_uid=30756, cgraph_uid=240, symbol_order=241)
+
+static std::allocator_traits<std::allocator<_Tp1> >::size_type std::allocator_traits<std::allocator<_Tp1> >::max_size(const allocator_type&) [with _Tp = VertexBufferElement; std::allocator_traits<std::allocator<_Tp1> >::size_type = long unsigned int; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<VertexBufferElement>] (const struct allocator_type & __a)
+{
+  size_type D.33446;
+  size_type _4;
+
+  <bb 2>:
+  _4 = __gnu_cxx::new_allocator<VertexBufferElement>::max_size (__a_2(D));
+
+<L0>:
+  return _4;
+
+}
+
+
+
+;; Function std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iterator_type) [with _Iterator = VertexBufferElement*; std::move_iterator<_Iterator>::iterator_type = VertexBufferElement*] (_ZNSt13move_iteratorIP19VertexBufferElementEC2ES1_, funcdef_no=866, decl_uid=32962, cgraph_uid=242, symbol_order=243)
+
+std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iterator_type) [with _Iterator = VertexBufferElement*; std::move_iterator<_Iterator>::iterator_type = VertexBufferElement*] (struct move_iterator * const this, struct VertexBufferElement * __i)
+{
+  <bb 2>:
+  this_2(D)->_M_current = __i_3(D);
+  return;
+
+}
+
+
+
+;; Function _ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZSt18uninitialized_copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=868, decl_uid=33056, cgraph_uid=244, symbol_order=245)
+
+_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
+{
+  struct VertexBufferElement * D.33482;
+  const bool __assignable;
+  struct VertexBufferElement * D.33480;
+  struct VertexBufferElement * _5;
+  struct VertexBufferElement * _6;
+
+  <bb 2>:
+  __assignable_1 = 1;
+  _5 = std::__uninitialized_copy<true>::__uninit_copy<std::move_iterator<VertexBufferElement*>, VertexBufferElement*> (__first, __last, __result_3(D));
+  _6 = _5;
+
+<L0>:
+  return _6;
+
+}
+
+
+
+;; Function __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (_ZNK9__gnu_cxx13new_allocatorI19VertexBufferElementE8max_sizeEv, funcdef_no=869, decl_uid=30933, cgraph_uid=245, symbol_order=246)
+
+__gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = VertexBufferElement; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int] (const struct new_allocator * const this)
+{
+  size_type D.33448;
+  size_type _1;
+
+  <bb 2>:
+  _1 = 1537228672809129301;
+
+<L0>:
+  return _1;
+
+}
+
+
+
+;; Function typename std::_Niter_base<_Iterator>::iterator_type std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*; typename std::_Niter_base<_Iterator>::iterator_type = VertexBufferElement*] (_ZSt12__niter_baseIP19VertexBufferElementENSt11_Niter_baseIT_E13iterator_typeES3_, funcdef_no=872, decl_uid=33100, cgraph_uid=248, symbol_order=249)
+
+typename std::_Niter_base<_Iterator>::iterator_type std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*; typename std::_Niter_base<_Iterator>::iterator_type = VertexBufferElement*] (struct VertexBufferElement * __it)
+{
+  struct VertexBufferElement * D.33509;
+  struct VertexBufferElement * _4;
+
+  <bb 2>:
+  _4 = std::_Iter_base<VertexBufferElement*, false>::_S_base (__it_2(D));
+
+<L0>:
+  return _4;
+
+}
+
+
+
+;; Function static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt13move_iteratorIP19VertexBufferElementES4_EET0_T_S7_S6_, funcdef_no=874, decl_uid=33158, cgraph_uid=250, symbol_order=251)
+
+static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
+{
+  struct VertexBufferElement * D.33485;
+  struct VertexBufferElement * D.33483;
+  struct VertexBufferElement * _4;
+  struct VertexBufferElement * _5;
+
+  <bb 2>:
+  _4 = std::copy<std::move_iterator<VertexBufferElement*>, VertexBufferElement*> (__first, __last, __result_2(D));
+  _5 = _4;
+
+<L0>:
+  return _5;
+
+}
+
+
+
+;; Function static std::_Iter_base<_Iterator, _HasBase>::iterator_type std::_Iter_base<_Iterator, _HasBase>::_S_base(_Iterator) [with _Iterator = VertexBufferElement*; bool _HasBase = false; std::_Iter_base<_Iterator, _HasBase>::iterator_type = VertexBufferElement*] (_ZNSt10_Iter_baseIP19VertexBufferElementLb0EE7_S_baseES1_, funcdef_no=876, decl_uid=33096, cgraph_uid=252, symbol_order=253)
+
+static std::_Iter_base<_Iterator, _HasBase>::iterator_type std::_Iter_base<_Iterator, _HasBase>::_S_base(_Iterator) [with _Iterator = VertexBufferElement*; bool _HasBase = false; std::_Iter_base<_Iterator, _HasBase>::iterator_type = VertexBufferElement*] (struct VertexBufferElement * __it)
+{
+  struct VertexBufferElement * D.33511;
+  struct VertexBufferElement * _2;
+
+  <bb 2>:
+  _2 = __it_1(D);
+
+<L0>:
+  return _2;
+
+}
+
+
+
+;; Function _OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*>; _OI = VertexBufferElement*] (_ZSt4copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=878, decl_uid=33216, cgraph_uid=254, symbol_order=255)
+
+_OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*>; _OI = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
+{
+  struct VertexBufferElement * D.33492;
+  struct VertexBufferElement * D.33491;
+  struct VertexBufferElement * D.33490;
+  struct VertexBufferElement * D.33488;
+  struct VertexBufferElement * D.33487;
+  struct VertexBufferElement * D.33486;
+  struct VertexBufferElement * _3;
+  struct VertexBufferElement * _4;
+  struct VertexBufferElement * _6;
+  struct VertexBufferElement * _7;
+  struct VertexBufferElement * _10;
+  struct VertexBufferElement * _11;
+
+  <bb 2>:
+  _3 = std::__miter_base<std::move_iterator<VertexBufferElement*> > (__last);
+  _4 = _3;
+  _6 = std::__miter_base<std::move_iterator<VertexBufferElement*> > (__first);
+  _7 = _6;
+  _10 = std::__copy_move_a2<true, VertexBufferElement*, VertexBufferElement*> (_7, _4, __result_8(D));
+  _11 = _10;
+
+<L0>:
+  return _11;
+
+}
+
+
+
+;; Function typename std::_Miter_base<_Iterator>::iterator_type std::__miter_base(_Iterator) [with _Iterator = std::move_iterator<VertexBufferElement*>; typename std::_Miter_base<_Iterator>::iterator_type = VertexBufferElement*] (_ZSt12__miter_baseISt13move_iteratorIP19VertexBufferElementEENSt11_Miter_baseIT_E13iterator_typeES5_, funcdef_no=880, decl_uid=33251, cgraph_uid=256, symbol_order=257)
+
+typename std::_Miter_base<_Iterator>::iterator_type std::__miter_base(_Iterator) [with _Iterator = std::move_iterator<VertexBufferElement*>; typename std::_Miter_base<_Iterator>::iterator_type = VertexBufferElement*] (struct move_iterator __it)
+{
+  struct VertexBufferElement * D.33495;
+  struct VertexBufferElement * D.33493;
+  struct VertexBufferElement * _3;
+  struct VertexBufferElement * _4;
+
+  <bb 2>:
+  _3 = std::_Iter_base<std::move_iterator<VertexBufferElement*>, true>::_S_base (__it);
+  _4 = _3;
+
+<L0>:
+  return _4;
+
+}
+
+
+
+;; Function _OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt14__copy_move_a2ILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=881, decl_uid=33255, cgraph_uid=257, symbol_order=258)
+
+_OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result)
+{
+  struct VertexBufferElement * D.33508;
+  struct VertexBufferElement * D.33507;
+  struct VertexBufferElement * D.33506;
+  struct VertexBufferElement * D.33505;
+  struct VertexBufferElement * D.33503;
+  struct VertexBufferElement * D.33502;
+  struct VertexBufferElement * D.33501;
+  struct VertexBufferElement * D.33500;
+  struct VertexBufferElement * _4;
+  struct VertexBufferElement * _5;
+  struct VertexBufferElement * _8;
+  struct VertexBufferElement * _9;
+  struct VertexBufferElement * _12;
+  struct VertexBufferElement * _13;
+  struct VertexBufferElement * _15;
+  struct VertexBufferElement * _16;
+
+  <bb 2>:
+  _4 = std::__niter_base<VertexBufferElement*> (__result_2(D));
+  _5 = _4;
+  _8 = std::__niter_base<VertexBufferElement*> (__last_6(D));
+  _9 = _8;
+  _12 = std::__niter_base<VertexBufferElement*> (__first_10(D));
+  _13 = _12;
+  _15 = std::__copy_move_a<true, VertexBufferElement*, VertexBufferElement*> (_13, _9, _5);
+  _16 = _15;
+
+<L0>:
+  return _16;
+
+}
+
+
+
+;; Function static std::_Iter_base<_Iterator, true>::iterator_type std::_Iter_base<_Iterator, true>::_S_base(_Iterator) [with _Iterator = std::move_iterator<VertexBufferElement*>; std::_Iter_base<_Iterator, true>::iterator_type = VertexBufferElement*] (_ZNSt10_Iter_baseISt13move_iteratorIP19VertexBufferElementELb1EE7_S_baseES3_, funcdef_no=882, decl_uid=33247, cgraph_uid=258, symbol_order=259)
+
+static std::_Iter_base<_Iterator, true>::iterator_type std::_Iter_base<_Iterator, true>::_S_base(_Iterator) [with _Iterator = std::move_iterator<VertexBufferElement*>; std::_Iter_base<_Iterator, true>::iterator_type = VertexBufferElement*] (struct move_iterator __it)
+{
+  struct VertexBufferElement * D.33496;
+  struct VertexBufferElement * _3;
+
+  <bb 2>:
+  _3 = std::move_iterator<VertexBufferElement*>::base (&__it);
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function _OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt13__copy_move_aILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=883, decl_uid=33263, cgraph_uid=259, symbol_order=260)
+
+_OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result)
+{
+  const bool __simple;
+  struct VertexBufferElement * D.33513;
+  struct VertexBufferElement * _7;
+
+  <bb 2>:
+  __simple_1 = 1;
+  _7 = std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<VertexBufferElement> (__first_3(D), __last_4(D), __result_5(D));
+
+<L0>:
+  return _7;
+
+}
+
+
+
+;; Function std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base() const [with _Iterator = VertexBufferElement*; std::move_iterator<_Iterator>::iterator_type = VertexBufferElement*] (_ZNKSt13move_iteratorIP19VertexBufferElementE4baseEv, funcdef_no=884, decl_uid=32920, cgraph_uid=260, symbol_order=261)
+
+std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base() const [with _Iterator = VertexBufferElement*; std::move_iterator<_Iterator>::iterator_type = VertexBufferElement*] (const struct move_iterator * const this)
+{
+  struct VertexBufferElement * D.33498;
+  struct VertexBufferElement * _3;
+
+  <bb 2>:
+  _3 = this_2(D)->_M_current;
+
+<L0>:
+  return _3;
+
+}
+
+
+
+;; Function static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = VertexBufferElement; bool _IsMove = true] (_ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mI19VertexBufferElementEEPT_PKS4_S7_S5_, funcdef_no=885, decl_uid=33291, cgraph_uid=261, symbol_order=262)
+
+static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = VertexBufferElement; bool _IsMove = true] (const struct VertexBufferElement * __first, const struct VertexBufferElement * __last, struct VertexBufferElement * __result)
+{
+  const ptrdiff_t _Num;
+  long unsigned int D.33525;
+  long unsigned int _Num.10;
+  struct VertexBufferElement * D.33523;
+  long unsigned int D.33521;
+  long unsigned int _Num.9;
+  long int D.33517;
+  long int __first.8;
+  long int __last.7;
+  long int __last.7_3;
+  long int __first.8_5;
+  long int _6;
+  long unsigned int _Num.9_9;
+  long unsigned int _10;
+  long unsigned int _Num.10_13;
+  long unsigned int _14;
+  struct VertexBufferElement * _15;
+
+  <bb 2>:
+  __last.7_3 = (long int) __last_2(D);
+  __first.8_5 = (long int) __first_4(D);
+  _6 = __last.7_3 - __first.8_5;
+  _Num_7 = _6 /[ex] 12;
+  if (_Num_7 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  _Num.9_9 = (long unsigned int) _Num_7;
+  _10 = _Num.9_9 * 12;
+  __builtin_memmove (__result_11(D), __first_4(D), _10);
+
+  <bb 4>:
+  _Num.10_13 = (long unsigned int) _Num_7;
+  _14 = _Num.10_13 * 12;
+  _15 = __result_11(D) + _14;
+
+<L3>:
+  return _15;
+
+}
+
+
