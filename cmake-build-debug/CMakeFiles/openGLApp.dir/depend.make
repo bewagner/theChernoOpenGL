@@ -2573,6 +2573,9 @@ CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/glm/vec2.hpp
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/glm/vec3.hpp
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/glm/vec4.hpp
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/glm/vector_relational.hpp
+CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/imgui/imconfig.h
+CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/openGLApp.dir/opengl.cpp.o: ../vendor/imgui/imgui_impl_glfw_gl3.h
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../IndexBuffer.h
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../Renderer.h
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../Shader.h
@@ -2583,6 +2586,32 @@ CMakeFiles/openGLApp.dir/opengl.cpp.o: ../VertexBufferLayout.h
 CMakeFiles/openGLApp.dir/opengl.cpp.o: ../opengl.cpp
 CMakeFiles/openGLApp.dir/opengl.cpp.o: /usr/local/include/GL/glew.h
 CMakeFiles/openGLApp.dir/opengl.cpp.o: /usr/local/include/GLFW/glfw3.h
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imconfig.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui.cpp
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui_internal.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/stb_textedit.h
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imconfig.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imgui_demo.cpp
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imconfig.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui_draw.cpp
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui_internal.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/stb_rect_pack.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/stb_textedit.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/stb_truetype.h
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: ../vendor/imgui/imconfig.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: ../vendor/imgui/imgui.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: ../vendor/imgui/imgui_impl_glfw_gl3.cpp
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: ../vendor/imgui/imgui_impl_glfw_gl3.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: /usr/local/include/GL/glew.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: /usr/local/include/GLFW/glfw3.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: /usr/local/include/GLFW/glfw3native.h
 
 CMakeFiles/openGLApp.dir/vendor/stb_image/stb_image.cpp.o: ../vendor/stb_image/stb_image.cpp
 CMakeFiles/openGLApp.dir/vendor/stb_image/stb_image.cpp.o: ../vendor/stb_image/stb_image.h

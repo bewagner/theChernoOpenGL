@@ -2574,6 +2574,9 @@ CMakeFiles/openGLApp.dir/opengl.cpp.o
  ../vendor/glm/vec3.hpp
  ../vendor/glm/vec4.hpp
  ../vendor/glm/vector_relational.hpp
+ ../vendor/imgui/imconfig.h
+ ../vendor/imgui/imgui.h
+ ../vendor/imgui/imgui_impl_glfw_gl3.h
  /home/benjamin/Videos/openGLSeries/code/IndexBuffer.h
  /home/benjamin/Videos/openGLSeries/code/Renderer.h
  /home/benjamin/Videos/openGLSeries/code/Shader.h
@@ -2584,6 +2587,32 @@ CMakeFiles/openGLApp.dir/opengl.cpp.o
  /home/benjamin/Videos/openGLSeries/code/opengl.cpp
  /usr/local/include/GL/glew.h
  /usr/local/include/GLFW/glfw3.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_internal.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_textedit.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_internal.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_rect_pack.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_textedit.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_truetype.h
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp
+ /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.h
+ /usr/local/include/GL/glew.h
+ /usr/local/include/GLFW/glfw3.h
+ /usr/local/include/GLFW/glfw3native.h
 CMakeFiles/openGLApp.dir/vendor/stb_image/stb_image.cpp.o
  /home/benjamin/Videos/openGLSeries/code/vendor/stb_image/stb_image.cpp
  /home/benjamin/Videos/openGLSeries/code/vendor/stb_image/stb_image.h

@@ -781,6 +781,114 @@ opengl.cpp.s:
 	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/opengl.cpp.s
 .PHONY : opengl.cpp.s
 
+vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
+
+.PHONY : vendor/imgui/imgui.o
+
+# target to build an object file
+vendor/imgui/imgui.cpp.o:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o
+.PHONY : vendor/imgui/imgui.cpp.o
+
+vendor/imgui/imgui.i: vendor/imgui/imgui.cpp.i
+
+.PHONY : vendor/imgui/imgui.i
+
+# target to preprocess a source file
+vendor/imgui/imgui.cpp.i:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.i
+.PHONY : vendor/imgui/imgui.cpp.i
+
+vendor/imgui/imgui.s: vendor/imgui/imgui.cpp.s
+
+.PHONY : vendor/imgui/imgui.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui.cpp.s:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.s
+.PHONY : vendor/imgui/imgui.cpp.s
+
+vendor/imgui/imgui_demo.o: vendor/imgui/imgui_demo.cpp.o
+
+.PHONY : vendor/imgui/imgui_demo.o
+
+# target to build an object file
+vendor/imgui/imgui_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o
+.PHONY : vendor/imgui/imgui_demo.cpp.o
+
+vendor/imgui/imgui_demo.i: vendor/imgui/imgui_demo.cpp.i
+
+.PHONY : vendor/imgui/imgui_demo.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.i
+.PHONY : vendor/imgui/imgui_demo.cpp.i
+
+vendor/imgui/imgui_demo.s: vendor/imgui/imgui_demo.cpp.s
+
+.PHONY : vendor/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.s
+.PHONY : vendor/imgui/imgui_demo.cpp.s
+
+vendor/imgui/imgui_draw.o: vendor/imgui/imgui_draw.cpp.o
+
+.PHONY : vendor/imgui/imgui_draw.o
+
+# target to build an object file
+vendor/imgui/imgui_draw.cpp.o:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o
+.PHONY : vendor/imgui/imgui_draw.cpp.o
+
+vendor/imgui/imgui_draw.i: vendor/imgui/imgui_draw.cpp.i
+
+.PHONY : vendor/imgui/imgui_draw.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_draw.cpp.i:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.i
+.PHONY : vendor/imgui/imgui_draw.cpp.i
+
+vendor/imgui/imgui_draw.s: vendor/imgui/imgui_draw.cpp.s
+
+.PHONY : vendor/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_draw.cpp.s:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.s
+.PHONY : vendor/imgui/imgui_draw.cpp.s
+
+vendor/imgui/imgui_impl_glfw_gl3.o: vendor/imgui/imgui_impl_glfw_gl3.cpp.o
+
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.o
+
+# target to build an object file
+vendor/imgui/imgui_impl_glfw_gl3.cpp.o:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.cpp.o
+
+vendor/imgui/imgui_impl_glfw_gl3.i: vendor/imgui/imgui_impl_glfw_gl3.cpp.i
+
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.i
+
+# target to preprocess a source file
+vendor/imgui/imgui_impl_glfw_gl3.cpp.i:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.i
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.cpp.i
+
+vendor/imgui/imgui_impl_glfw_gl3.s: vendor/imgui/imgui_impl_glfw_gl3.cpp.s
+
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.s
+
+# target to generate assembly for a file
+vendor/imgui/imgui_impl_glfw_gl3.cpp.s:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.s
+.PHONY : vendor/imgui/imgui_impl_glfw_gl3.cpp.s
+
 vendor/stb_image/stb_image.o: vendor/stb_image/stb_image.cpp.o
 
 .PHONY : vendor/stb_image/stb_image.o
@@ -875,6 +983,18 @@ help:
 	@echo "... opengl.o"
 	@echo "... opengl.i"
 	@echo "... opengl.s"
+	@echo "... vendor/imgui/imgui.o"
+	@echo "... vendor/imgui/imgui.i"
+	@echo "... vendor/imgui/imgui.s"
+	@echo "... vendor/imgui/imgui_demo.o"
+	@echo "... vendor/imgui/imgui_demo.i"
+	@echo "... vendor/imgui/imgui_demo.s"
+	@echo "... vendor/imgui/imgui_draw.o"
+	@echo "... vendor/imgui/imgui_draw.i"
+	@echo "... vendor/imgui/imgui_draw.s"
+	@echo "... vendor/imgui/imgui_impl_glfw_gl3.o"
+	@echo "... vendor/imgui/imgui_impl_glfw_gl3.i"
+	@echo "... vendor/imgui/imgui_impl_glfw_gl3.s"
 	@echo "... vendor/stb_image/stb_image.o"
 	@echo "... vendor/stb_image/stb_image.i"
 	@echo "... vendor/stb_image/stb_image.s"

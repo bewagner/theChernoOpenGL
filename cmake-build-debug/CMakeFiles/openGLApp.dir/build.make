@@ -109,9 +109,61 @@ CMakeFiles/openGLApp.dir/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openGLApp.dir/Texture.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Videos/openGLSeries/code/Texture.cpp -o CMakeFiles/openGLApp.dir/Texture.cpp.s
 
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: CMakeFiles/openGLApp.dir/flags.make
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o: ../vendor/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o -c /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp > CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.i
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.s
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o: CMakeFiles/openGLApp.dir/flags.make
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o: ../vendor/imgui/imgui_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o -c /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp > CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.i
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.s
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: CMakeFiles/openGLApp.dir/flags.make
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o: ../vendor/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o -c /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp > CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.i
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.s
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: CMakeFiles/openGLApp.dir/flags.make
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o: ../vendor/imgui/imgui_impl_glfw_gl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o -c /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp > CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.i
+
+CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp -o CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.s
+
 CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o: CMakeFiles/openGLApp.dir/flags.make
 CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o: ../IndexBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o -c /home/benjamin/Videos/openGLSeries/code/IndexBuffer.cpp
 
 CMakeFiles/openGLApp.dir/IndexBuffer.cpp.i: cmake_force
@@ -124,7 +176,7 @@ CMakeFiles/openGLApp.dir/IndexBuffer.cpp.s: cmake_force
 
 CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o: CMakeFiles/openGLApp.dir/flags.make
 CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o: ../VertexBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o -c /home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp
 
 CMakeFiles/openGLApp.dir/VertexBuffer.cpp.i: cmake_force
@@ -137,7 +189,7 @@ CMakeFiles/openGLApp.dir/VertexBuffer.cpp.s: cmake_force
 
 CMakeFiles/openGLApp.dir/Renderer.cpp.o: CMakeFiles/openGLApp.dir/flags.make
 CMakeFiles/openGLApp.dir/Renderer.cpp.o: ../Renderer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/openGLApp.dir/Renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/openGLApp.dir/Renderer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/Renderer.cpp.o -c /home/benjamin/Videos/openGLSeries/code/Renderer.cpp
 
 CMakeFiles/openGLApp.dir/Renderer.cpp.i: cmake_force
@@ -150,7 +202,7 @@ CMakeFiles/openGLApp.dir/Renderer.cpp.s: cmake_force
 
 CMakeFiles/openGLApp.dir/VertexArray.cpp.o: CMakeFiles/openGLApp.dir/flags.make
 CMakeFiles/openGLApp.dir/VertexArray.cpp.o: ../VertexArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/openGLApp.dir/VertexArray.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/openGLApp.dir/VertexArray.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/openGLApp.dir/VertexArray.cpp.o -c /home/benjamin/Videos/openGLSeries/code/VertexArray.cpp
 
 CMakeFiles/openGLApp.dir/VertexArray.cpp.i: cmake_force
@@ -167,6 +219,10 @@ openGLApp_OBJECTS = \
 "CMakeFiles/openGLApp.dir/Shader.cpp.o" \
 "CMakeFiles/openGLApp.dir/vendor/stb_image/stb_image.cpp.o" \
 "CMakeFiles/openGLApp.dir/Texture.cpp.o" \
+"CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o" \
+"CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o" \
+"CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o" \
+"CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o" \
 "CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o" \
 "CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o" \
 "CMakeFiles/openGLApp.dir/Renderer.cpp.o" \
@@ -179,6 +235,10 @@ openGLApp: CMakeFiles/openGLApp.dir/opengl.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/Shader.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/vendor/stb_image/stb_image.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/Texture.cpp.o
+openGLApp: CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o
+openGLApp: CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o
+openGLApp: CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o
+openGLApp: CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o
 openGLApp: CMakeFiles/openGLApp.dir/Renderer.cpp.o
@@ -191,7 +251,7 @@ openGLApp: /usr/lib/x86_64-linux-gnu/librt.so
 openGLApp: /usr/lib/x86_64-linux-gnu/libm.so
 openGLApp: /usr/lib/x86_64-linux-gnu/libX11.so
 openGLApp: CMakeFiles/openGLApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable openGLApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable openGLApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openGLApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

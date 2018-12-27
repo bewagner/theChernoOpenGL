@@ -3,7 +3,7 @@
 
 void* operator new(std::size_t, void*) (size_t D.29557, void * __p)
 {
-  void * D.147349;
+  void * D.152557;
   void * _2;
 
   <bb 2>:
@@ -16,11 +16,11 @@ void* operator new(std::size_t, void*) (size_t D.29557, void * __p)
 
 
 
-;; Function static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (_ZN19VertexBufferElement13GetSizeOfTypeEj, funcdef_no=5153, decl_uid=136081, cgraph_uid=1511, symbol_order=1516)
+;; Function static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (_ZN19VertexBufferElement13GetSizeOfTypeEj, funcdef_no=5328, decl_uid=140991, cgraph_uid=1656, symbol_order=1661)
 
 static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (unsigned int type)
 {
-  unsigned int D.147516;
+  unsigned int D.152724;
   unsigned int _1;
   unsigned int _4;
   unsigned int _6;
@@ -54,12 +54,12 @@ static unsigned int VertexBufferElement::GetSizeOfType(unsigned int) (unsigned i
 
 
 
-;; Function VertexBufferLayout::VertexBufferLayout() (_ZN18VertexBufferLayoutC2Ev, funcdef_no=5155, decl_uid=137184, cgraph_uid=1513, symbol_order=1518)
+;; Function VertexBufferLayout::VertexBufferLayout() (_ZN18VertexBufferLayoutC2Ev, funcdef_no=5330, decl_uid=142094, cgraph_uid=1658, symbol_order=1663)
 
 VertexBufferLayout::VertexBufferLayout() (struct VertexBufferLayout * const this)
 {
-  struct vector * D.147322;
-  struct vector * D.147321;
+  struct vector * D.152530;
+  struct vector * D.152529;
   struct vector * _5;
 
   <bb 2>:
@@ -73,7 +73,7 @@ VertexBufferLayout::VertexBufferLayout() (struct VertexBufferLayout * const this
 
 
 
-;; Function void VertexBufferLayout::AddFloat(unsigned int) (_ZN18VertexBufferLayout8AddFloatEj, funcdef_no=5157, decl_uid=137165, cgraph_uid=1515, symbol_order=1520)
+;; Function void VertexBufferLayout::AddFloat(unsigned int) (_ZN18VertexBufferLayout8AddFloatEj, funcdef_no=5332, decl_uid=142075, cgraph_uid=1660, symbol_order=1665)
 
 void VertexBufferLayout::AddFloat(unsigned int) (struct VertexBufferLayout * const this, unsigned int count)
 {
@@ -85,16 +85,16 @@ void VertexBufferLayout::AddFloat(unsigned int) (struct VertexBufferLayout * con
 
 
 
-;; Function void VertexBufferLayout::Push(unsigned int, unsigned int, unsigned char) (_ZN18VertexBufferLayout4PushEjjh, funcdef_no=5162, decl_uid=137180, cgraph_uid=1520, symbol_order=1525)
+;; Function void VertexBufferLayout::Push(unsigned int, unsigned int, unsigned char) (_ZN18VertexBufferLayout4PushEjjh, funcdef_no=5337, decl_uid=142090, cgraph_uid=1665, symbol_order=1670)
 
 void VertexBufferLayout::Push(unsigned int, unsigned int, unsigned char) (struct VertexBufferLayout * const this, unsigned int type, unsigned int count, unsigned char normalized)
 {
   struct VertexBufferElement vbe;
-  unsigned int D.147331;
-  unsigned int D.147330;
-  unsigned int D.147329;
-  unsigned int D.137337;
-  struct vector * D.147328;
+  unsigned int D.152539;
+  unsigned int D.152538;
+  unsigned int D.152537;
+  unsigned int D.142247;
+  struct vector * D.152536;
   struct vector * _9;
   unsigned int _12;
   unsigned int _13;
@@ -119,11 +119,11 @@ void VertexBufferLayout::Push(unsigned int, unsigned int, unsigned char) (struct
 
 
 
-;; Function VertexBufferLayout::~VertexBufferLayout() (_ZN18VertexBufferLayoutD2Ev, funcdef_no=5165, decl_uid=137443, cgraph_uid=1522, symbol_order=1527)
+;; Function VertexBufferLayout::~VertexBufferLayout() (_ZN18VertexBufferLayoutD2Ev, funcdef_no=5340, decl_uid=142353, cgraph_uid=1667, symbol_order=1672)
 
 VertexBufferLayout::~VertexBufferLayout() (struct VertexBufferLayout * const this)
 {
-  struct vector * D.147697;
+  struct vector * D.153099;
   struct vector * _2;
 
   <bb 2>:
@@ -136,15 +136,15 @@ VertexBufferLayout::~VertexBufferLayout() (struct VertexBufferLayout * const thi
 
 
 
-;; Function glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm::qualifier)0u>&) (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC2ERKS2_, funcdef_no=5171, decl_uid=138030, cgraph_uid=1528, symbol_order=1533)
+;; Function glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm::qualifier)0u>&) (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC2ERKS2_, funcdef_no=5346, decl_uid=142940, cgraph_uid=1673, symbol_order=1678)
 
-glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm::qualifier)0u>&) (struct mat * const this, const struct mat & D.138032)
+glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm::qualifier)0u>&) (struct mat * const this, const struct mat & D.142942)
 {
-  const struct col_type * D.147626;
-  long int D.147625;
-  struct col_type * D.147624;
-  struct col_type * D.147623;
-  struct col_type * retval.17;
+  const struct col_type * D.153032;
+  long int D.153031;
+  struct col_type * D.153030;
+  struct col_type * D.153029;
+  struct col_type * retval.18;
   struct col_type * _1;
   long int _2;
   const struct col_type * _3;
@@ -155,7 +155,7 @@ glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm:
   struct col_type * _14;
   const struct col_type * _15;
   long int _16;
-  struct col_type * retval.17_17;
+  struct col_type * retval.18_17;
 
   <bb 2>:
   MEM[(struct  &)this_6(D)] ={v} {CLOBBER};
@@ -181,29 +181,37 @@ glm::mat<4, 4, float, (glm::qualifier)0u>::mat(const glm::mat<4, 4, float, (glm:
   goto <bb 3>;
 
   <bb 5>:
-  retval.17_17 = _8;
+  retval.18_17 = _8;
   return;
 
 }
 
 
 
-;; Function int main() (main, funcdef_no=5163, decl_uid=137388, cgraph_uid=1530, symbol_order=1535)
+;; Function int main() (main, funcdef_no=5338, decl_uid=142298, cgraph_uid=1675, symbol_order=1680)
 
-Merging blocks 51 and 52
+Merging blocks 80 and 81
 int main() ()
 {
-  void * D.147810;
-  int D.147305;
-  bool D.147287;
-  bool D.147286;
-  struct basic_ostream & D.147285;
-  unsigned int D.147284;
-  struct GLFWwindow * D.147283;
-  int D.147282;
+  void * D.153228;
+  struct ImDrawData * D.152513;
+  int D.152494;
+  bool D.152478;
+  bool D.152477;
+  struct basic_ostream & D.152476;
+  unsigned int D.152475;
+  struct GLFWwindow * D.152474;
+  int D.152473;
+  struct mat4 mvp;
+  struct mat4 model;
+  struct mat4 mvp;
+  struct mat4 model;
+  struct vec3 translationB;
+  struct vec3 translationA;
   struct Renderer renderer;
   struct Texture texture;
   struct Shader shader;
+  struct mat4 view;
   struct mat4 proj;
   struct IndexBuffer ib;
   struct VertexBufferLayout layout;
@@ -212,106 +220,121 @@ int main() ()
   unsigned int indices[6];
   float positions[16];
   struct GLFWwindow * window;
-  int D.147279;
+  struct ImDrawData * D.152471;
+  struct allocator D.146531;
+  const struct string D.146532;
+  struct mat4 D.146533;
+  struct mat D.146528;
+  const float D.146524;
+  struct mat4 D.146525;
+  struct allocator D.146515;
+  const struct string D.146516;
+  struct mat4 D.146522;
+  struct mat D.146512;
+  const float D.146499;
+  struct mat4 D.146500;
+  int D.152469;
   bool retval.4;
-  struct allocator D.141536;
-  const struct string D.141537;
-  struct allocator D.141533;
-  const struct string D.141534;
-  struct allocator D.141514;
-  const struct string D.141515;
-  struct mat4 D.141521;
-  struct allocator D.141511;
-  const struct string D.141512;
-  bool D.147273;
+  struct allocator D.146460;
+  const struct string D.146461;
+  struct allocator D.146457;
+  const struct string D.146458;
+  struct allocator D.146444;
+  const struct string D.146445;
+  const float D.146402;
+  struct mat4 D.146403;
+  struct vec3 D.146419;
+  bool D.152463;
   bool retval.3;
-  bool D.147268;
+  bool D.152458;
   bool retval.2;
-  struct basic_ostream & D.147265;
-  unsigned int D.147262;
+  struct basic_ostream & D.152455;
+  unsigned int D.152452;
   bool retval.1;
-  int D.147258;
-  int D.147255;
+  int D.152448;
+  int D.152445;
   bool retval.0;
   int _1;
-  int _19;
-  int _20;
-  bool retval.0_21;
-  int _22;
-  struct GLFWwindow * _24;
-  int _27;
-  unsigned int _30;
-  unsigned int _31;
-  bool retval.1_32;
-  struct basic_ostream & _34;
-  struct basic_ostream & _35;
-  bool _62;
-  bool _63;
-  bool retval.2_64;
+  int _25;
+  int _26;
+  bool retval.0_27;
+  int _28;
+  struct GLFWwindow * _30;
+  int _33;
+  unsigned int _36;
+  unsigned int _37;
+  bool retval.1_38;
+  struct basic_ostream & _40;
+  struct basic_ostream & _41;
+  bool _68;
   bool _69;
-  bool _70;
-  bool retval.3_71;
-  int _114;
-  int _115;
-  bool retval.4_116;
-  int _122;
+  bool retval.2_70;
+  bool _75;
+  bool _76;
+  bool retval.3_77;
+  int _123;
+  int _124;
+  bool retval.4_125;
+  struct ImDrawData * _174;
+  struct ImDrawData * _175;
+  int _202;
 
   <bb 2>:
-  _19 = glfwInit ();
-  _20 = _19;
-  retval.0_21 = _20 == 0;
-  if (retval.0_21 != 0)
+  _25 = glfwInit ();
+  _26 = _25;
+  retval.0_27 = _26 == 0;
+  if (retval.0_27 != 0)
     goto <bb 3>;
   else
     goto <bb 4>;
 
   <bb 3>:
-  _22 = -1;
-  goto <bb 38>;
+  _28 = -1;
+  goto <bb 64>;
 
   <bb 4>:
-  _24 = glfwCreateWindow (640, 480, "OpenGL Tutorial", 0B, 0B);
-  window_25 = _24;
-  if (window_25 == 0B)
+  _30 = glfwCreateWindow (960, 540, "OpenGL Tutorial", 0B, 0B);
+  window_31 = _30;
+  if (window_31 == 0B)
     goto <bb 5>;
   else
     goto <bb 6>;
 
   <bb 5>:
   glfwTerminate ();
-  _27 = -1;
-  goto <bb 38>;
+  _33 = -1;
+  goto <bb 64>;
 
   <bb 6>:
-  glfwMakeContextCurrent (window_25);
-  _30 = glewInit ();
-  _31 = _30;
-  retval.1_32 = _31 != 0;
-  if (retval.1_32 != 0)
+  glfwMakeContextCurrent (window_31);
+  _36 = glewInit ();
+  _37 = _36;
+  retval.1_38 = _37 != 0;
+  if (retval.1_38 != 0)
     goto <bb 7>;
   else
     goto <bb 8>;
 
   <bb 7>:
-  _34 = std::operator<< <std::char_traits<char> > (&cout, "Glew loading error!");
-  _35 = _34;
-  std::basic_ostream<char>::operator<< (_35, endl);
+  _40 = std::operator<< <std::char_traits<char> > (&cout, "Glew loading error!");
+  _41 = _40;
+  std::basic_ostream<char>::operator<< (_41, endl);
 
   <bb 8>:
-  positions[0] = -5.0e-1;
-  positions[1] = -5.0e-1;
+  positions[0] = -5.0e+1;
+  positions[1] = -5.0e+1;
   positions[2] = 0.0;
   positions[3] = 0.0;
-  positions[4] = 5.0e-1;
-  positions[5] = -5.0e-1;
+  positions[4] = 5.0e+1;
+  positions[5] = -5.0e+1;
   positions[6] = 1.0e+0;
   positions[7] = 0.0;
-  positions[8] = 5.0e-1;
-  positions[9] = 5.0e-1;
+  positions[8] = 5.0e+1;
+  positions[9] = 5.0e+1;
   positions[10] = 1.0e+0;
   positions[11] = 1.0e+0;
-  positions[12] = -5.0e-1;
-  positions[13] = 5.0e-1;
+  positions[12] = -5.0e+1;
+  positions[13] = 5.0e+1;
   positions[14] = 0.0;
   positions[15] = 1.0e+0;
   indices[0] = 0;
@@ -322,10 +345,10 @@ int main() ()
   indices[5] = 0;
   GLClearError ();
   glEnable (3042);
-  _62 = GLLogCall ("glEnable(GL_BLEND)", "/home/benjamin/Videos/openGLSeries/code/opengl.cpp", 54);
-  _63 = _62;
-  retval.2_64 = ~_63;
-  if (retval.2_64 != 0)
+  _68 = GLLogCall ("glEnable(GL_BLEND)", "/home/benjamin/Videos/openGLSeries/code/opengl.cpp", 56);
+  _69 = _68;
+  retval.2_70 = ~_69;
+  if (retval.2_70 != 0)
     goto <bb 9>;
   else
     goto <bb 10>;
@@ -336,10 +359,10 @@ int main() ()
   <bb 10>:
   GLClearError ();
   glBlendFunc (770, 771);
-  _69 = GLLogCall ("glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)", "/home/benjamin/Videos/openGLSeries/code/opengl.cpp", 55);
-  _70 = _69;
-  retval.3_71 = ~_70;
-  if (retval.3_71 != 0)
+  _75 = GLLogCall ("glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)", "/home/benjamin/Videos/openGLSeries/code/opengl.cpp", 57);
+  _76 = _75;
+  retval.3_77 = ~_76;
+  if (retval.3_77 != 0)
     goto <bb 11>;
   else
     goto <bb 12>;
@@ -365,93 +388,198 @@ int main() ()
   IndexBuffer::IndexBuffer (&ib, &indices, 6);
 
   <bb 17>:
-  proj = glm::ortho<float> (-2.0e+0, 2.0e+0, -1.5e+0, 1.5e+0, -1.0e+0, 1.0e+0); [return slot optimization]
+  proj = glm::ortho<float> (0.0, 9.6e+2, 0.0, 5.4e+2, -1.0e+0, 1.0e+0); [return slot optimization]
 
   <bb 18>:
-  std::allocator<char>::allocator (&D.141511);
-  std::__cxx11::basic_string<char>::basic_string (&D.141512, "/home/benjamin/Videos/openGLSeries/code/res/shaders/Basic.shader", &D.141511);
+  glm::vec<3, float, (glm::qualifier)0u>::vec<int, int, int> (&D.146419, 0, 0, 0);
+  D.146402 = 1.0e+0;
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.146403, &D.146402);
 
   <bb 19>:
-  Shader::Shader (&shader, &D.141512);
+  view = glm::translate<float, (glm::qualifier)0u> (&D.146403, &D.146419); [return slot optimization]
 
   <bb 20>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141512);
-  D.141512 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141511);
-  D.141511 ={v} {CLOBBER};
-  Shader::Bind (&shader);
+  D.146403 ={v} {CLOBBER};
+  D.146402 ={v} {CLOBBER};
+  D.146419 ={v} {CLOBBER};
+  std::allocator<char>::allocator (&D.146444);
+  std::__cxx11::basic_string<char>::basic_string (&D.146445, "/home/benjamin/Videos/openGLSeries/code/res/shaders/Basic.shader", &D.146444);
 
   <bb 21>:
-  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.141521, &proj);
-  std::allocator<char>::allocator (&D.141514);
-  std::__cxx11::basic_string<char>::basic_string (&D.141515, "u_MVP", &D.141514);
+  Shader::Shader (&shader, &D.146445);
 
   <bb 22>:
-  Shader::SetUniformMat4f (&shader, &D.141515, &D.141521);
+  std::__cxx11::basic_string<char>::~basic_string (&D.146445);
+  D.146445 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146444);
+  D.146444 ={v} {CLOBBER};
+  Shader::Bind (&shader);
 
   <bb 23>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141515);
-  D.141515 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141514);
-  D.141514 ={v} {CLOBBER};
-  D.141521 ={v} {CLOBBER};
-  std::allocator<char>::allocator (&D.141533);
-  std::__cxx11::basic_string<char>::basic_string (&D.141534, "/home/benjamin/Videos/openGLSeries/code/res/textures/dog.png", &D.141533);
+  std::allocator<char>::allocator (&D.146457);
+  std::__cxx11::basic_string<char>::basic_string (&D.146458, "/home/benjamin/Videos/openGLSeries/code/res/textures/dog.png", &D.146457);
 
   <bb 24>:
-  Texture::Texture (&texture, &D.141534);
+  Texture::Texture (&texture, &D.146458);
 
   <bb 25>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141534);
-  D.141534 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141533);
-  D.141533 ={v} {CLOBBER};
+  std::__cxx11::basic_string<char>::~basic_string (&D.146458);
+  D.146458 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146457);
+  D.146457 ={v} {CLOBBER};
   Texture::Bind (&texture, 0);
 
   <bb 26>:
-  std::allocator<char>::allocator (&D.141536);
-  std::__cxx11::basic_string<char>::basic_string (&D.141537, "u_Texture", &D.141536);
+  std::allocator<char>::allocator (&D.146460);
+  std::__cxx11::basic_string<char>::basic_string (&D.146461, "u_Texture", &D.146460);
 
   <bb 27>:
-  Shader::SetUniform1i (&shader, &D.141537, 0);
+  Shader::SetUniform1i (&shader, &D.146461, 0);
 
   <bb 28>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141537);
-  D.141537 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141536);
-  D.141536 ={v} {CLOBBER};
+  std::__cxx11::basic_string<char>::~basic_string (&D.146461);
+  D.146461 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146460);
+  D.146460 ={v} {CLOBBER};
+  ImGui::CreateContext (0B);
 
   <bb 29>:
-  _114 = glfwWindowShouldClose (window_25);
+  ImGui_ImplGlfwGL3_Init (window_31, 1, 0B);
 
   <bb 30>:
-  _115 = _114;
-  retval.4_116 = _115 == 0;
-  if (retval.4_116 != 0)
-    goto <bb 31>;
-  else
-    goto <bb 36>;
+  ImGui::StyleColorsDark (0B);
 
   <bb 31>:
-  Renderer::Clear (&renderer);
+  glm::vec<3, float, (glm::qualifier)0u>::vec<int, int, int> (&translationA, 200, 200, 0);
+  glm::vec<3, float, (glm::qualifier)0u>::vec<int, int, int> (&translationB, 400, 200, 0);
 
   <bb 32>:
-  Renderer::Draw (&renderer, &va, &ib, &shader);
+  _123 = glfwWindowShouldClose (window_31);
 
   <bb 33>:
-  glfwSwapBuffers (window_25);
+  _124 = _123;
+  retval.4_125 = _124 == 0;
+  if (retval.4_125 != 0)
+    goto <bb 34>;
+  else
+    goto <bb 60>;
 
   <bb 34>:
-  glfwPollEvents ();
+  Renderer::Clear (&renderer);
 
   <bb 35>:
-  goto <bb 29>;
+  ImGui_ImplGlfwGL3_NewFrame ();
 
   <bb 36>:
-  glfwTerminate ();
+  D.146499 = 1.0e+0;
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.146500, &D.146499);
 
   <bb 37>:
-  _122 = 0;
+  model = glm::translate<float, (glm::qualifier)0u> (&D.146500, &translationA); [return slot optimization]
+
+  <bb 38>:
+  D.146500 ={v} {CLOBBER};
+  D.146499 ={v} {CLOBBER};
+  D.146512 = glm::operator*<float, (glm::qualifier)0u> (&proj, &view); [return slot optimization]
+
+  <bb 39>:
+  mvp = glm::operator*<float, (glm::qualifier)0u> (&D.146512, &model); [return slot optimization]
+
+  <bb 40>:
+  D.146512 ={v} {CLOBBER};
+  Shader::Bind (&shader);
+
+  <bb 41>:
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.146522, &mvp);
+  std::allocator<char>::allocator (&D.146515);
+  std::__cxx11::basic_string<char>::basic_string (&D.146516, "u_MVP", &D.146515);
+
+  <bb 42>:
+  Shader::SetUniformMat4f (&shader, &D.146516, &D.146522);
+
+  <bb 43>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.146516);
+  D.146516 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146515);
+  D.146515 ={v} {CLOBBER};
+  D.146522 ={v} {CLOBBER};
+  Renderer::Draw (&renderer, &va, &ib, &shader);
+
+  <bb 44>:
+  model ={v} {CLOBBER};
+  mvp ={v} {CLOBBER};
+  D.146524 = 1.0e+0;
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.146525, &D.146524);
+
+  <bb 45>:
+  model = glm::translate<float, (glm::qualifier)0u> (&D.146525, &translationB); [return slot optimization]
+
+  <bb 46>:
+  D.146525 ={v} {CLOBBER};
+  D.146524 ={v} {CLOBBER};
+  D.146528 = glm::operator*<float, (glm::qualifier)0u> (&proj, &view); [return slot optimization]
+
+  <bb 47>:
+  mvp = glm::operator*<float, (glm::qualifier)0u> (&D.146528, &model); [return slot optimization]
+
+  <bb 48>:
+  D.146528 ={v} {CLOBBER};
+  Shader::Bind (&shader);
+
+  <bb 49>:
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (&D.146533, &mvp);
+  std::allocator<char>::allocator (&D.146531);
+  std::__cxx11::basic_string<char>::basic_string (&D.146532, "u_MVP", &D.146531);
+
+  <bb 50>:
+  Shader::SetUniformMat4f (&shader, &D.146532, &D.146533);
+
+  <bb 51>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.146532);
+  D.146532 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146531);
+  D.146531 ={v} {CLOBBER};
+  D.146533 ={v} {CLOBBER};
+  Renderer::Draw (&renderer, &va, &ib, &shader);
+
+  <bb 52>:
+  model ={v} {CLOBBER};
+  mvp ={v} {CLOBBER};
+  ImGui::SliderFloat2 ("Translation A", &translationA.D.126689.x, 0.0, 9.6e+2, "%.3f", 1.0e+0);
+
+  <bb 53>:
+  ImGui::SliderFloat2 ("Translation B", &translationB.D.126689.x, 0.0, 9.6e+2, "%.3f", 1.0e+0);
+
+  <bb 54>:
+  ImGui::Render ();
+
+  <bb 55>:
+  _174 = ImGui::GetDrawData ();
+
+  <bb 56>:
+  _175 = _174;
+  ImGui_ImplGlfwGL3_RenderDrawData (_175);
+
+  <bb 57>:
+  glfwSwapBuffers (window_31);
+
+  <bb 58>:
+  glfwPollEvents ();
+
+  <bb 59>:
+  goto <bb 32>;
+
+  <bb 60>:
+  ImGui_ImplGlfwGL3_Shutdown ();
+
+  <bb 61>:
+  ImGui::DestroyContext (0B);
+
+  <bb 62>:
+  glfwTerminate ();
+
+  <bb 63>:
+  _202 = 0;
   Texture::~Texture (&texture);
   Shader::~Shader (&shader);
   IndexBuffer::~IndexBuffer (&ib);
@@ -459,8 +587,8 @@ int main() ()
   VertexBuffer::~VertexBuffer (&vb);
   VertexArray::~VertexArray (&va);
 
-  <bb 38>:
-  # _1 = PHI <_22(3), _27(5), _122(37)>
+  <bb 64>:
+  # _1 = PHI <_28(3), _33(5), _202(63)>
   positions ={v} {CLOBBER};
   indices ={v} {CLOBBER};
   va ={v} {CLOBBER};
@@ -468,92 +596,151 @@ int main() ()
   layout ={v} {CLOBBER};
   ib ={v} {CLOBBER};
   proj ={v} {CLOBBER};
+  view ={v} {CLOBBER};
   shader ={v} {CLOBBER};
   texture ={v} {CLOBBER};
   renderer ={v} {CLOBBER};
+  translationA ={v} {CLOBBER};
+  translationB ={v} {CLOBBER};
 
 <L23>:
   return _1;
 
-<L24>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141512);
-  __builtin_eh_copy_values (7, 9);
+<L25>:
+  __builtin_eh_copy_values (5, 6);
+  goto <bb 79> (<L59>);
 
-<L26>:
-  D.141512 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141511);
-  __builtin_eh_copy_values (5, 7);
-  goto <bb 50> (<L43>);
+<L27>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.146445);
+  __builtin_eh_copy_values (13, 15);
 
-<L28>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141515);
-  __builtin_eh_copy_values (19, 21);
+<L29>:
+  D.146445 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146444);
+  __builtin_eh_copy_values (5, 13);
+  goto <bb 79> (<L59>);
 
-<L30>:
-  D.141515 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141514);
-  __builtin_eh_copy_values (16, 19);
-  goto <bb 49> (<L42>);
+<L31>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.146458);
+  __builtin_eh_copy_values (24, 26);
 
 <L33>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141534);
-  __builtin_eh_copy_values (28, 30);
+  D.146458 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146457);
+  __builtin_eh_copy_values (22, 24);
+  goto <bb 78> (<L58>);
 
 <L35>:
-  D.141534 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141533);
-  __builtin_eh_copy_values (16, 28);
-  goto <bb 49> (<L42>);
+  std::__cxx11::basic_string<char>::~basic_string (&D.146461);
+  __builtin_eh_copy_values (35, 37);
 
 <L37>:
-  std::__cxx11::basic_string<char>::~basic_string (&D.141537);
-  __builtin_eh_copy_values (39, 41);
-
-<L39>:
-  D.141537 ={v} {CLOBBER};
-  std::allocator<char>::~allocator (&D.141536);
-  __builtin_eh_copy_values (37, 39);
-
-<L41>:
-  D.141536 ={v} {CLOBBER};
-  Texture::~Texture (&texture);
-  __builtin_eh_copy_values (16, 37);
+  D.146461 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146460);
+  __builtin_eh_copy_values (33, 35);
+  goto <bb 77> (<L57>);
 
 <L42>:
-  D.141533 ={v} {CLOBBER};
-  D.141514 ={v} {CLOBBER};
-  D.141521 ={v} {CLOBBER};
-  Shader::~Shader (&shader);
-  __builtin_eh_copy_values (5, 16);
+  std::__cxx11::basic_string<char>::~basic_string (&D.146516);
+  __builtin_eh_copy_values (51, 53);
 
-<L43>:
-  D.141511 ={v} {CLOBBER};
+<L44>:
+  D.146516 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146515);
+  __builtin_eh_copy_values (33, 51);
+  goto <bb 77> (<L57>);
+
+<L51>:
+  std::__cxx11::basic_string<char>::~basic_string (&D.146532);
+  __builtin_eh_copy_values (69, 71);
+
+<L53>:
+  D.146532 ={v} {CLOBBER};
+  std::allocator<char>::~allocator (&D.146531);
+  __builtin_eh_copy_values (33, 69);
+
+<L57>:
+  D.146531 ={v} {CLOBBER};
+  D.146533 ={v} {CLOBBER};
+  D.146528 ={v} {CLOBBER};
+  D.146525 ={v} {CLOBBER};
+  D.146524 ={v} {CLOBBER};
+  model ={v} {CLOBBER};
+  mvp ={v} {CLOBBER};
+  D.146515 ={v} {CLOBBER};
+  D.146522 ={v} {CLOBBER};
+  D.146512 ={v} {CLOBBER};
+  D.146500 ={v} {CLOBBER};
+  D.146499 ={v} {CLOBBER};
+  model ={v} {CLOBBER};
+  mvp ={v} {CLOBBER};
+  D.146460 ={v} {CLOBBER};
+  Texture::~Texture (&texture);
+  __builtin_eh_copy_values (22, 33);
+
+<L58>:
+  D.146457 ={v} {CLOBBER};
+  Shader::~Shader (&shader);
+  __builtin_eh_copy_values (5, 22);
+
+<L59>:
+  D.146444 ={v} {CLOBBER};
+  D.146403 ={v} {CLOBBER};
+  D.146402 ={v} {CLOBBER};
+  D.146419 ={v} {CLOBBER};
   IndexBuffer::~IndexBuffer (&ib);
   __builtin_eh_copy_values (4, 5);
 
-<L44>:
+<L60>:
   VertexBufferLayout::~VertexBufferLayout (&layout);
   __builtin_eh_copy_values (3, 4);
   VertexBuffer::~VertexBuffer (&vb);
   __builtin_eh_copy_values (2, 3);
 
-<L46>:
+<L62>:
   VertexArray::~VertexArray (&va);
-  _16 = __builtin_eh_pointer (2);
-  __builtin_unwind_resume (_16);
+  _11 = __builtin_eh_pointer (2);
+  __builtin_unwind_resume (_11);
 
 }
 
 
 
-;; Function glm::vec<4, T, Q>::vec(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2ERKS2_, funcdef_no=5433, decl_uid=97549, cgraph_uid=1791, symbol_order=1796)
+;; Function glm::vec<4, T, Q> glm::operator*(const glm::vec<4, T, Q>&, const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glmmlIfLNS_9qualifierE0EEENS_3vecILi4ET_XT0_EEERKS4_RKS3_, funcdef_no=5667, decl_uid=102728, cgraph_uid=1995, symbol_order=2000)
+
+glm::vec<4, T, Q> glm::operator*(const glm::vec<4, T, Q>&, const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct vec & v, const float & scalar)
+{
+  struct vec & D.152877;
+  struct vec & D.152875;
+  struct vec D.148224;
+  float D.152874;
+  float _3;
+  struct vec & _7;
+  struct vec & _8;
+
+  <bb 2>:
+  _3 = *scalar_2(D);
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&D.148224, v_4(D));
+  _7 = glm::vec<4, float, (glm::qualifier)0u>::operator*=<float> (&D.148224, _3);
+  _8 = _7;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_9(D), _8);
+  D.148224 ={v} {CLOBBER};
+
+<L1>:
+  return _9(D);
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>::vec(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2ERKS2_, funcdef_no=5677, decl_uid=102703, cgraph_uid=2005, symbol_order=2010)
 
 glm::vec<4, T, Q>::vec(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, const struct vec & v)
 {
-  float D.147636;
-  float D.147635;
-  float D.147634;
-  float D.147633;
+  float D.152901;
+  float D.152900;
+  float D.152899;
+  float D.152898;
   float _5;
   float _7;
   float _9;
@@ -561,31 +748,47 @@ glm::vec<4, T, Q>::vec(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier
 
   <bb 2>:
   MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  _5 = v_4(D)->D.95630.x;
-  this_2(D)->D.95630.x = _5;
-  _7 = v_4(D)->D.95636.y;
-  this_2(D)->D.95636.y = _7;
-  _9 = v_4(D)->D.95642.z;
-  this_2(D)->D.95642.z = _9;
-  _11 = v_4(D)->D.95648.w;
-  this_2(D)->D.95648.w = _11;
+  _5 = v_4(D)->D.100784.x;
+  this_2(D)->D.100784.x = _5;
+  _7 = v_4(D)->D.100790.y;
+  this_2(D)->D.100790.y = _7;
+  _9 = v_4(D)->D.100796.z;
+  this_2(D)->D.100796.z = _9;
+  _11 = v_4(D)->D.100802.w;
+  this_2(D)->D.100802.w = _11;
   return;
 
 }
 
 
 
-;; Function std::vector<_Tp, _Alloc>::vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EEC2Ev, funcdef_no=5616, decl_uid=137151, cgraph_uid=1974, symbol_order=1979)
+;; Function glm::vec<4, T, Q>::vec(T, T, T, T) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Effff, funcdef_no=5761, decl_uid=102680, cgraph_uid=2089, symbol_order=2094)
+
+glm::vec<4, T, Q>::vec(T, T, T, T) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, float _x, float _y, float _z, float _w)
+{
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  this_2(D)->D.100784.x = _x_4(D);
+  this_2(D)->D.100790.y = _y_6(D);
+  this_2(D)->D.100796.z = _z_8(D);
+  this_2(D)->D.100802.w = _w_10(D);
+  return;
+
+}
+
+
+
+;; Function std::vector<_Tp, _Alloc>::vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EEC2Ev, funcdef_no=5860, decl_uid=142061, cgraph_uid=2188, symbol_order=2193)
 
 std::vector<_Tp, _Alloc>::vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this)
 {
-  struct _Vector_base * D.147324;
-  struct _Vector_base * D.147323;
+  struct _Vector_base * D.152532;
+  struct _Vector_base * D.152531;
   struct _Vector_base * _4;
 
   <bb 2>:
   MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  _4 = &this_2(D)->D.137159;
+  _4 = &this_2(D)->D.142069;
   std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_base (_4);
   return;
 
@@ -593,15 +796,15 @@ std::vector<_Tp, _Alloc>::vector() [with _Tp = VertexBufferElement; _Alloc = std
 
 
 
-;; Function std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=5619, decl_uid=137156, cgraph_uid=1977, symbol_order=1982)
+;; Function std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=5863, decl_uid=142066, cgraph_uid=2191, symbol_order=2196)
 
 std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this)
 {
-  struct _Vector_base * D.147702;
-  struct VertexBufferElement * D.147701;
-  struct VertexBufferElement * D.147700;
-  struct _Tp_alloc_type & D.147699;
-  struct _Vector_base * D.147698;
+  struct _Vector_base * D.153104;
+  struct VertexBufferElement * D.153103;
+  struct VertexBufferElement * D.153102;
+  struct _Tp_alloc_type & D.153101;
+  struct _Vector_base * D.153100;
   struct _Vector_base * _2;
   struct _Tp_alloc_type & _5;
   struct VertexBufferElement * _6;
@@ -609,12 +812,12 @@ std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = st
   struct _Vector_base * _9;
 
   <bb 2>:
-  _2 = &this_1(D)->D.137159;
+  _2 = &this_1(D)->D.142069;
   _5 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_2);
-  _6 = this_1(D)->D.137159._M_impl._M_finish;
-  _7 = this_1(D)->D.137159._M_impl._M_start;
+  _6 = this_1(D)->D.142069._M_impl._M_finish;
+  _7 = this_1(D)->D.142069._M_impl._M_start;
   std::_Destroy<VertexBufferElement*, VertexBufferElement> (_7, _6, _5);
-  _9 = &this_1(D)->D.137159;
+  _9 = &this_1(D)->D.142069;
   std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::~_Vector_base (_9);
   MEM[(struct  &)this_1(D)] ={v} {CLOBBER};
   return;
@@ -623,16 +826,16 @@ std::vector<_Tp, _Alloc>::~vector() [with _Tp = VertexBufferElement; _Alloc = st
 
 
 
-;; Function void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE9push_backERKS0_, funcdef_no=5624, decl_uid=136748, cgraph_uid=1982, symbol_order=1987)
+;; Function void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE9push_backERKS0_, funcdef_no=5868, decl_uid=141658, cgraph_uid=2196, symbol_order=2201)
 
 void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this, const struct value_type & __x)
 {
-  struct VertexBufferElement * D.147340;
-  struct VertexBufferElement * D.147339;
-  struct _Vector_impl * D.147338;
-  struct VertexBufferElement * D.147337;
-  struct VertexBufferElement * D.147334;
-  struct VertexBufferElement * D.147333;
+  struct VertexBufferElement * D.152548;
+  struct VertexBufferElement * D.152547;
+  struct _Vector_impl * D.152546;
+  struct VertexBufferElement * D.152545;
+  struct VertexBufferElement * D.152542;
+  struct VertexBufferElement * D.152541;
   struct VertexBufferElement * _4;
   struct VertexBufferElement * _5;
   struct VertexBufferElement * _6;
@@ -641,20 +844,20 @@ void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = VertexBu
   struct VertexBufferElement * _11;
 
   <bb 2>:
-  _4 = this_3(D)->D.137159._M_impl._M_finish;
-  _5 = this_3(D)->D.137159._M_impl._M_end_of_storage;
+  _4 = this_3(D)->D.142069._M_impl._M_finish;
+  _5 = this_3(D)->D.142069._M_impl._M_end_of_storage;
   if (_4 != _5)
     goto <bb 3>;
   else
     goto <bb 4>;
 
   <bb 3>:
-  _6 = this_3(D)->D.137159._M_impl._M_finish;
-  _7 = &this_3(D)->D.137159._M_impl;
+  _6 = this_3(D)->D.142069._M_impl._M_finish;
+  _7 = &this_3(D)->D.142069._M_impl;
   std::allocator_traits<std::allocator<VertexBufferElement> >::construct<VertexBufferElement, const VertexBufferElement&> (_7, _6, __x_8(D));
-  _10 = this_3(D)->D.137159._M_impl._M_finish;
+  _10 = this_3(D)->D.142069._M_impl._M_finish;
   _11 = _10 + 12;
-  this_3(D)->D.137159._M_impl._M_finish = _11;
+  this_3(D)->D.142069._M_impl._M_finish = _11;
   goto <bb 5>;
 
   <bb 4>:
@@ -667,7 +870,7 @@ void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = VertexBu
 
 
 
-;; Function glm::mat<4, 4, T, (glm::qualifier)0u> glm::ortho(T, T, T, T, T, T) [with T = float] (_ZN3glm5orthoIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_S2_S2_, funcdef_no=5628, decl_uid=138007, cgraph_uid=1986, symbol_order=1991)
+;; Function glm::mat<4, 4, T, (glm::qualifier)0u> glm::ortho(T, T, T, T, T, T) [with T = float] (_ZN3glm5orthoIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_S2_S2_, funcdef_no=5872, decl_uid=142917, cgraph_uid=2200, symbol_order=2205)
 
 glm::mat<4, 4, T, (glm::qualifier)0u> glm::ortho(T, T, T, T, T, T) [with T = float] (float left, float right, float bottom, float top, float zNear, float zFar)
 {
@@ -683,7 +886,537 @@ glm::mat<4, 4, T, (glm::qualifier)0u> glm::ortho(T, T, T, T, T, T) [with T = flo
 
 
 
-;; Function std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl() (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE12_Vector_implD2Ev, funcdef_no=5762, decl_uid=143909, cgraph_uid=2119, symbol_order=2124)
+;; Function glm::mat<4, 4, T, Q>::mat(const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC2ERKf, funcdef_no=5874, decl_uid=142901, cgraph_uid=2202, symbol_order=2207)
+
+glm::mat<4, 4, T, Q>::mat(const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct mat * const this, const float & s)
+{
+  struct col_type * D.152815;
+  float D.152814;
+  struct col_type D.149317;
+  struct col_type * D.152813;
+  float D.152812;
+  struct col_type D.149316;
+  struct col_type * D.152811;
+  float D.152810;
+  struct col_type D.149315;
+  struct col_type * D.152809;
+  float D.152808;
+  struct col_type D.149314;
+  long int D.152802;
+  struct col_type * D.152801;
+  struct col_type * D.152800;
+  struct col_type * retval.16;
+  struct col_type * _1;
+  long int _2;
+  struct col_type * _7;
+  struct col_type * _8;
+  long int _9;
+  struct col_type * _11;
+  long int _12;
+  struct col_type * retval.16_13;
+  float _15;
+  struct col_type * _17;
+  float _20;
+  struct col_type * _22;
+  float _25;
+  struct col_type * _27;
+  float _30;
+  struct col_type * _32;
+
+  <bb 2>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  _7 = &this_5(D)->value;
+  _8 = _7;
+  _9 = 3;
+
+  <bb 3>:
+  # _1 = PHI <_8(2), _11(4)>
+  # _2 = PHI <_9(2), _12(4)>
+  if (_2 < 0)
+    goto <bb 5>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_1);
+  _11 = _1 + 16;
+  _12 = _2 + -1;
+  goto <bb 3>;
+
+  <bb 5>:
+  retval.16_13 = _7;
+  _15 = *s_14(D);
+  glm::vec<4, float, (glm::qualifier)0u>::vec<float, int, int, int> (&D.149314, _15, 0, 0, 0);
+  _17 = &this_5(D)->value[0];
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_17, &D.149314);
+  D.149314 ={v} {CLOBBER};
+  _20 = *s_14(D);
+  glm::vec<4, float, (glm::qualifier)0u>::vec<int, float, int, int> (&D.149315, 0, _20, 0, 0);
+  _22 = &this_5(D)->value[1];
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_22, &D.149315);
+  D.149315 ={v} {CLOBBER};
+  _25 = *s_14(D);
+  glm::vec<4, float, (glm::qualifier)0u>::vec<int, int, float, int> (&D.149316, 0, 0, _25, 0);
+  _27 = &this_5(D)->value[2];
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_27, &D.149316);
+  D.149316 ={v} {CLOBBER};
+  _30 = *s_14(D);
+  glm::vec<4, float, (glm::qualifier)0u>::vec<int, int, int, float> (&D.149317, 0, 0, 0, _30);
+  _32 = &this_5(D)->value[3];
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_32, &D.149317);
+  D.149317 ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function glm::vec<3, T, Q>::vec(X, Y, Z) [with X = int; Y = int; Z = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi3EfLNS_9qualifierE0EEC2IiiiEET_T0_T1_, funcdef_no=5877, decl_uid=146414, cgraph_uid=2205, symbol_order=2210)
+
+glm::vec<3, T, Q>::vec(X, Y, Z) [with X = int; Y = int; Z = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, int _y, int _z)
+{
+  float D.152799;
+  float D.152798;
+  float D.152797;
+  float _5;
+  float _8;
+  float _11;
+
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  _5 = (float) _x_4(D);
+  this_2(D)->D.126689.x = _5;
+  _8 = (float) _y_7(D);
+  this_2(D)->D.126695.y = _8;
+  _11 = (float) _z_10(D);
+  this_2(D)->D.126701.z = _11;
+  return;
+
+}
+
+
+
+;; Function glm::mat<4, 4, T, Q> glm::translate(const glm::mat<4, 4, T, Q>&, const glm::vec<3, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm9translateIfLNS_9qualifierE0EEENS_3matILi4ELi4ET_XT0_EEERKS4_RKNS_3vecILi3ES3_XT0_EEE, funcdef_no=5879, decl_uid=146420, cgraph_uid=2207, symbol_order=2212)
+
+glm::mat<4, 4, T, Q> glm::translate(const glm::mat<4, 4, T, Q>&, const glm::vec<3, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct mat & m, const struct vec & v)
+{
+  struct col_type & D.152851;
+  const struct col_type & D.152850;
+  const float & D.152849;
+  const struct col_type & D.152848;
+  const float & D.152847;
+  const struct col_type & D.152846;
+  const float & D.152845;
+  const struct col_type & D.152844;
+  struct mat Result [value-expr: *<retval>];
+  struct col_type & D.152842;
+  const struct col_type & D.152841;
+  const float & D.152840;
+  struct vec D.149324;
+  const struct col_type & D.152839;
+  const float & D.152838;
+  struct vec D.149325;
+  struct vec D.149329;
+  const struct col_type & D.152837;
+  const float & D.152836;
+  struct vec D.149330;
+  struct vec D.149331;
+  const struct col_type & D.152835;
+  struct vec D.149332;
+  const struct col_type & _11;
+  const struct col_type & _12;
+  const float & _15;
+  const float & _16;
+  const struct col_type & _18;
+  const struct col_type & _19;
+  const float & _22;
+  const float & _23;
+  const struct col_type & _25;
+  const struct col_type & _26;
+  const float & _29;
+  const float & _30;
+  const struct col_type & _32;
+  const struct col_type & _33;
+  struct col_type & _39;
+  struct col_type & _40;
+
+  <bb 2>:
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (Result_7(D), m_8(D));
+  _11 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m_8(D), 3);
+  _12 = _11;
+  _15 = glm::vec<3, float, (glm::qualifier)0u>::operator[] (v_13(D), 2);
+  _16 = _15;
+  _18 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m_8(D), 2);
+  _19 = _18;
+  D.149330 = glm::operator*<float, (glm::qualifier)0u> (_19, _16); [return slot optimization]
+  _22 = glm::vec<3, float, (glm::qualifier)0u>::operator[] (v_13(D), 1);
+  _23 = _22;
+  _25 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m_8(D), 1);
+  _26 = _25;
+  D.149325 = glm::operator*<float, (glm::qualifier)0u> (_26, _23); [return slot optimization]
+  _29 = glm::vec<3, float, (glm::qualifier)0u>::operator[] (v_13(D), 0);
+  _30 = _29;
+  _32 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m_8(D), 0);
+  _33 = _32;
+  D.149324 = glm::operator*<float, (glm::qualifier)0u> (_33, _30); [return slot optimization]
+  D.149329 = glm::operator+<float, (glm::qualifier)0u> (&D.149324, &D.149325); [return slot optimization]
+  D.149331 = glm::operator+<float, (glm::qualifier)0u> (&D.149329, &D.149330); [return slot optimization]
+  D.149332 = glm::operator+<float, (glm::qualifier)0u> (&D.149331, _12); [return slot optimization]
+  _39 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_7(D), 3);
+  _40 = _39;
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_40, &D.149332);
+  D.149332 ={v} {CLOBBER};
+  D.149331 ={v} {CLOBBER};
+  D.149329 ={v} {CLOBBER};
+  D.149324 ={v} {CLOBBER};
+  D.149325 ={v} {CLOBBER};
+  D.149330 ={v} {CLOBBER};
+
+<L0>:
+  return Result_7(D);
+
+}
+
+
+
+;; Function glm::mat<4, 4, T, Q> glm::operator*(const glm::mat<4, 4, T, Q>&, const glm::mat<4, 4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glmmlIfLNS_9qualifierE0EEENS_3matILi4ELi4ET_XT0_EEERKS4_S6_, funcdef_no=5883, decl_uid=146509, cgraph_uid=2211, symbol_order=2216)
+
+glm::mat<4, 4, T, Q> glm::operator*(const glm::mat<4, 4, T, Q>&, const glm::mat<4, 4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct mat & m1, const struct mat & m2)
+{
+  struct col_type & D.153004;
+  const float & D.153003;
+  const float & D.153002;
+  const float & D.153001;
+  const float & D.153000;
+  struct col_type & D.152992;
+  const float & D.152991;
+  const float & D.152990;
+  const float & D.152989;
+  const float & D.152988;
+  struct col_type & D.152980;
+  const float & D.152979;
+  const float & D.152978;
+  const float & D.152977;
+  const float & D.152976;
+  struct col_type & D.152968;
+  const float & D.152967;
+  const float & D.152966;
+  const float & D.152965;
+  const float & D.152964;
+  const struct col_type & D.152963;
+  const struct col_type & D.152962;
+  const struct col_type & D.152961;
+  const struct col_type & D.152960;
+  const struct col_type & D.152959;
+  const struct col_type & D.152958;
+  const struct col_type & D.152957;
+  const struct col_type & D.152956;
+  struct mat Result [value-expr: *<retval>];
+  const struct col_type SrcB3;
+  const struct col_type SrcB2;
+  const struct col_type SrcB1;
+  const struct col_type SrcB0;
+  const struct col_type SrcA3;
+  const struct col_type SrcA2;
+  const struct col_type SrcA1;
+  const struct col_type SrcA0;
+  struct col_type & D.152954;
+  const float & D.152953;
+  struct vec D.149376;
+  const float & D.152952;
+  struct vec D.149377;
+  struct vec D.149378;
+  const float & D.152951;
+  struct vec D.149379;
+  struct vec D.149380;
+  const float & D.152950;
+  struct vec D.149381;
+  struct vec D.149382;
+  struct col_type & D.152949;
+  const float & D.152948;
+  struct vec D.149369;
+  const float & D.152947;
+  struct vec D.149370;
+  struct vec D.149371;
+  const float & D.152946;
+  struct vec D.149372;
+  struct vec D.149373;
+  const float & D.152945;
+  struct vec D.149374;
+  struct vec D.149375;
+  struct col_type & D.152944;
+  const float & D.152943;
+  struct vec D.149362;
+  const float & D.152942;
+  struct vec D.149363;
+  struct vec D.149364;
+  const float & D.152941;
+  struct vec D.149365;
+  struct vec D.149366;
+  const float & D.152940;
+  struct vec D.149367;
+  struct vec D.149368;
+  struct col_type & D.152939;
+  const float & D.152938;
+  struct vec D.149355;
+  const float & D.152937;
+  struct vec D.149356;
+  struct vec D.149357;
+  const float & D.152936;
+  struct vec D.149358;
+  struct vec D.149359;
+  const float & D.152935;
+  struct vec D.149360;
+  struct vec D.149361;
+  const struct col_type & D.152934;
+  const struct col_type & D.152933;
+  const struct col_type & D.152932;
+  const struct col_type & D.152931;
+  const struct col_type & D.152930;
+  const struct col_type & D.152929;
+  const struct col_type & D.152928;
+  const struct col_type & D.152927;
+  const struct col_type & _29;
+  const struct col_type & _30;
+  const struct col_type & _33;
+  const struct col_type & _34;
+  const struct col_type & _37;
+  const struct col_type & _38;
+  const struct col_type & _41;
+  const struct col_type & _42;
+  const struct col_type & _46;
+  const struct col_type & _47;
+  const struct col_type & _50;
+  const struct col_type & _51;
+  const struct col_type & _54;
+  const struct col_type & _55;
+  const struct col_type & _58;
+  const struct col_type & _59;
+  const float & _64;
+  const float & _65;
+  const float & _68;
+  const float & _69;
+  const float & _72;
+  const float & _73;
+  const float & _76;
+  const float & _77;
+  struct col_type & _83;
+  struct col_type & _84;
+  const float & _94;
+  const float & _95;
+  const float & _98;
+  const float & _99;
+  const float & _102;
+  const float & _103;
+  const float & _106;
+  const float & _107;
+  struct col_type & _113;
+  struct col_type & _114;
+  const float & _124;
+  const float & _125;
+  const float & _128;
+  const float & _129;
+  const float & _132;
+  const float & _133;
+  const float & _136;
+  const float & _137;
+  struct col_type & _143;
+  struct col_type & _144;
+  const float & _154;
+  const float & _155;
+  const float & _158;
+  const float & _159;
+  const float & _162;
+  const float & _163;
+  const float & _166;
+  const float & _167;
+  struct col_type & _173;
+  struct col_type & _174;
+
+  <bb 2>:
+  _29 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m1_27(D), 0);
+  _30 = _29;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcA0, _30);
+  _33 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m1_27(D), 1);
+  _34 = _33;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcA1, _34);
+  _37 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m1_27(D), 2);
+  _38 = _37;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcA2, _38);
+  _41 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m1_27(D), 3);
+  _42 = _41;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcA3, _42);
+  _46 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m2_44(D), 0);
+  _47 = _46;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcB0, _47);
+  _50 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m2_44(D), 1);
+  _51 = _50;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcB1, _51);
+  _54 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m2_44(D), 2);
+  _55 = _54;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcB2, _55);
+  _58 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (m2_44(D), 3);
+  _59 = _58;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&SrcB3, _59);
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (Result_61(D));
+  _64 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB0, 3);
+  _65 = _64;
+  D.149360 = glm::operator*<float, (glm::qualifier)0u> (&SrcA3, _65); [return slot optimization]
+  _68 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB0, 2);
+  _69 = _68;
+  D.149358 = glm::operator*<float, (glm::qualifier)0u> (&SrcA2, _69); [return slot optimization]
+  _72 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB0, 1);
+  _73 = _72;
+  D.149356 = glm::operator*<float, (glm::qualifier)0u> (&SrcA1, _73); [return slot optimization]
+  _76 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB0, 0);
+  _77 = _76;
+  D.149355 = glm::operator*<float, (glm::qualifier)0u> (&SrcA0, _77); [return slot optimization]
+  D.149357 = glm::operator+<float, (glm::qualifier)0u> (&D.149355, &D.149356); [return slot optimization]
+  D.149359 = glm::operator+<float, (glm::qualifier)0u> (&D.149357, &D.149358); [return slot optimization]
+  D.149361 = glm::operator+<float, (glm::qualifier)0u> (&D.149359, &D.149360); [return slot optimization]
+  _83 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_61(D), 0);
+  _84 = _83;
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_84, &D.149361);
+  D.149361 ={v} {CLOBBER};
+  D.149359 ={v} {CLOBBER};
+  D.149357 ={v} {CLOBBER};
+  D.149355 ={v} {CLOBBER};
+  D.149356 ={v} {CLOBBER};
+  D.149358 ={v} {CLOBBER};
+  D.149360 ={v} {CLOBBER};
+  _94 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB1, 3);
+  _95 = _94;
+  D.149367 = glm::operator*<float, (glm::qualifier)0u> (&SrcA3, _95); [return slot optimization]
+  _98 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB1, 2);
+  _99 = _98;
+  D.149365 = glm::operator*<float, (glm::qualifier)0u> (&SrcA2, _99); [return slot optimization]
+  _102 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB1, 1);
+  _103 = _102;
+  D.149363 = glm::operator*<float, (glm::qualifier)0u> (&SrcA1, _103); [return slot optimization]
+  _106 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB1, 0);
+  _107 = _106;
+  D.149362 = glm::operator*<float, (glm::qualifier)0u> (&SrcA0, _107); [return slot optimization]
+  D.149364 = glm::operator+<float, (glm::qualifier)0u> (&D.149362, &D.149363); [return slot optimization]
+  D.149366 = glm::operator+<float, (glm::qualifier)0u> (&D.149364, &D.149365); [return slot optimization]
+  D.149368 = glm::operator+<float, (glm::qualifier)0u> (&D.149366, &D.149367); [return slot optimization]
+  _113 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_61(D), 1);
+  _114 = _113;
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_114, &D.149368);
+  D.149368 ={v} {CLOBBER};
+  D.149366 ={v} {CLOBBER};
+  D.149364 ={v} {CLOBBER};
+  D.149362 ={v} {CLOBBER};
+  D.149363 ={v} {CLOBBER};
+  D.149365 ={v} {CLOBBER};
+  D.149367 ={v} {CLOBBER};
+  _124 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB2, 3);
+  _125 = _124;
+  D.149374 = glm::operator*<float, (glm::qualifier)0u> (&SrcA3, _125); [return slot optimization]
+  _128 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB2, 2);
+  _129 = _128;
+  D.149372 = glm::operator*<float, (glm::qualifier)0u> (&SrcA2, _129); [return slot optimization]
+  _132 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB2, 1);
+  _133 = _132;
+  D.149370 = glm::operator*<float, (glm::qualifier)0u> (&SrcA1, _133); [return slot optimization]
+  _136 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB2, 0);
+  _137 = _136;
+  D.149369 = glm::operator*<float, (glm::qualifier)0u> (&SrcA0, _137); [return slot optimization]
+  D.149371 = glm::operator+<float, (glm::qualifier)0u> (&D.149369, &D.149370); [return slot optimization]
+  D.149373 = glm::operator+<float, (glm::qualifier)0u> (&D.149371, &D.149372); [return slot optimization]
+  D.149375 = glm::operator+<float, (glm::qualifier)0u> (&D.149373, &D.149374); [return slot optimization]
+  _143 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_61(D), 2);
+  _144 = _143;
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_144, &D.149375);
+  D.149375 ={v} {CLOBBER};
+  D.149373 ={v} {CLOBBER};
+  D.149371 ={v} {CLOBBER};
+  D.149369 ={v} {CLOBBER};
+  D.149370 ={v} {CLOBBER};
+  D.149372 ={v} {CLOBBER};
+  D.149374 ={v} {CLOBBER};
+  _154 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB3, 3);
+  _155 = _154;
+  D.149381 = glm::operator*<float, (glm::qualifier)0u> (&SrcA3, _155); [return slot optimization]
+  _158 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB3, 2);
+  _159 = _158;
+  D.149379 = glm::operator*<float, (glm::qualifier)0u> (&SrcA2, _159); [return slot optimization]
+  _162 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB3, 1);
+  _163 = _162;
+  D.149377 = glm::operator*<float, (glm::qualifier)0u> (&SrcA1, _163); [return slot optimization]
+  _166 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (&SrcB3, 0);
+  _167 = _166;
+  D.149376 = glm::operator*<float, (glm::qualifier)0u> (&SrcA0, _167); [return slot optimization]
+  D.149378 = glm::operator+<float, (glm::qualifier)0u> (&D.149376, &D.149377); [return slot optimization]
+  D.149380 = glm::operator+<float, (glm::qualifier)0u> (&D.149378, &D.149379); [return slot optimization]
+  D.149382 = glm::operator+<float, (glm::qualifier)0u> (&D.149380, &D.149381); [return slot optimization]
+  _173 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_61(D), 3);
+  _174 = _173;
+  glm::vec<4, float, (glm::qualifier)0u>::operator= (_174, &D.149382);
+  D.149382 ={v} {CLOBBER};
+  D.149380 ={v} {CLOBBER};
+  D.149378 ={v} {CLOBBER};
+  D.149376 ={v} {CLOBBER};
+  D.149377 ={v} {CLOBBER};
+  D.149379 ={v} {CLOBBER};
+  D.149381 ={v} {CLOBBER};
+
+  <bb 3>:
+  SrcA0 ={v} {CLOBBER};
+  SrcA1 ={v} {CLOBBER};
+  SrcA2 ={v} {CLOBBER};
+  SrcA3 ={v} {CLOBBER};
+  SrcB0 ={v} {CLOBBER};
+  SrcB1 ={v} {CLOBBER};
+  SrcB2 ={v} {CLOBBER};
+  SrcB3 ={v} {CLOBBER};
+
+<L1>:
+  return Result_61(D);
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>::vec(T) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Ef, funcdef_no=5989, decl_uid=102689, cgraph_uid=2317, symbol_order=2322)
+
+glm::vec<4, T, Q>::vec(T) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, float scalar)
+{
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  this_2(D)->D.100784.x = scalar_4(D);
+  this_2(D)->D.100790.y = scalar_4(D);
+  this_2(D)->D.100796.z = scalar_4(D);
+  this_2(D)->D.100802.w = scalar_4(D);
+  return;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator*=(U) [with U = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEmLIfEERS2_T_, funcdef_no=5991, decl_uid=148225, cgraph_uid=2319, symbol_order=2324)
+
+glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator*=(U) [with U = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, float scalar)
+{
+  struct vec D.149818;
+  struct vec D.149819;
+  struct vec & D.152880;
+  struct vec & _7;
+
+  <bb 2>:
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&D.149818, scalar_2(D));
+  D.149819 = glm::detail::compute_vec4_mul<float, (glm::qualifier)0u, false>::call (this_4(D), &D.149818); [return slot optimization]
+  _7 = glm::vec<4, float, (glm::qualifier)0u>::operator= (this_4(D), &D.149819);
+  D.149819 ={v} {CLOBBER};
+  D.149818 ={v} {CLOBBER};
+
+<L2>:
+  return _7;
+
+}
+
+
+
+;; Function std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl() (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE12_Vector_implD2Ev, funcdef_no=6019, decl_uid=148984, cgraph_uid=2346, symbol_order=2351)
 
 std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_Vector_impl::~_Vector_impl() (struct _Vector_impl * const this)
 {
@@ -696,12 +1429,12 @@ std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_V
 
 
 
-;; Function std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EEC2Ev, funcdef_no=5764, decl_uid=136532, cgraph_uid=2122, symbol_order=2127)
+;; Function std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EEC2Ev, funcdef_no=6021, decl_uid=141442, cgraph_uid=2349, symbol_order=2354)
 
 std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this)
 {
-  struct _Vector_impl * D.147326;
-  struct _Vector_impl * D.147325;
+  struct _Vector_impl * D.152534;
+  struct _Vector_impl * D.152533;
   struct _Vector_impl * _4;
 
   <bb 2>:
@@ -714,19 +1447,19 @@ std::_Vector_base<_Tp, _Alloc>::_Vector_base() [with _Tp = VertexBufferElement; 
 
 
 
-;; Function std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=5767, decl_uid=136537, cgraph_uid=2125, symbol_order=2130)
+;; Function std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EED2Ev, funcdef_no=6024, decl_uid=141447, cgraph_uid=2352, symbol_order=2357)
 
 std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this)
 {
-  struct _Vector_impl * D.147711;
-  struct VertexBufferElement * D.147710;
-  long unsigned int D.147709;
-  long int D.147708;
-  long int D.147707;
-  long int D.147706;
-  struct VertexBufferElement * D.147705;
-  long int D.147704;
-  struct VertexBufferElement * D.147703;
+  struct _Vector_impl * D.153113;
+  struct VertexBufferElement * D.153112;
+  long unsigned int D.153111;
+  long int D.153110;
+  long int D.153109;
+  long int D.153108;
+  struct VertexBufferElement * D.153107;
+  long int D.153106;
+  struct VertexBufferElement * D.153105;
   struct VertexBufferElement * _3;
   long int _4;
   struct VertexBufferElement * _5;
@@ -756,11 +1489,11 @@ std::_Vector_base<_Tp, _Alloc>::~_Vector_base() [with _Tp = VertexBufferElement;
 
 
 
-;; Function std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=5769, decl_uid=136244, cgraph_uid=2127, symbol_order=2132)
+;; Function std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=6026, decl_uid=141154, cgraph_uid=2354, symbol_order=2359)
 
 std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this)
 {
-  struct _Tp_alloc_type & D.147510;
+  struct _Tp_alloc_type & D.152718;
   struct _Tp_alloc_type & _2;
 
   <bb 2>:
@@ -773,9 +1506,9 @@ std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::
 
 
 
-;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt8_DestroyIP19VertexBufferElementS0_EvT_S2_RSaIT0_E, funcdef_no=5770, decl_uid=143925, cgraph_uid=2128, symbol_order=2133)
+;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt8_DestroyIP19VertexBufferElementS0_EvT_S2_RSaIT0_E, funcdef_no=6027, decl_uid=149000, cgraph_uid=2355, symbol_order=2360)
 
-void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct allocator & D.143928)
+void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [with _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct allocator & D.149003)
 {
   <bb 2>:
   std::_Destroy<VertexBufferElement*> (__first_2(D), __last_3(D));
@@ -785,17 +1518,17 @@ void std::_Destroy(_ForwardIterator, _ForwardIterator, std::allocator<_T2>&) [wi
 
 
 
-;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE4sizeEv, funcdef_no=5771, decl_uid=136701, cgraph_uid=2129, symbol_order=2134)
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE4sizeEv, funcdef_no=6028, decl_uid=141611, cgraph_uid=2356, symbol_order=2361)
 
 std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (const struct vector * const this)
 {
-  long int D.147508;
-  long int D.147507;
-  long int D.147506;
-  struct VertexBufferElement * D.147505;
-  long int D.147504;
-  struct VertexBufferElement * D.147503;
-  size_type D.147502;
+  long int D.152716;
+  long int D.152715;
+  long int D.152714;
+  struct VertexBufferElement * D.152713;
+  long int D.152712;
+  struct VertexBufferElement * D.152711;
+  size_type D.152710;
   struct VertexBufferElement * _3;
   long int _4;
   struct VertexBufferElement * _5;
@@ -805,9 +1538,9 @@ std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with
   size_type _9;
 
   <bb 2>:
-  _3 = this_2(D)->D.137159._M_impl._M_finish;
+  _3 = this_2(D)->D.142069._M_impl._M_finish;
   _4 = (long int) _3;
-  _5 = this_2(D)->D.137159._M_impl._M_start;
+  _5 = this_2(D)->D.142069._M_impl._M_start;
   _6 = (long int) _5;
   _7 = _4 - _6;
   _8 = _7 /[ex] 12;
@@ -820,11 +1553,11 @@ std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::size() const [with
 
 
 
-;; Function const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=5773, decl_uid=136246, cgraph_uid=2131, symbol_order=2136)
+;; Function const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt12_Vector_baseI19VertexBufferElementSaIS0_EE19_M_get_Tp_allocatorEv, funcdef_no=6030, decl_uid=141156, cgraph_uid=2358, symbol_order=2363)
 
 const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (const struct _Vector_base * const this)
 {
-  const struct _Tp_alloc_type & D.147424;
+  const struct _Tp_alloc_type & D.152632;
   const struct _Tp_alloc_type & _2;
 
   <bb 2>:
@@ -837,11 +1570,11 @@ const _Tp_alloc_type& std::_Vector_base<_Tp, _Alloc>::_M_get_Tp_allocator() cons
 
 
 
-;; Function std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBufferElement] (_ZNSaI19VertexBufferElementED2Ev, funcdef_no=5775, decl_uid=136443, cgraph_uid=2133, symbol_order=2138)
+;; Function std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBufferElement] (_ZNSaI19VertexBufferElementED2Ev, funcdef_no=6032, decl_uid=141353, cgraph_uid=2360, symbol_order=2365)
 
 std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBufferElement] (struct allocator * const this)
 {
-  void * D.147712;
+  void * D.153114;
 
   <bb 2>:
   __gnu_cxx::new_allocator<VertexBufferElement>::~new_allocator (this_2(D));
@@ -851,11 +1584,11 @@ std::allocator< <template-parameter-1-1> >::~allocator() [with _Tp = VertexBuffe
 
 
 
-;; Function constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = const VertexBufferElement&] (_ZSt7forwardIRK19VertexBufferElementEOT_RNSt16remove_referenceIS3_E4typeE, funcdef_no=5784, decl_uid=144738, cgraph_uid=2141, symbol_order=2146)
+;; Function constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = const VertexBufferElement&] (_ZSt7forwardIRK19VertexBufferElementEOT_RNSt16remove_referenceIS3_E4typeE, funcdef_no=6041, decl_uid=149970, cgraph_uid=2368, symbol_order=2373)
 
 constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with _Tp = const VertexBufferElement&] (const struct type & __t)
 {
-  const struct VertexBufferElement & D.147343;
+  const struct VertexBufferElement & D.152551;
   const struct VertexBufferElement & _2;
 
   <bb 2>:
@@ -868,11 +1601,11 @@ constexpr _Tp&& std::forward(typename std::remove_reference<_From>::type&) [with
 
 
 
-;; Function static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE9constructIS0_JRKS0_EEEvRS1_PT_DpOT0_, funcdef_no=5783, decl_uid=144087, cgraph_uid=2142, symbol_order=2147)
+;; Function static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE9constructIS0_JRKS0_EEEvRS1_PT_DpOT0_, funcdef_no=6040, decl_uid=149162, cgraph_uid=2369, symbol_order=2374)
 
 static void std::allocator_traits<std::allocator<_CharT> >::construct(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (struct allocator_type & __a, struct VertexBufferElement * __p, const struct VertexBufferElement & __args#0)
 {
-  const struct VertexBufferElement & D.147342;
+  const struct VertexBufferElement & D.152550;
   const struct VertexBufferElement & _4;
 
   <bb 2>:
@@ -884,50 +1617,50 @@ static void std::allocator_traits<std::allocator<_CharT> >::construct(std::alloc
 
 
 
-;; Function void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_, funcdef_no=5785, decl_uid=144117, cgraph_uid=2143, symbol_order=2148)
+;; Function void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt6vectorI19VertexBufferElementSaIS0_EE19_M_emplace_back_auxIJRKS0_EEEvDpOT_, funcdef_no=6042, decl_uid=149192, cgraph_uid=2370, symbol_order=2375)
 
 void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct vector * const this, const struct VertexBufferElement & __args#0)
 {
-  void * D.147827;
-  struct VertexBufferElement * D.147389;
-  struct VertexBufferElement * D.147388;
-  const size_type D.147387;
+  void * D.153300;
+  struct VertexBufferElement * D.152597;
+  struct VertexBufferElement * D.152596;
+  const size_type D.152595;
   struct VertexBufferElement * __new_finish;
   struct VertexBufferElement * __new_start;
   const size_type __len;
-  struct VertexBufferElement * D.147386;
-  long unsigned int D.147385;
-  struct _Vector_base * D.147384;
-  struct VertexBufferElement * D.147383;
-  long unsigned int D.147382;
-  long int D.147381;
-  long int D.147380;
-  long int D.147379;
-  struct VertexBufferElement * D.147378;
-  long int D.147377;
-  struct VertexBufferElement * D.147376;
-  struct VertexBufferElement * D.147375;
-  struct VertexBufferElement * D.147374;
-  struct _Tp_alloc_type & D.147373;
-  struct _Vector_base * D.147372;
-  struct _Vector_base * D.147371;
-  struct _Tp_alloc_type & D.147370;
-  struct _Vector_base * D.147369;
-  struct _Vector_impl * D.147367;
-  struct VertexBufferElement * D.147366;
-  long unsigned int D.147365;
-  long unsigned int D.147364;
-  void * D.147361;
-  struct VertexBufferElement * D.147360;
-  struct VertexBufferElement * D.147359;
-  struct _Tp_alloc_type & D.147358;
-  struct _Vector_base * D.147357;
-  struct _Vector_impl * D.147356;
-  struct VertexBufferElement * D.147355;
-  long unsigned int D.147354;
-  long unsigned int D.147353;
-  const struct VertexBufferElement & D.147352;
-  struct _Vector_base * D.147351;
+  struct VertexBufferElement * D.152594;
+  long unsigned int D.152593;
+  struct _Vector_base * D.152592;
+  struct VertexBufferElement * D.152591;
+  long unsigned int D.152590;
+  long int D.152589;
+  long int D.152588;
+  long int D.152587;
+  struct VertexBufferElement * D.152586;
+  long int D.152585;
+  struct VertexBufferElement * D.152584;
+  struct VertexBufferElement * D.152583;
+  struct VertexBufferElement * D.152582;
+  struct _Tp_alloc_type & D.152581;
+  struct _Vector_base * D.152580;
+  struct _Vector_base * D.152579;
+  struct _Tp_alloc_type & D.152578;
+  struct _Vector_base * D.152577;
+  struct _Vector_impl * D.152575;
+  struct VertexBufferElement * D.152574;
+  long unsigned int D.152573;
+  long unsigned int D.152572;
+  void * D.152569;
+  struct VertexBufferElement * D.152568;
+  struct VertexBufferElement * D.152567;
+  struct _Tp_alloc_type & D.152566;
+  struct _Vector_base * D.152565;
+  struct _Vector_impl * D.152564;
+  struct VertexBufferElement * D.152563;
+  long unsigned int D.152562;
+  long unsigned int D.152561;
+  const struct VertexBufferElement & D.152560;
+  struct _Vector_base * D.152559;
   const size_type _8;
   struct _Vector_base * _10;
   struct VertexBufferElement * _12;
@@ -968,7 +1701,7 @@ void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {c
   <bb 2>:
   _8 = std::vector<VertexBufferElement>::_M_check_len (this_6(D), 1, "vector::_M_emplace_back_aux");
   __len_9 = _8;
-  _10 = &this_6(D)->D.137159;
+  _10 = &this_6(D)->D.142069;
   _12 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_allocate (_10, __len_9);
   __new_start_13 = _12;
   __new_finish_14 = __new_start_13;
@@ -976,38 +1709,38 @@ void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {c
   _19 = std::vector<VertexBufferElement>::size (this_6(D));
   _20 = _19 * 12;
   _21 = __new_start_13 + _20;
-  _22 = &this_6(D)->D.137159._M_impl;
+  _22 = &this_6(D)->D.142069._M_impl;
   std::allocator_traits<std::allocator<VertexBufferElement> >::construct<VertexBufferElement, const VertexBufferElement&> (_22, _21, _17);
   __new_finish_24 = 0B;
-  _25 = &this_6(D)->D.137159;
+  _25 = &this_6(D)->D.142069;
   _27 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_25);
-  _28 = this_6(D)->D.137159._M_impl._M_finish;
-  _29 = this_6(D)->D.137159._M_impl._M_start;
+  _28 = this_6(D)->D.142069._M_impl._M_finish;
+  _29 = this_6(D)->D.142069._M_impl._M_start;
   _31 = std::__uninitialized_move_if_noexcept_a<VertexBufferElement*, VertexBufferElement*, std::allocator<VertexBufferElement> > (_29, _28, __new_start_13, _27);
 
   <bb 3>:
   __new_finish_32 = _31;
   __new_finish_33 = __new_finish_32 + 12;
-  _34 = &this_6(D)->D.137159;
+  _34 = &this_6(D)->D.142069;
   _36 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_34);
-  _37 = this_6(D)->D.137159._M_impl._M_finish;
-  _38 = this_6(D)->D.137159._M_impl._M_start;
+  _37 = this_6(D)->D.142069._M_impl._M_finish;
+  _38 = this_6(D)->D.142069._M_impl._M_start;
   std::_Destroy<VertexBufferElement*, VertexBufferElement> (_38, _37, _36);
-  _40 = this_6(D)->D.137159._M_impl._M_end_of_storage;
+  _40 = this_6(D)->D.142069._M_impl._M_end_of_storage;
   _41 = (long int) _40;
-  _42 = this_6(D)->D.137159._M_impl._M_start;
+  _42 = this_6(D)->D.142069._M_impl._M_start;
   _43 = (long int) _42;
   _44 = _41 - _43;
   _45 = _44 /[ex] 12;
   _46 = (long unsigned int) _45;
-  _47 = this_6(D)->D.137159._M_impl._M_start;
-  _48 = &this_6(D)->D.137159;
+  _47 = this_6(D)->D.142069._M_impl._M_start;
+  _48 = &this_6(D)->D.142069;
   std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_deallocate (_48, _47, _46);
-  this_6(D)->D.137159._M_impl._M_start = __new_start_13;
-  this_6(D)->D.137159._M_impl._M_finish = __new_finish_33;
+  this_6(D)->D.142069._M_impl._M_start = __new_start_13;
+  this_6(D)->D.142069._M_impl._M_finish = __new_finish_33;
   _52 = __len_9 * 12;
   _53 = __new_start_13 + _52;
-  this_6(D)->D.137159._M_impl._M_end_of_storage = _53;
+  this_6(D)->D.142069._M_impl._M_end_of_storage = _53;
   return;
 
   # __new_finish_1 = PHI <__new_finish_24(2)>
@@ -1023,19 +1756,19 @@ void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {c
   _58 = std::vector<VertexBufferElement>::size (this_6(D));
   _59 = _58 * 12;
   _60 = __new_start_13 + _59;
-  _61 = &this_6(D)->D.137159._M_impl;
+  _61 = &this_6(D)->D.142069._M_impl;
   std::allocator_traits<std::allocator<VertexBufferElement> >::destroy<VertexBufferElement> (_61, _60);
 
   <bb 6>:
   goto <bb 8>;
 
   <bb 7>:
-  _63 = &this_6(D)->D.137159;
+  _63 = &this_6(D)->D.142069;
   _65 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_63);
   std::_Destroy<VertexBufferElement*, VertexBufferElement> (__new_start_13, __new_finish_1, _65);
 
   <bb 8>:
-  _67 = &this_6(D)->D.137159;
+  _67 = &this_6(D)->D.142069;
   std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_deallocate (_67, __new_start_13, __len_9);
 
   <bb 9>:
@@ -1050,54 +1783,54 @@ void std::vector<_Tp, _Alloc>::_M_emplace_back_aux(_Args&& ...) [with _Args = {c
 
 
 
-;; Function glm::mat<4, 4, T, (glm::qualifier)0u> glm::orthoRH_NO(T, T, T, T, T, T) [with T = float] (_ZN3glm10orthoRH_NOIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_S2_S2_, funcdef_no=5792, decl_uid=144148, cgraph_uid=2150, symbol_order=2155)
+;; Function glm::mat<4, 4, T, (glm::qualifier)0u> glm::orthoRH_NO(T, T, T, T, T, T) [with T = float] (_ZN3glm10orthoRH_NOIfEENS_3matILi4ELi4ET_LNS_9qualifierE0EEES2_S2_S2_S2_S2_S2_, funcdef_no=6049, decl_uid=149223, cgraph_uid=2377, symbol_order=2382)
 
 glm::mat<4, 4, T, (glm::qualifier)0u> glm::orthoRH_NO(T, T, T, T, T, T) [with T = float] (float left, float right, float bottom, float top, float zNear, float zFar)
 {
-  float & D.147571;
-  struct col_type & D.147570;
-  float & D.147569;
-  struct col_type & D.147568;
-  float & D.147567;
-  struct col_type & D.147566;
-  float & D.147565;
-  struct col_type & D.147564;
-  float & D.147563;
-  struct col_type & D.147562;
-  float & D.147561;
-  struct col_type & D.147560;
+  float & D.152779;
+  struct col_type & D.152778;
+  float & D.152777;
+  struct col_type & D.152776;
+  float & D.152775;
+  struct col_type & D.152774;
+  float & D.152773;
+  struct col_type & D.152772;
+  float & D.152771;
+  struct col_type & D.152770;
+  float & D.152769;
+  struct col_type & D.152768;
   struct mat Result [value-expr: *<retval>];
-  float D.147557;
-  float D.147556;
-  float D.147555;
-  float D.147554;
-  float & D.147553;
-  struct col_type & D.147552;
-  float D.147551;
-  float D.147550;
-  float D.147549;
-  float D.147548;
-  float & D.147547;
-  struct col_type & D.147546;
-  float D.147545;
-  float D.147544;
-  float D.147543;
-  float D.147542;
-  float & D.147541;
-  struct col_type & D.147540;
-  float D.147539;
-  float D.147538;
-  float & D.147537;
-  struct col_type & D.147536;
-  float D.147535;
-  float D.147534;
-  float & D.147533;
-  struct col_type & D.147532;
-  float D.147531;
-  float D.147530;
-  float & D.147529;
-  struct col_type & D.147528;
-  const float D.144777;
+  float D.152765;
+  float D.152764;
+  float D.152763;
+  float D.152762;
+  float & D.152761;
+  struct col_type & D.152760;
+  float D.152759;
+  float D.152758;
+  float D.152757;
+  float D.152756;
+  float & D.152755;
+  struct col_type & D.152754;
+  float D.152753;
+  float D.152752;
+  float D.152751;
+  float D.152750;
+  float & D.152749;
+  struct col_type & D.152748;
+  float D.152747;
+  float D.152746;
+  float & D.152745;
+  struct col_type & D.152744;
+  float D.152743;
+  float D.152742;
+  float & D.152741;
+  struct col_type & D.152740;
+  float D.152739;
+  float D.152738;
+  float & D.152737;
+  struct col_type & D.152736;
+  const float D.150009;
   struct col_type & _7;
   struct col_type & _8;
   float & _10;
@@ -1142,9 +1875,9 @@ glm::mat<4, 4, T, (glm::qualifier)0u> glm::orthoRH_NO(T, T, T, T, T, T) [with T 
   float _70;
 
   <bb 2>:
-  D.144777 = 1.0e+0;
-  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (Result_3(D), &D.144777);
-  D.144777 ={v} {CLOBBER};
+  D.150009 = 1.0e+0;
+  glm::mat<4, 4, float, (glm::qualifier)0u>::mat (Result_3(D), &D.150009);
+  D.150009 ={v} {CLOBBER};
   _7 = glm::mat<4, 4, float, (glm::qualifier)0u>::operator[] (Result_3(D), 0);
   _8 = _7;
   _10 = glm::vec<4, float, (glm::qualifier)0u>::operator[] (_8, 0);
@@ -1201,15 +1934,53 @@ glm::mat<4, 4, T, (glm::qualifier)0u> glm::orthoRH_NO(T, T, T, T, T, T) [with T 
 
 
 
-;; Function glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator=(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEaSERKS2_, funcdef_no=5833, decl_uid=96808, cgraph_uid=2191, symbol_order=2196)
+;; Function glm::vec<4, T, Q>::vec() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Ev, funcdef_no=6051, decl_uid=102708, cgraph_uid=2379, symbol_order=2384)
+
+glm::vec<4, T, Q>::vec() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this)
+{
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = float; Y = int; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IfiiiEET_T0_T1_T2_, funcdef_no=6054, decl_uid=149245, cgraph_uid=2382, symbol_order=2387)
+
+glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = float; Y = int; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, float _x, int _y, int _z, int _w)
+{
+  float D.152818;
+  float D.152817;
+  float D.152816;
+  float _7;
+  float _10;
+  float _13;
+
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  this_2(D)->D.100784.x = _x_4(D);
+  _7 = (float) _y_6(D);
+  this_2(D)->D.100790.y = _7;
+  _10 = (float) _z_9(D);
+  this_2(D)->D.100796.z = _10;
+  _13 = (float) _w_12(D);
+  this_2(D)->D.100802.w = _13;
+  return;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator=(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEaSERKS2_, funcdef_no=6056, decl_uid=101962, cgraph_uid=2384, symbol_order=2389)
 
 glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator=(const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, const struct vec & v)
 {
-  struct vec & D.147604;
-  float D.147603;
-  float D.147602;
-  float D.147601;
-  float D.147600;
+  struct vec & D.152832;
+  float D.152831;
+  float D.152830;
+  float D.152829;
+  float D.152828;
   float _3;
   float _6;
   float _8;
@@ -1217,14 +1988,14 @@ glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator=(const glm::vec<4, T, Q>&) [with 
   struct vec & _12;
 
   <bb 2>:
-  _3 = v_2(D)->D.95630.x;
-  this_4(D)->D.95630.x = _3;
-  _6 = v_2(D)->D.95636.y;
-  this_4(D)->D.95636.y = _6;
-  _8 = v_2(D)->D.95642.z;
-  this_4(D)->D.95642.z = _8;
-  _10 = v_2(D)->D.95648.w;
-  this_4(D)->D.95648.w = _10;
+  _3 = v_2(D)->D.100784.x;
+  this_4(D)->D.100784.x = _3;
+  _6 = v_2(D)->D.100790.y;
+  this_4(D)->D.100790.y = _6;
+  _8 = v_2(D)->D.100796.z;
+  this_4(D)->D.100796.z = _8;
+  _10 = v_2(D)->D.100802.w;
+  this_4(D)->D.100802.w = _10;
   _12 = this_4(D);
 
 <L0>:
@@ -1234,7 +2005,378 @@ glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator=(const glm::vec<4, T, Q>&) [with 
 
 
 
-;; Function std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE12_Vector_implC2Ev, funcdef_no=5844, decl_uid=136475, cgraph_uid=2202, symbol_order=2207)
+;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = float; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IifiiEET_T0_T1_T2_, funcdef_no=6058, decl_uid=149267, cgraph_uid=2386, symbol_order=2391)
+
+glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = float; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, float _y, int _z, int _w)
+{
+  float D.152821;
+  float D.152820;
+  float D.152819;
+  float _5;
+  float _10;
+  float _13;
+
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  _5 = (float) _x_4(D);
+  this_2(D)->D.100784.x = _5;
+  this_2(D)->D.100790.y = _y_7(D);
+  _10 = (float) _z_9(D);
+  this_2(D)->D.100796.z = _10;
+  _13 = (float) _w_12(D);
+  this_2(D)->D.100802.w = _13;
+  return;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = float; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IiifiEET_T0_T1_T2_, funcdef_no=6061, decl_uid=149286, cgraph_uid=2389, symbol_order=2394)
+
+glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = float; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, int _y, float _z, int _w)
+{
+  float D.152824;
+  float D.152823;
+  float D.152822;
+  float _5;
+  float _8;
+  float _13;
+
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  _5 = (float) _x_4(D);
+  this_2(D)->D.100784.x = _5;
+  _8 = (float) _y_7(D);
+  this_2(D)->D.100790.y = _8;
+  this_2(D)->D.100796.z = _z_10(D);
+  _13 = (float) _w_12(D);
+  this_2(D)->D.100802.w = _13;
+  return;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = int; W = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IiiifEET_T0_T1_T2_, funcdef_no=6064, decl_uid=149305, cgraph_uid=2392, symbol_order=2397)
+
+glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = int; W = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, int _y, int _z, float _w)
+{
+  float D.152827;
+  float D.152826;
+  float D.152825;
+  float _5;
+  float _8;
+  float _11;
+
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  _5 = (float) _x_4(D);
+  this_2(D)->D.100784.x = _5;
+  _8 = (float) _y_7(D);
+  this_2(D)->D.100790.y = _8;
+  _11 = (float) _z_10(D);
+  this_2(D)->D.100796.z = _11;
+  this_2(D)->D.100802.w = _w_13(D);
+  return;
+
+}
+
+
+
+;; Function glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEixEi, funcdef_no=6066, decl_uid=142383, cgraph_uid=2394, symbol_order=2399)
+
+glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct mat * const this, length_type i)
+{
+  static const char __PRETTY_FUNCTION__[270] = "glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::mat<4, 4, T, Q>::col_type = glm::vec<4, float, (glm::qualifier)0u>; glm::mat<4, 4, T, Q>::length_type = int]";
+  struct col_type & D.152784;
+  int D.152780;
+  int _3;
+  struct col_type & _6;
+
+  <bb 2>:
+  _3 = glm::mat<4, 4, float, (glm::qualifier)0u>::length ();
+  if (_3 > i_4(D))
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  __assert_fail ("i < this->length()", "/home/benjamin/Videos/openGLSeries/code/vendor/glm/gtc/.././ext/../detail/type_mat4x4.inl", 291, &__PRETTY_FUNCTION__);
+
+  <bb 4>:
+  _6 = &this_5(D)->value[i_4(D)];
+
+<L3>:
+  return _6;
+
+}
+
+
+
+;; Function const col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZNK3glm3matILi4ELi4EfLNS_9qualifierE0EEixEi, funcdef_no=6067, decl_uid=142386, cgraph_uid=2395, symbol_order=2400)
+
+const col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct mat * const this, length_type i)
+{
+  static const char __PRETTY_FUNCTION__[260] = "const col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::mat<4, 4, T, Q>::col_type = glm::vec<4, float, (glm::qualifier)0u>; glm::mat<4, 4, T, Q>::length_type = int]";
+  const struct col_type & D.152871;
+  int D.152867;
+  int _3;
+  const struct col_type & _6;
+
+  <bb 2>:
+  _3 = glm::mat<4, 4, float, (glm::qualifier)0u>::length ();
+  if (_3 > i_4(D))
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  __assert_fail ("i < this->length()", "/home/benjamin/Videos/openGLSeries/code/vendor/glm/gtc/.././ext/../detail/type_mat4x4.inl", 298, &__PRETTY_FUNCTION__);
+
+  <bb 4>:
+  _6 = &this_5(D)->value[i_4(D)];
+
+<L3>:
+  return _6;
+
+}
+
+
+
+;; Function const T& glm::vec<3, T, Q>::operator[](glm::vec<3, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZNK3glm3vecILi3EfLNS_9qualifierE0EEixEi, funcdef_no=6068, decl_uid=126711, cgraph_uid=2396, symbol_order=2401)
+
+const T& glm::vec<3, T, Q>::operator[](glm::vec<3, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct vec * const this, length_type i)
+{
+  static const char __PRETTY_FUNCTION__[171] = "const T& glm::vec<3, T, Q>::operator[](glm::vec<3, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::vec<3, T, Q>::length_type = int]";
+  const float & D.152863;
+  int D.152861;
+  const float & _1;
+  int _6;
+  const float & _8;
+  const float & _9;
+  const float & _10;
+
+  <bb 2>:
+  if (i_3(D) >= 0)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  _6 = glm::vec<3, float, (glm::qualifier)0u>::length ();
+  if (_6 > i_3(D))
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  goto <bb 6>;
+
+  <bb 5>:
+  __assert_fail ("i >= 0 && i < this->length()", "/home/benjamin/Videos/openGLSeries/code/vendor/glm/gtc/.././ext/../detail/.././ext/../detail/type_vec3.inl", 186, &__PRETTY_FUNCTION__);
+
+  <bb 6>:
+  switch (i_3(D)) <default: <L4>, case 1: <L6>, case 2: <L7>>
+
+<L4>:
+  _8 = &this_7(D)->D.126689.x;
+  goto <bb 10> (<L8>);
+
+<L6>:
+  _9 = &this_7(D)->D.126695.y;
+  goto <bb 10> (<L8>);
+
+<L7>:
+  _10 = &this_7(D)->D.126701.z;
+
+  # _1 = PHI <_8(7), _9(8), _10(9)>
+<L8>:
+  return _1;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q> glm::operator+(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glmplIfLNS_9qualifierE0EEENS_3vecILi4ET_XT0_EEERKS4_S6_, funcdef_no=6069, decl_uid=149326, cgraph_uid=2397, symbol_order=2402)
+
+glm::vec<4, T, Q> glm::operator+(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct vec & v1, const struct vec & v2)
+{
+  struct vec & D.152905;
+  struct vec & D.152903;
+  struct vec D.150039;
+  struct vec & _6;
+  struct vec & _7;
+
+  <bb 2>:
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&D.150039, v1_2(D));
+  _6 = glm::vec<4, float, (glm::qualifier)0u>::operator+=<float> (&D.150039, v2_4(D));
+  _7 = _6;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_8(D), _7);
+  D.150039 ={v} {CLOBBER};
+
+<L1>:
+  return _8(D);
+
+}
+
+
+
+;; Function glm::mat<4, 4, T, Q>::mat() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC2Ev, funcdef_no=6071, decl_uid=142914, cgraph_uid=2399, symbol_order=2404)
+
+glm::mat<4, 4, T, Q>::mat() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct mat * const this)
+{
+  long int D.153016;
+  struct col_type * D.153015;
+  struct col_type * D.153014;
+  struct col_type * retval.17;
+  struct col_type * _1;
+  long int _2;
+  struct col_type * _7;
+  struct col_type * _8;
+  long int _9;
+  struct col_type * _11;
+  long int _12;
+  struct col_type * retval.17_13;
+
+  <bb 2>:
+  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
+  _7 = &this_5(D)->value;
+  _8 = _7;
+  _9 = 3;
+
+  <bb 3>:
+  # _1 = PHI <_8(2), _11(4)>
+  # _2 = PHI <_9(2), _12(4)>
+  if (_2 < 0)
+    goto <bb 5>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_1);
+  _11 = _1 + 16;
+  _12 = _2 + -1;
+  goto <bb 3>;
+
+  <bb 5>:
+  retval.17_13 = _7;
+  return;
+
+}
+
+
+
+;; Function const T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZNK3glm3vecILi4EfLNS_9qualifierE0EEixEi, funcdef_no=6073, decl_uid=100812, cgraph_uid=2401, symbol_order=2406)
+
+const T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u] (const struct vec * const this, length_type i)
+{
+  static const char __PRETTY_FUNCTION__[171] = "const T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) const [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::vec<4, T, Q>::length_type = int]";
+  const float & D.153027;
+  int D.153025;
+  const float & _1;
+  int _6;
+  const float & _8;
+  const float & _9;
+  const float & _10;
+  const float & _11;
+
+  <bb 2>:
+  if (i_3(D) >= 0)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  _6 = glm::vec<4, float, (glm::qualifier)0u>::length ();
+  if (_6 > i_3(D))
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  goto <bb 6>;
+
+  <bb 5>:
+  __assert_fail ("i >= 0 && i < this->length()", "/home/benjamin/Videos/openGLSeries/code/vendor/glm/gtc/.././ext/../detail/type_vec4.inl", 497, &__PRETTY_FUNCTION__);
+
+  <bb 6>:
+  switch (i_3(D)) <default: <L4>, case 1: <L6>, case 2: <L7>, case 3: <L8>>
+
+<L4>:
+  _8 = &this_7(D)->D.100784.x;
+  goto <bb 11> (<L9>);
+
+<L6>:
+  _9 = &this_7(D)->D.100790.y;
+  goto <bb 11> (<L9>);
+
+<L7>:
+  _10 = &this_7(D)->D.100796.z;
+  goto <bb 11> (<L9>);
+
+<L8>:
+  _11 = &this_7(D)->D.100802.w;
+
+  # _1 = PHI <_8(7), _9(8), _10(9), _11(10)>
+<L9>:
+  return _1;
+
+}
+
+
+
+;; Function static glm::vec<4, T, Q> glm::detail::compute_vec4_mul<T, Q, Aligned>::call(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u; bool Aligned = false] (_ZN3glm6detail16compute_vec4_mulIfLNS_9qualifierE0ELb0EE4callERKNS_3vecILi4EfLS2_0EEES7_, funcdef_no=6113, decl_uid=149814, cgraph_uid=2441, symbol_order=2446)
+
+static glm::vec<4, T, Q> glm::detail::compute_vec4_mul<T, Q, Aligned>::call(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u; bool Aligned = false] (const struct vec & a, const struct vec & b)
+{
+  float D.152896;
+  float D.152895;
+  float D.152894;
+  float D.152893;
+  float D.152892;
+  float D.152891;
+  float D.152890;
+  float D.152889;
+  float D.152888;
+  float D.152887;
+  float D.152886;
+  float D.152885;
+  float _3;
+  float _5;
+  float _6;
+  float _7;
+  float _8;
+  float _9;
+  float _10;
+  float _11;
+  float _12;
+  float _13;
+  float _14;
+  float _15;
+
+  <bb 2>:
+  _3 = a_2(D)->D.100802.w;
+  _5 = b_4(D)->D.100802.w;
+  _6 = _3 * _5;
+  _7 = a_2(D)->D.100796.z;
+  _8 = b_4(D)->D.100796.z;
+  _9 = _7 * _8;
+  _10 = a_2(D)->D.100790.y;
+  _11 = b_4(D)->D.100790.y;
+  _12 = _10 * _11;
+  _13 = a_2(D)->D.100784.x;
+  _14 = b_4(D)->D.100784.x;
+  _15 = _13 * _14;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_16(D), _15, _12, _9, _6);
+
+<L0>:
+  return _16(D);
+
+}
+
+
+
+;; Function std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE12_Vector_implC2Ev, funcdef_no=6124, decl_uid=141385, cgraph_uid=2452, symbol_order=2457)
 
 std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_impl * const this)
 {
@@ -1250,11 +2392,11 @@ std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl() [with _Tp = VertexB
 
 
 
-;; Function void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE13_M_deallocateEPS0_m, funcdef_no=5846, decl_uid=136483, cgraph_uid=2204, symbol_order=2209)
+;; Function void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE13_M_deallocateEPS0_m, funcdef_no=6126, decl_uid=141393, cgraph_uid=2454, symbol_order=2459)
 
 void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc>::pointer, std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this, struct VertexBufferElement * __p, size_t __n)
 {
-  struct _Vector_impl * D.147514;
+  struct _Vector_impl * D.152722;
   struct _Vector_impl * _5;
 
   <bb 2>:
@@ -1274,7 +2416,7 @@ void std::_Vector_base<_Tp, _Alloc>::_M_deallocate(std::_Vector_base<_Tp, _Alloc
 
 
 
-;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZSt8_DestroyIP19VertexBufferElementEvT_S2_, funcdef_no=5847, decl_uid=144703, cgraph_uid=2205, symbol_order=2210)
+;; Function void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZSt8_DestroyIP19VertexBufferElementEvT_S2_, funcdef_no=6127, decl_uid=149935, cgraph_uid=2455, symbol_order=2460)
 
 void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last)
 {
@@ -1286,7 +2428,7 @@ void std::_Destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = 
 
 
 
-;; Function __gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementED2Ev, funcdef_no=5853, decl_uid=136378, cgraph_uid=2211, symbol_order=2216)
+;; Function __gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementED2Ev, funcdef_no=6133, decl_uid=141288, cgraph_uid=2461, symbol_order=2466)
 
 __gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement] (struct new_allocator * const this)
 {
@@ -1297,14 +2439,14 @@ __gnu_cxx::new_allocator<_Tp>::~new_allocator() [with _Tp = VertexBufferElement]
 
 
 
-;; Function void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE9constructIS1_JRKS1_EEEvPT_DpOT0_, funcdef_no=5863, decl_uid=144741, cgraph_uid=2221, symbol_order=2226)
+;; Function void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE9constructIS1_JRKS1_EEEvPT_DpOT0_, funcdef_no=6143, decl_uid=149973, cgraph_uid=2471, symbol_order=2476)
 
 void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = VertexBufferElement; _Args = {const VertexBufferElement&}; _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p, const struct VertexBufferElement & __args#0)
 {
   struct VertexBufferElement * iftmp.5;
-  void * D.145482;
-  void * D.145481;
-  const struct VertexBufferElement * D.145483;
+  void * D.150762;
+  void * D.150761;
+  const struct VertexBufferElement * D.150763;
   const struct VertexBufferElement * _5;
   void * _7;
   void * _9;
@@ -1335,13 +2477,13 @@ void __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = Ver
 
 
 
-;; Function constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int] (_ZSt3maxImERKT_S2_S2_, funcdef_no=5865, decl_uid=145486, cgraph_uid=2222, symbol_order=2227)
+;; Function constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int] (_ZSt3maxImERKT_S2_S2_, funcdef_no=6145, decl_uid=150766, cgraph_uid=2472, symbol_order=2477)
 
 constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned int] (const long unsigned int & __a, const long unsigned int & __b)
 {
-  const long unsigned int & D.147418;
-  long unsigned int D.147415;
-  long unsigned int D.147414;
+  const long unsigned int & D.152626;
+  long unsigned int D.152623;
+  long unsigned int D.152622;
   const long unsigned int & _1;
   long unsigned int _4;
   long unsigned int _6;
@@ -1371,25 +2513,25 @@ constexpr const _Tp& std::max(const _Tp&, const _Tp&) [with _Tp = long unsigned 
 
 
 
-;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::vector<_Tp, _Alloc>::size_type, const char*) const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE12_M_check_lenEmPKc, funcdef_no=5864, decl_uid=137034, cgraph_uid=2223, symbol_order=2228)
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::vector<_Tp, _Alloc>::size_type, const char*) const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE12_M_check_lenEmPKc, funcdef_no=6144, decl_uid=141944, cgraph_uid=2473, symbol_order=2478)
 
 std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::vector<_Tp, _Alloc>::size_type, const char*) const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (const struct vector * const this, size_type __n, const char * __s)
 {
   const size_type __len;
-  long unsigned int D.147412;
-  long unsigned int D.147410;
+  long unsigned int D.152620;
+  long unsigned int D.152618;
   size_type iftmp.9;
-  size_type D.147405;
-  long unsigned int D.147404;
-  const long unsigned int & D.147403;
-  long unsigned int D.147402;
-  const long unsigned int D.145489;
-  long unsigned int D.147401;
+  size_type D.152613;
+  long unsigned int D.152612;
+  const long unsigned int & D.152611;
+  long unsigned int D.152610;
+  const long unsigned int D.150769;
+  long unsigned int D.152609;
   const char * __s.8;
   long unsigned int __n.7;
-  long unsigned int D.147396;
-  long unsigned int D.147395;
-  long unsigned int D.147394;
+  long unsigned int D.152604;
+  long unsigned int D.152603;
+  long unsigned int D.152602;
   bool retval.6;
   size_type iftmp.9_1;
   long unsigned int _7;
@@ -1426,11 +2568,11 @@ std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::
   <bb 4>:
   _14 = std::vector<VertexBufferElement>::size (this_5(D));
   _16 = std::vector<VertexBufferElement>::size (this_5(D));
-  D.145489 = _16;
-  _19 = std::max<long unsigned int> (&D.145489, &__n);
+  D.150769 = _16;
+  _19 = std::max<long unsigned int> (&D.150769, &__n);
   _20 = *_19;
   __len_21 = _14 + _20;
-  D.145489 ={v} {CLOBBER};
+  D.150769 ={v} {CLOBBER};
   _24 = std::vector<VertexBufferElement>::size (this_5(D));
   if (_24 > __len_21)
     goto <bb 6>;
@@ -1462,14 +2604,14 @@ std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::_M_check_len(std::
 
 
 
-;; Function std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE11_M_allocateEm, funcdef_no=5866, decl_uid=136480, cgraph_uid=2224, symbol_order=2229)
+;; Function std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNSt12_Vector_baseI19VertexBufferElementSaIS0_EE11_M_allocateEm, funcdef_no=6146, decl_uid=141390, cgraph_uid=2474, symbol_order=2479)
 
 std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_allocate(std::size_t) [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (struct _Vector_base * const this, size_t __n)
 {
-  struct VertexBufferElement * D.147437;
-  struct _Vector_impl * D.147434;
+  struct VertexBufferElement * D.152645;
+  struct _Vector_impl * D.152642;
   struct VertexBufferElement * iftmp.10;
-  struct VertexBufferElement * D.147430;
+  struct VertexBufferElement * D.152638;
   struct VertexBufferElement * iftmp.10_1;
   struct _Vector_impl * _5;
   struct VertexBufferElement * _8;
@@ -1503,21 +2645,21 @@ std::_Vector_base<_Tp, _Alloc>::pointer std::_Vector_base<_Tp, _Alloc>::_M_alloc
 
 
 
-;; Function _ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = VertexBufferElement*; _ForwardIterator = VertexBufferElement*; _Allocator = std::allocator<VertexBufferElement>] (_ZSt34__uninitialized_move_if_noexcept_aIP19VertexBufferElementS1_SaIS0_EET0_T_S4_S3_RT1_, funcdef_no=5867, decl_uid=144749, cgraph_uid=2225, symbol_order=2230)
+;; Function _ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = VertexBufferElement*; _ForwardIterator = VertexBufferElement*; _Allocator = std::allocator<VertexBufferElement>] (_ZSt34__uninitialized_move_if_noexcept_aIP19VertexBufferElementS1_SaIS0_EET0_T_S4_S3_RT1_, funcdef_no=6147, decl_uid=149981, cgraph_uid=2475, symbol_order=2480)
 
 _ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = VertexBufferElement*; _ForwardIterator = VertexBufferElement*; _Allocator = std::allocator<VertexBufferElement>] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result, struct allocator & __alloc)
 {
-  struct VertexBufferElement * D.147453;
-  struct move_iterator D.147451;
-  struct move_iterator D.147450;
-  struct VertexBufferElement * D.147449;
+  struct VertexBufferElement * D.152661;
+  struct move_iterator D.152659;
+  struct move_iterator D.152658;
+  struct VertexBufferElement * D.152657;
   struct VertexBufferElement * _9;
   struct VertexBufferElement * _10;
 
   <bb 2>:
-  D.147450 = std::__make_move_if_noexcept_iterator<VertexBufferElement> (__last_2(D));
-  D.147451 = std::__make_move_if_noexcept_iterator<VertexBufferElement> (__first_4(D));
-  _9 = std::__uninitialized_copy_a<std::move_iterator<VertexBufferElement*>, VertexBufferElement*, VertexBufferElement> (D.147451, D.147450, __result_6(D), __alloc_7(D));
+  D.152658 = std::__make_move_if_noexcept_iterator<VertexBufferElement> (__last_2(D));
+  D.152659 = std::__make_move_if_noexcept_iterator<VertexBufferElement> (__first_4(D));
+  _9 = std::__uninitialized_copy_a<std::move_iterator<VertexBufferElement*>, VertexBufferElement*, VertexBufferElement> (D.152659, D.152658, __result_6(D), __alloc_7(D));
   _10 = _9;
 
 <L0>:
@@ -1527,7 +2669,7 @@ _ForwardIterator std::__uninitialized_move_if_noexcept_a(_InputIterator, _InputI
 
 
 
-;; Function static void std::allocator_traits<std::allocator<_CharT> >::destroy(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE7destroyIS0_EEvRS1_PT_, funcdef_no=5868, decl_uid=144754, cgraph_uid=2226, symbol_order=2231)
+;; Function static void std::allocator_traits<std::allocator<_CharT> >::destroy(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE7destroyIS0_EEvRS1_PT_, funcdef_no=6148, decl_uid=149986, cgraph_uid=2476, symbol_order=2481)
 
 static void std::allocator_traits<std::allocator<_CharT> >::destroy(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, _Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (struct allocator_type & __a, struct VertexBufferElement * __p)
 {
@@ -1539,128 +2681,13 @@ static void std::allocator_traits<std::allocator<_CharT> >::destroy(std::allocat
 
 
 
-;; Function glm::mat<4, 4, T, Q>::mat(const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEC2ERKf, funcdef_no=5872, decl_uid=137991, cgraph_uid=2230, symbol_order=2235)
-
-glm::mat<4, 4, T, Q>::mat(const T&) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct mat * const this, const float & s)
-{
-  struct col_type * D.147587;
-  float D.147586;
-  struct col_type D.145987;
-  struct col_type * D.147585;
-  float D.147584;
-  struct col_type D.145986;
-  struct col_type * D.147583;
-  float D.147582;
-  struct col_type D.145985;
-  struct col_type * D.147581;
-  float D.147580;
-  struct col_type D.145984;
-  long int D.147574;
-  struct col_type * D.147573;
-  struct col_type * D.147572;
-  struct col_type * retval.16;
-  struct col_type * _1;
-  long int _2;
-  struct col_type * _7;
-  struct col_type * _8;
-  long int _9;
-  struct col_type * _11;
-  long int _12;
-  struct col_type * retval.16_13;
-  float _15;
-  struct col_type * _17;
-  float _20;
-  struct col_type * _22;
-  float _25;
-  struct col_type * _27;
-  float _30;
-  struct col_type * _32;
-
-  <bb 2>:
-  MEM[(struct  &)this_5(D)] ={v} {CLOBBER};
-  _7 = &this_5(D)->value;
-  _8 = _7;
-  _9 = 3;
-
-  <bb 3>:
-  # _1 = PHI <_8(2), _11(4)>
-  # _2 = PHI <_9(2), _12(4)>
-  if (_2 < 0)
-    goto <bb 5>;
-  else
-    goto <bb 4>;
-
-  <bb 4>:
-  glm::vec<4, float, (glm::qualifier)0u>::vec (_1);
-  _11 = _1 + 16;
-  _12 = _2 + -1;
-  goto <bb 3>;
-
-  <bb 5>:
-  retval.16_13 = _7;
-  _15 = *s_14(D);
-  glm::vec<4, float, (glm::qualifier)0u>::vec<float, int, int, int> (&D.145984, _15, 0, 0, 0);
-  _17 = &this_5(D)->value[0];
-  glm::vec<4, float, (glm::qualifier)0u>::operator= (_17, &D.145984);
-  D.145984 ={v} {CLOBBER};
-  _20 = *s_14(D);
-  glm::vec<4, float, (glm::qualifier)0u>::vec<int, float, int, int> (&D.145985, 0, _20, 0, 0);
-  _22 = &this_5(D)->value[1];
-  glm::vec<4, float, (glm::qualifier)0u>::operator= (_22, &D.145985);
-  D.145985 ={v} {CLOBBER};
-  _25 = *s_14(D);
-  glm::vec<4, float, (glm::qualifier)0u>::vec<int, int, float, int> (&D.145986, 0, 0, _25, 0);
-  _27 = &this_5(D)->value[2];
-  glm::vec<4, float, (glm::qualifier)0u>::operator= (_27, &D.145986);
-  D.145986 ={v} {CLOBBER};
-  _30 = *s_14(D);
-  glm::vec<4, float, (glm::qualifier)0u>::vec<int, int, int, float> (&D.145987, 0, 0, 0, _30);
-  _32 = &this_5(D)->value[3];
-  glm::vec<4, float, (glm::qualifier)0u>::operator= (_32, &D.145987);
-  D.145987 ={v} {CLOBBER};
-  return;
-
-}
-
-
-
-;; Function glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EEixEi, funcdef_no=5874, decl_uid=137473, cgraph_uid=2232, symbol_order=2237)
-
-glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct mat * const this, length_type i)
-{
-  static const char __PRETTY_FUNCTION__[270] = "glm::mat<4, 4, T, Q>::col_type& glm::mat<4, 4, T, Q>::operator[](glm::mat<4, 4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::mat<4, 4, T, Q>::col_type = glm::vec<4, float, (glm::qualifier)0u>; glm::mat<4, 4, T, Q>::length_type = int]";
-  struct col_type & D.147610;
-  int D.147606;
-  int _3;
-  struct col_type & _6;
-
-  <bb 2>:
-  _3 = glm::mat<4, 4, float, (glm::qualifier)0u>::length ();
-  if (_3 > i_4(D))
-    goto <bb 4>;
-  else
-    goto <bb 3>;
-
-  <bb 3>:
-  __assert_fail ("i < this->length()", "/home/benjamin/Videos/openGLSeries/code/vendor/glm/gtc/.././ext/../detail/type_mat4x4.inl", 291, &__PRETTY_FUNCTION__);
-
-  <bb 4>:
-  _6 = &this_5(D)->value[i_4(D)];
-
-<L3>:
-  return _6;
-
-}
-
-
-
-;; Function T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEixEi, funcdef_no=5875, decl_uid=95655, cgraph_uid=2233, symbol_order=2238)
+;; Function T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEixEi, funcdef_no=6151, decl_uid=100809, cgraph_uid=2479, symbol_order=2484)
 
 T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, length_type i)
 {
   static const char __PRETTY_FUNCTION__[159] = "T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float; glm::qualifier Q = (glm::qualifier)0u; glm::vec<4, T, Q>::length_type = int]";
-  float & D.147619;
-  int D.147617;
+  float & D.152793;
+  int D.152791;
   float & _1;
   int _6;
   float & _8;
@@ -1691,19 +2718,19 @@ T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float
   switch (i_3(D)) <default: <L4>, case 1: <L6>, case 2: <L7>, case 3: <L8>>
 
 <L4>:
-  _8 = &this_7(D)->D.95630.x;
+  _8 = &this_7(D)->D.100784.x;
   goto <bb 11> (<L9>);
 
 <L6>:
-  _9 = &this_7(D)->D.95636.y;
+  _9 = &this_7(D)->D.100790.y;
   goto <bb 11> (<L9>);
 
 <L7>:
-  _10 = &this_7(D)->D.95642.z;
+  _10 = &this_7(D)->D.100796.z;
   goto <bb 11> (<L9>);
 
 <L8>:
-  _11 = &this_7(D)->D.95648.w;
+  _11 = &this_7(D)->D.100802.w;
 
   # _1 = PHI <_8(7), _9(8), _10(9), _11(10)>
 <L9>:
@@ -1713,11 +2740,85 @@ T& glm::vec<4, T, Q>::operator[](glm::vec<4, T, Q>::length_type) [with T = float
 
 
 
-;; Function std::allocator< <template-parameter-1-1> >::allocator() [with _Tp = VertexBufferElement] (_ZNSaI19VertexBufferElementEC2Ev, funcdef_no=5918, decl_uid=136438, cgraph_uid=2276, symbol_order=2281)
+;; Function static glm::mat<4, 4, T, Q>::length_type glm::mat<4, 4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EE6lengthEv, funcdef_no=6152, decl_uid=142382, cgraph_uid=2480, symbol_order=2485)
+
+static glm::mat<4, 4, T, Q>::length_type glm::mat<4, 4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] ()
+{
+  length_type D.152786;
+  length_type _1;
+
+  <bb 2>:
+  _1 = 4;
+
+<L0>:
+  return _1;
+
+}
+
+
+
+;; Function static glm::vec<3, T, Q>::length_type glm::vec<3, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi3EfLNS_9qualifierE0EE6lengthEv, funcdef_no=6153, decl_uid=126707, cgraph_uid=2481, symbol_order=2486)
+
+static glm::vec<3, T, Q>::length_type glm::vec<3, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] ()
+{
+  length_type D.152865;
+  length_type _1;
+
+  <bb 2>:
+  _1 = 3;
+
+<L0>:
+  return _1;
+
+}
+
+
+
+;; Function glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator+=(const glm::vec<4, U, Q>&) [with U = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEpLIfEERS2_RKNS0_ILi4ET_LS1_0EEE, funcdef_no=6154, decl_uid=150040, cgraph_uid=2482, symbol_order=2487)
+
+glm::vec<4, T, Q>& glm::vec<4, T, Q>::operator+=(const glm::vec<4, U, Q>&) [with U = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, const struct vec & v)
+{
+  struct vec D.151201;
+  struct vec D.151202;
+  struct vec & D.152908;
+  struct vec & _7;
+
+  <bb 2>:
+  glm::vec<4, float, (glm::qualifier)0u>::vec (&D.151201, v_2(D));
+  D.151202 = glm::detail::compute_vec4_add<float, (glm::qualifier)0u, false>::call (this_4(D), &D.151201); [return slot optimization]
+  _7 = glm::vec<4, float, (glm::qualifier)0u>::operator= (this_4(D), &D.151202);
+  D.151202 ={v} {CLOBBER};
+  D.151201 ={v} {CLOBBER};
+
+<L2>:
+  return _7;
+
+}
+
+
+
+;; Function static glm::vec<4, T, Q>::length_type glm::vec<4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EE6lengthEv, funcdef_no=6155, decl_uid=100808, cgraph_uid=2483, symbol_order=2488)
+
+static glm::vec<4, T, Q>::length_type glm::vec<4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] ()
+{
+  length_type D.152795;
+  length_type _1;
+
+  <bb 2>:
+  _1 = 4;
+
+<L0>:
+  return _1;
+
+}
+
+
+
+;; Function std::allocator< <template-parameter-1-1> >::allocator() [with _Tp = VertexBufferElement] (_ZNSaI19VertexBufferElementEC2Ev, funcdef_no=6198, decl_uid=141348, cgraph_uid=2526, symbol_order=2531)
 
 std::allocator< <template-parameter-1-1> >::allocator() [with _Tp = VertexBufferElement] (struct allocator * const this)
 {
-  void * D.147327;
+  void * D.152535;
 
   <bb 2>:
   __gnu_cxx::new_allocator<VertexBufferElement>::new_allocator (this_2(D));
@@ -1727,7 +2828,7 @@ std::allocator< <template-parameter-1-1> >::allocator() [with _Tp = VertexBuffer
 
 
 
-;; Function static void std::allocator_traits<std::allocator<_CharT> >::deallocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::pointer, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE10deallocateERS1_PS0_m, funcdef_no=5920, decl_uid=136128, cgraph_uid=2278, symbol_order=2283)
+;; Function static void std::allocator_traits<std::allocator<_CharT> >::deallocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::pointer, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE10deallocateERS1_PS0_m, funcdef_no=6200, decl_uid=141038, cgraph_uid=2528, symbol_order=2533)
 
 static void std::allocator_traits<std::allocator<_CharT> >::deallocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::pointer, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (struct allocator_type & __a, struct VertexBufferElement * __p, size_type __n)
 {
@@ -1739,9 +2840,9 @@ static void std::allocator_traits<std::allocator<_CharT> >::deallocate(std::allo
 
 
 
-;; Function static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZNSt12_Destroy_auxILb1EE9__destroyIP19VertexBufferElementEEvT_S4_, funcdef_no=5921, decl_uid=145281, cgraph_uid=2279, symbol_order=2284)
+;; Function static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (_ZNSt12_Destroy_auxILb1EE9__destroyIP19VertexBufferElementEEvT_S4_, funcdef_no=6201, decl_uid=150561, cgraph_uid=2529, symbol_order=2534)
 
-static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (struct VertexBufferElement * D.145282, struct VertexBufferElement * D.145283)
+static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterator) [with _ForwardIterator = VertexBufferElement*] (struct VertexBufferElement * D.150562, struct VertexBufferElement * D.150563)
 {
   <bb 2>:
   GIMPLE_NOP
@@ -1751,19 +2852,19 @@ static void std::_Destroy_aux<true>::__destroy(_ForwardIterator, _ForwardIterato
 
 
 
-;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE8max_sizeEv, funcdef_no=5926, decl_uid=136703, cgraph_uid=2284, symbol_order=2289)
+;; Function std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (_ZNKSt6vectorI19VertexBufferElementSaIS0_EE8max_sizeEv, funcdef_no=6206, decl_uid=141613, cgraph_uid=2534, symbol_order=2539)
 
 std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [with _Tp = VertexBufferElement; _Alloc = std::allocator<VertexBufferElement>] (const struct vector * const this)
 {
-  const struct _Tp_alloc_type & D.147422;
-  const struct _Vector_base * D.147421;
-  size_type D.147420;
+  const struct _Tp_alloc_type & D.152630;
+  const struct _Vector_base * D.152629;
+  size_type D.152628;
   const struct _Vector_base * _2;
   const struct _Tp_alloc_type & _5;
   size_type _7;
 
   <bb 2>:
-  _2 = &this_1(D)->D.137159;
+  _2 = &this_1(D)->D.142069;
   _5 = std::_Vector_base<VertexBufferElement, std::allocator<VertexBufferElement> >::_M_get_Tp_allocator (_2);
   _7 = std::allocator_traits<std::allocator<VertexBufferElement> >::max_size (_5);
 
@@ -1774,12 +2875,12 @@ std::vector<_Tp, _Alloc>::size_type std::vector<_Tp, _Alloc>::max_size() const [
 
 
 
-;; Function static _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8allocateERS1_m, funcdef_no=5927, decl_uid=136121, cgraph_uid=2285, symbol_order=2290)
+;; Function static _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8allocateERS1_m, funcdef_no=6207, decl_uid=141031, cgraph_uid=2535, symbol_order=2540)
 
 static _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(std::allocator_traits<std::allocator<_CharT> >::allocator_type&, std::allocator_traits<std::allocator<_CharT> >::size_type) [with _Tp = VertexBufferElement] (struct allocator_type & __a, size_type __n)
 {
-  struct VertexBufferElement * D.147440;
-  struct VertexBufferElement * D.147438;
+  struct VertexBufferElement * D.152648;
+  struct VertexBufferElement * D.152646;
   struct VertexBufferElement * _5;
   struct VertexBufferElement * _6;
 
@@ -1794,31 +2895,31 @@ static _Tp* std::allocator_traits<std::allocator<_CharT> >::allocate(std::alloca
 
 
 
-;; Function _ReturnType std::__make_move_if_noexcept_iterator(_Tp*) [with _Tp = VertexBufferElement; _ReturnType = std::move_iterator<VertexBufferElement*>] (_ZSt32__make_move_if_noexcept_iteratorI19VertexBufferElementSt13move_iteratorIPS0_EET0_PT_, funcdef_no=5928, decl_uid=145754, cgraph_uid=2286, symbol_order=2291)
+;; Function _ReturnType std::__make_move_if_noexcept_iterator(_Tp*) [with _Tp = VertexBufferElement; _ReturnType = std::move_iterator<VertexBufferElement*>] (_ZSt32__make_move_if_noexcept_iteratorI19VertexBufferElementSt13move_iteratorIPS0_EET0_PT_, funcdef_no=6208, decl_uid=151034, cgraph_uid=2536, symbol_order=2541)
 
 _ReturnType std::__make_move_if_noexcept_iterator(_Tp*) [with _Tp = VertexBufferElement; _ReturnType = std::move_iterator<VertexBufferElement*>] (struct VertexBufferElement * __i)
 {
-  struct move_iterator D.146802;
-  struct move_iterator D.147454;
+  struct move_iterator D.152007;
+  struct move_iterator D.152662;
 
   <bb 2>:
-  std::move_iterator<VertexBufferElement*>::move_iterator (&D.146802, __i_2(D));
-  D.147454 = D.146802;
-  D.146802 ={v} {CLOBBER};
+  std::move_iterator<VertexBufferElement*>::move_iterator (&D.152007, __i_2(D));
+  D.152662 = D.152007;
+  D.152007 ={v} {CLOBBER};
 
 <L1>:
-  return D.147454;
+  return D.152662;
 
 }
 
 
 
-;; Function _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt22__uninitialized_copy_aISt13move_iteratorIP19VertexBufferElementES2_S1_ET0_T_S5_S4_RSaIT1_E, funcdef_no=5929, decl_uid=145861, cgraph_uid=2287, symbol_order=2292)
+;; Function _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (_ZSt22__uninitialized_copy_aISt13move_iteratorIP19VertexBufferElementES2_S1_ET0_T_S5_S4_RSaIT1_E, funcdef_no=6209, decl_uid=151141, cgraph_uid=2537, symbol_order=2542)
 
-_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result, struct allocator & D.145865)
+_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, std::allocator<_Tp>&) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*; _Tp = VertexBufferElement] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result, struct allocator & D.151145)
 {
-  struct VertexBufferElement * D.147459;
-  struct VertexBufferElement * D.147457;
+  struct VertexBufferElement * D.152667;
+  struct VertexBufferElement * D.152665;
   struct VertexBufferElement * _4;
   struct VertexBufferElement * _5;
 
@@ -1833,7 +2934,7 @@ _ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _Fo
 
 
 
-;; Function void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE7destroyIS1_EEvPT_, funcdef_no=5930, decl_uid=145899, cgraph_uid=2288, symbol_order=2293)
+;; Function void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE7destroyIS1_EEvPT_, funcdef_no=6210, decl_uid=151179, cgraph_uid=2538, symbol_order=2543)
 
 void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElement; _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p)
 {
@@ -1845,157 +2946,58 @@ void __gnu_cxx::new_allocator<_Tp>::destroy(_Up*) [with _Up = VertexBufferElemen
 
 
 
-;; Function glm::vec<4, T, Q>::vec() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2Ev, funcdef_no=5932, decl_uid=97554, cgraph_uid=2290, symbol_order=2295)
+;; Function static glm::vec<4, T, Q> glm::detail::compute_vec4_add<T, Q, Aligned>::call(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u; bool Aligned = false] (_ZN3glm6detail16compute_vec4_addIfLNS_9qualifierE0ELb0EE4callERKNS_3vecILi4EfLS2_0EEES7_, funcdef_no=6211, decl_uid=151197, cgraph_uid=2539, symbol_order=2544)
 
-glm::vec<4, T, Q>::vec() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this)
+static glm::vec<4, T, Q> glm::detail::compute_vec4_add<T, Q, Aligned>::call(const glm::vec<4, T, Q>&, const glm::vec<4, T, Q>&) [with T = float; glm::qualifier Q = (glm::qualifier)0u; bool Aligned = false] (const struct vec & a, const struct vec & b)
 {
-  <bb 2>:
-  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  return;
-
-}
-
-
-
-;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = float; Y = int; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IfiiiEET_T0_T1_T2_, funcdef_no=5935, decl_uid=145918, cgraph_uid=2293, symbol_order=2298)
-
-glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = float; Y = int; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, float _x, int _y, int _z, int _w)
-{
-  float D.147590;
-  float D.147589;
-  float D.147588;
+  float D.152924;
+  float D.152923;
+  float D.152922;
+  float D.152921;
+  float D.152920;
+  float D.152919;
+  float D.152918;
+  float D.152917;
+  float D.152916;
+  float D.152915;
+  float D.152914;
+  float D.152913;
+  float _3;
+  float _5;
+  float _6;
   float _7;
-  float _10;
-  float _13;
-
-  <bb 2>:
-  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  this_2(D)->D.95630.x = _x_4(D);
-  _7 = (float) _y_6(D);
-  this_2(D)->D.95636.y = _7;
-  _10 = (float) _z_9(D);
-  this_2(D)->D.95642.z = _10;
-  _13 = (float) _w_12(D);
-  this_2(D)->D.95648.w = _13;
-  return;
-
-}
-
-
-
-;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = float; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IifiiEET_T0_T1_T2_, funcdef_no=5938, decl_uid=145937, cgraph_uid=2296, symbol_order=2301)
-
-glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = float; Z = int; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, float _y, int _z, int _w)
-{
-  float D.147593;
-  float D.147592;
-  float D.147591;
-  float _5;
-  float _10;
-  float _13;
-
-  <bb 2>:
-  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  _5 = (float) _x_4(D);
-  this_2(D)->D.95630.x = _5;
-  this_2(D)->D.95636.y = _y_7(D);
-  _10 = (float) _z_9(D);
-  this_2(D)->D.95642.z = _10;
-  _13 = (float) _w_12(D);
-  this_2(D)->D.95648.w = _13;
-  return;
-
-}
-
-
-
-;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = float; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IiifiEET_T0_T1_T2_, funcdef_no=5941, decl_uid=145956, cgraph_uid=2299, symbol_order=2304)
-
-glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = float; W = int; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, int _y, float _z, int _w)
-{
-  float D.147596;
-  float D.147595;
-  float D.147594;
-  float _5;
   float _8;
-  float _13;
-
-  <bb 2>:
-  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  _5 = (float) _x_4(D);
-  this_2(D)->D.95630.x = _5;
-  _8 = (float) _y_7(D);
-  this_2(D)->D.95636.y = _8;
-  this_2(D)->D.95642.z = _z_10(D);
-  _13 = (float) _w_12(D);
-  this_2(D)->D.95648.w = _13;
-  return;
-
-}
-
-
-
-;; Function glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = int; W = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EEC2IiiifEET_T0_T1_T2_, funcdef_no=5944, decl_uid=145975, cgraph_uid=2302, symbol_order=2307)
-
-glm::vec<4, T, Q>::vec(X, Y, Z, W) [with X = int; Y = int; Z = int; W = float; T = float; glm::qualifier Q = (glm::qualifier)0u] (struct vec * const this, int _x, int _y, int _z, float _w)
-{
-  float D.147599;
-  float D.147598;
-  float D.147597;
-  float _5;
-  float _8;
+  float _9;
+  float _10;
   float _11;
+  float _12;
+  float _13;
+  float _14;
+  float _15;
 
   <bb 2>:
-  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
-  _5 = (float) _x_4(D);
-  this_2(D)->D.95630.x = _5;
-  _8 = (float) _y_7(D);
-  this_2(D)->D.95636.y = _8;
-  _11 = (float) _z_10(D);
-  this_2(D)->D.95642.z = _11;
-  this_2(D)->D.95648.w = _w_13(D);
-  return;
-
-}
-
-
-
-;; Function static glm::mat<4, 4, T, Q>::length_type glm::mat<4, 4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3matILi4ELi4EfLNS_9qualifierE0EE6lengthEv, funcdef_no=5946, decl_uid=137472, cgraph_uid=2304, symbol_order=2309)
-
-static glm::mat<4, 4, T, Q>::length_type glm::mat<4, 4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] ()
-{
-  length_type D.147612;
-  length_type _1;
-
-  <bb 2>:
-  _1 = 4;
+  _3 = a_2(D)->D.100802.w;
+  _5 = b_4(D)->D.100802.w;
+  _6 = _3 + _5;
+  _7 = a_2(D)->D.100796.z;
+  _8 = b_4(D)->D.100796.z;
+  _9 = _7 + _8;
+  _10 = a_2(D)->D.100790.y;
+  _11 = b_4(D)->D.100790.y;
+  _12 = _10 + _11;
+  _13 = a_2(D)->D.100784.x;
+  _14 = b_4(D)->D.100784.x;
+  _15 = _13 + _14;
+  glm::vec<4, float, (glm::qualifier)0u>::vec (_16(D), _15, _12, _9, _6);
 
 <L0>:
-  return _1;
+  return _16(D);
 
 }
 
 
 
-;; Function static glm::vec<4, T, Q>::length_type glm::vec<4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] (_ZN3glm3vecILi4EfLNS_9qualifierE0EE6lengthEv, funcdef_no=5947, decl_uid=95654, cgraph_uid=2305, symbol_order=2310)
-
-static glm::vec<4, T, Q>::length_type glm::vec<4, T, Q>::length() [with T = float; glm::qualifier Q = (glm::qualifier)0u] ()
-{
-  length_type D.147621;
-  length_type _1;
-
-  <bb 2>:
-  _1 = 4;
-
-<L0>:
-  return _1;
-
-}
-
-
-
-;; Function __gnu_cxx::new_allocator<_Tp>::new_allocator() [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementEC2Ev, funcdef_no=5981, decl_uid=136373, cgraph_uid=2339, symbol_order=2344)
+;; Function __gnu_cxx::new_allocator<_Tp>::new_allocator() [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementEC2Ev, funcdef_no=6245, decl_uid=141283, cgraph_uid=2573, symbol_order=2578)
 
 __gnu_cxx::new_allocator<_Tp>::new_allocator() [with _Tp = VertexBufferElement] (struct new_allocator * const this)
 {
@@ -2006,9 +3008,9 @@ __gnu_cxx::new_allocator<_Tp>::new_allocator() [with _Tp = VertexBufferElement] 
 
 
 
-;; Function void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE10deallocateEPS1_m, funcdef_no=5983, decl_uid=136327, cgraph_uid=2341, symbol_order=2346)
+;; Function void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE10deallocateEPS1_m, funcdef_no=6247, decl_uid=141237, cgraph_uid=2575, symbol_order=2580)
 
-void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p, size_type D.136330)
+void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::pointer, __gnu_cxx::new_allocator<_Tp>::size_type) [with _Tp = VertexBufferElement] (struct new_allocator * const this, struct VertexBufferElement * __p, size_type D.141240)
 {
   <bb 2>:
   operator delete (__p_2(D));
@@ -2018,11 +3020,11 @@ void __gnu_cxx::new_allocator<_Tp>::deallocate(__gnu_cxx::new_allocator<_Tp>::po
 
 
 
-;; Function static std::allocator_traits<std::allocator<_CharT> >::size_type std::allocator_traits<std::allocator<_CharT> >::max_size(const allocator_type&) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8max_sizeERKS1_, funcdef_no=5985, decl_uid=136156, cgraph_uid=2343, symbol_order=2348)
+;; Function static std::allocator_traits<std::allocator<_CharT> >::size_type std::allocator_traits<std::allocator<_CharT> >::max_size(const allocator_type&) [with _Tp = VertexBufferElement] (_ZNSt16allocator_traitsISaI19VertexBufferElementEE8max_sizeERKS1_, funcdef_no=6249, decl_uid=141066, cgraph_uid=2577, symbol_order=2582)
 
 static std::allocator_traits<std::allocator<_CharT> >::size_type std::allocator_traits<std::allocator<_CharT> >::max_size(const allocator_type&) [with _Tp = VertexBufferElement] (const struct allocator_type & __a)
 {
-  size_type D.147426;
+  size_type D.152634;
   size_type _4;
 
   <bb 2>:
@@ -2035,14 +3037,14 @@ static std::allocator_traits<std::allocator<_CharT> >::size_type std::allocator_
 
 
 
-;; Function _Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE8allocateEmPKv, funcdef_no=5986, decl_uid=136323, cgraph_uid=2344, symbol_order=2349)
+;; Function _Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement] (_ZN9__gnu_cxx13new_allocatorI19VertexBufferElementE8allocateEmPKv, funcdef_no=6250, decl_uid=141233, cgraph_uid=2578, symbol_order=2583)
 
-_Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement] (struct new_allocator * const this, size_type __n, const void * D.136326)
+_Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size_type, const void*) [with _Tp = VertexBufferElement] (struct new_allocator * const this, size_type __n, const void * D.141236)
 {
-  struct VertexBufferElement * D.147448;
-  long unsigned int D.147446;
-  struct VertexBufferElement * D.147445;
-  long unsigned int D.147442;
+  struct VertexBufferElement * D.152656;
+  long unsigned int D.152654;
+  struct VertexBufferElement * D.152653;
+  long unsigned int D.152650;
   bool retval.11;
   long unsigned int _4;
   bool retval.11_6;
@@ -2073,7 +3075,7 @@ _Tp* __gnu_cxx::new_allocator<_Tp>::allocate(__gnu_cxx::new_allocator<_Tp>::size
 
 
 
-;; Function std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iterator_type) [with _Iterator = VertexBufferElement*] (_ZNSt13move_iteratorIP19VertexBufferElementEC2ES1_, funcdef_no=5988, decl_uid=145842, cgraph_uid=2346, symbol_order=2351)
+;; Function std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iterator_type) [with _Iterator = VertexBufferElement*] (_ZNSt13move_iteratorIP19VertexBufferElementEC2ES1_, funcdef_no=6252, decl_uid=151122, cgraph_uid=2580, symbol_order=2585)
 
 std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iterator_type) [with _Iterator = VertexBufferElement*] (struct move_iterator * const this, struct VertexBufferElement * __i)
 {
@@ -2086,13 +3088,13 @@ std::move_iterator<_Iterator>::move_iterator(std::move_iterator<_Iterator>::iter
 
 
 
-;; Function _ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZSt18uninitialized_copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=5990, decl_uid=146804, cgraph_uid=2348, symbol_order=2353)
+;; Function _ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZSt18uninitialized_copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=6254, decl_uid=152009, cgraph_uid=2582, symbol_order=2587)
 
 _ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
 {
-  struct VertexBufferElement * D.147462;
+  struct VertexBufferElement * D.152670;
   const bool __assignable;
-  struct VertexBufferElement * D.147460;
+  struct VertexBufferElement * D.152668;
   struct VertexBufferElement * _5;
   struct VertexBufferElement * _6;
 
@@ -2108,11 +3110,11 @@ _ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _Forwar
 
 
 
-;; Function __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = VertexBufferElement] (_ZNK9__gnu_cxx13new_allocatorI19VertexBufferElementE8max_sizeEv, funcdef_no=6020, decl_uid=136331, cgraph_uid=2378, symbol_order=2383)
+;; Function __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = VertexBufferElement] (_ZNK9__gnu_cxx13new_allocatorI19VertexBufferElementE8max_sizeEv, funcdef_no=6284, decl_uid=141241, cgraph_uid=2612, symbol_order=2617)
 
 __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = VertexBufferElement] (const struct new_allocator * const this)
 {
-  size_type D.147428;
+  size_type D.152636;
   size_type _1;
 
   <bb 2>:
@@ -2125,12 +3127,12 @@ __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size
 
 
 
-;; Function static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt13move_iteratorIP19VertexBufferElementES4_EET0_T_S7_S6_, funcdef_no=6021, decl_uid=147013, cgraph_uid=2379, symbol_order=2384)
+;; Function static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (_ZNSt20__uninitialized_copyILb1EE13__uninit_copyISt13move_iteratorIP19VertexBufferElementES4_EET0_T_S7_S6_, funcdef_no=6285, decl_uid=152203, cgraph_uid=2613, symbol_order=2618)
 
 static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<VertexBufferElement*>; _ForwardIterator = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
 {
-  struct VertexBufferElement * D.147465;
-  struct VertexBufferElement * D.147463;
+  struct VertexBufferElement * D.152673;
+  struct VertexBufferElement * D.152671;
   struct VertexBufferElement * _4;
   struct VertexBufferElement * _5;
 
@@ -2145,11 +3147,11 @@ static _ForwardIterator std::__uninitialized_copy<true>::__uninit_copy(_InputIte
 
 
 
-;; Function _Iterator std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*] (_ZSt12__niter_baseIP19VertexBufferElementET_S2_, funcdef_no=6033, decl_uid=147081, cgraph_uid=2391, symbol_order=2396)
+;; Function _Iterator std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*] (_ZSt12__niter_baseIP19VertexBufferElementET_S2_, funcdef_no=6297, decl_uid=152271, cgraph_uid=2625, symbol_order=2630)
 
 _Iterator std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*] (struct VertexBufferElement * __it)
 {
-  struct VertexBufferElement * D.147486;
+  struct VertexBufferElement * D.152694;
   struct VertexBufferElement * _2;
 
   <bb 2>:
@@ -2162,16 +3164,16 @@ _Iterator std::__niter_base(_Iterator) [with _Iterator = VertexBufferElement*] (
 
 
 
-;; Function _OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*>; _OI = VertexBufferElement*] (_ZSt4copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=6035, decl_uid=147089, cgraph_uid=2393, symbol_order=2398)
+;; Function _OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*>; _OI = VertexBufferElement*] (_ZSt4copyISt13move_iteratorIP19VertexBufferElementES2_ET0_T_S5_S4_, funcdef_no=6299, decl_uid=152279, cgraph_uid=2627, symbol_order=2632)
 
 _OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*>; _OI = VertexBufferElement*] (struct move_iterator __first, struct move_iterator __last, struct VertexBufferElement * __result)
 {
-  struct VertexBufferElement * D.147472;
-  struct VertexBufferElement * D.147471;
-  struct VertexBufferElement * D.147470;
-  struct VertexBufferElement * D.147468;
-  struct VertexBufferElement * D.147467;
-  struct VertexBufferElement * D.147466;
+  struct VertexBufferElement * D.152680;
+  struct VertexBufferElement * D.152679;
+  struct VertexBufferElement * D.152678;
+  struct VertexBufferElement * D.152676;
+  struct VertexBufferElement * D.152675;
+  struct VertexBufferElement * D.152674;
   struct VertexBufferElement * _3;
   struct VertexBufferElement * _4;
   struct VertexBufferElement * _6;
@@ -2194,12 +3196,12 @@ _OI std::copy(_II, _II, _OI) [with _II = std::move_iterator<VertexBufferElement*
 
 
 
-;; Function decltype (std::__miter_base(__it.base())) std::__miter_base(std::move_iterator<_IteratorL>) [with _Iterator = VertexBufferElement*] (_ZSt12__miter_baseIP19VertexBufferElementEDTcl12__miter_basecldtfp_4baseEEESt13move_iteratorIT_E, funcdef_no=6040, decl_uid=147164, cgraph_uid=2398, symbol_order=2403)
+;; Function decltype (std::__miter_base(__it.base())) std::__miter_base(std::move_iterator<_IteratorL>) [with _Iterator = VertexBufferElement*] (_ZSt12__miter_baseIP19VertexBufferElementEDTcl12__miter_basecldtfp_4baseEEESt13move_iteratorIT_E, funcdef_no=6304, decl_uid=152354, cgraph_uid=2632, symbol_order=2637)
 
 decltype (std::__miter_base(__it.base())) std::__miter_base(std::move_iterator<_IteratorL>) [with _Iterator = VertexBufferElement*] (struct move_iterator __it)
 {
-  struct VertexBufferElement * D.147474;
-  struct VertexBufferElement * D.147473;
+  struct VertexBufferElement * D.152682;
+  struct VertexBufferElement * D.152681;
   struct VertexBufferElement * _3;
   struct VertexBufferElement * _5;
 
@@ -2214,15 +3216,15 @@ decltype (std::__miter_base(__it.base())) std::__miter_base(std::move_iterator<_
 
 
 
-;; Function _OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt14__copy_move_a2ILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=6041, decl_uid=147170, cgraph_uid=2399, symbol_order=2404)
+;; Function _OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt14__copy_move_a2ILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=6305, decl_uid=152360, cgraph_uid=2633, symbol_order=2638)
 
 _OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result)
 {
-  struct VertexBufferElement * D.147485;
-  struct VertexBufferElement * D.147483;
-  struct VertexBufferElement * D.147482;
-  struct VertexBufferElement * D.147481;
-  struct VertexBufferElement * D.147480;
+  struct VertexBufferElement * D.152693;
+  struct VertexBufferElement * D.152691;
+  struct VertexBufferElement * D.152690;
+  struct VertexBufferElement * D.152689;
+  struct VertexBufferElement * D.152688;
   struct VertexBufferElement * _4;
   struct VertexBufferElement * _7;
   struct VertexBufferElement * _10;
@@ -2243,11 +3245,11 @@ _OI std::__copy_move_a2(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBu
 
 
 
-;; Function std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base() const [with _Iterator = VertexBufferElement*] (_ZNKSt13move_iteratorIP19VertexBufferElementE4baseEv, funcdef_no=6042, decl_uid=145800, cgraph_uid=2400, symbol_order=2405)
+;; Function std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base() const [with _Iterator = VertexBufferElement*] (_ZNKSt13move_iteratorIP19VertexBufferElementE4baseEv, funcdef_no=6306, decl_uid=151080, cgraph_uid=2634, symbol_order=2639)
 
 std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base() const [with _Iterator = VertexBufferElement*] (const struct move_iterator * const this)
 {
-  struct VertexBufferElement * D.147476;
+  struct VertexBufferElement * D.152684;
   struct VertexBufferElement * _3;
 
   <bb 2>:
@@ -2260,11 +3262,11 @@ std::move_iterator<_Iterator>::iterator_type std::move_iterator<_Iterator>::base
 
 
 
-;; Function _Iterator std::__miter_base(_Iterator) [with _Iterator = VertexBufferElement*] (_ZSt12__miter_baseIP19VertexBufferElementET_S2_, funcdef_no=6043, decl_uid=147162, cgraph_uid=2401, symbol_order=2406)
+;; Function _Iterator std::__miter_base(_Iterator) [with _Iterator = VertexBufferElement*] (_ZSt12__miter_baseIP19VertexBufferElementET_S2_, funcdef_no=6307, decl_uid=152352, cgraph_uid=2635, symbol_order=2640)
 
 _Iterator std::__miter_base(_Iterator) [with _Iterator = VertexBufferElement*] (struct VertexBufferElement * __it)
 {
-  struct VertexBufferElement * D.147478;
+  struct VertexBufferElement * D.152686;
   struct VertexBufferElement * _2;
 
   <bb 2>:
@@ -2277,12 +3279,12 @@ _Iterator std::__miter_base(_Iterator) [with _Iterator = VertexBufferElement*] (
 
 
 
-;; Function _OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt13__copy_move_aILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=6044, decl_uid=147191, cgraph_uid=2402, symbol_order=2407)
+;; Function _OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (_ZSt13__copy_move_aILb1EP19VertexBufferElementS1_ET1_T0_S3_S2_, funcdef_no=6308, decl_uid=152381, cgraph_uid=2636, symbol_order=2641)
 
 _OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBufferElement*; _OI = VertexBufferElement*] (struct VertexBufferElement * __first, struct VertexBufferElement * __last, struct VertexBufferElement * __result)
 {
   const bool __simple;
-  struct VertexBufferElement * D.147488;
+  struct VertexBufferElement * D.152696;
   struct VertexBufferElement * _7;
 
   <bb 2>:
@@ -2296,17 +3298,17 @@ _OI std::__copy_move_a(_II, _II, _OI) [with bool _IsMove = true; _II = VertexBuf
 
 
 
-;; Function static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = VertexBufferElement; bool _IsMove = true] (_ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mI19VertexBufferElementEEPT_PKS4_S7_S5_, funcdef_no=6045, decl_uid=147220, cgraph_uid=2403, symbol_order=2408)
+;; Function static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = VertexBufferElement; bool _IsMove = true] (_ZNSt11__copy_moveILb1ELb1ESt26random_access_iterator_tagE8__copy_mI19VertexBufferElementEEPT_PKS4_S7_S5_, funcdef_no=6309, decl_uid=152410, cgraph_uid=2637, symbol_order=2642)
 
 static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__copy_m(const _Tp*, const _Tp*, _Tp*) [with _Tp = VertexBufferElement; bool _IsMove = true] (const struct VertexBufferElement * __first, const struct VertexBufferElement * __last, struct VertexBufferElement * __result)
 {
   const ptrdiff_t _Num;
-  long unsigned int D.147500;
+  long unsigned int D.152708;
   long unsigned int _Num.15;
-  struct VertexBufferElement * D.147498;
-  long unsigned int D.147496;
+  struct VertexBufferElement * D.152706;
+  long unsigned int D.152704;
   long unsigned int _Num.14;
-  long int D.147492;
+  long int D.152700;
   long int __first.13;
   long int __last.12;
   long int __last.12_3;
@@ -2345,7 +3347,7 @@ static _Tp* std::__copy_move<_IsMove, true, std::random_access_iterator_tag>::__
 
 
 
-;; Function void __static_initialization_and_destruction_0(int, int) (_Z41__static_initialization_and_destruction_0ii, funcdef_no=6046, decl_uid=147243, cgraph_uid=2404, symbol_order=2467)
+;; Function void __static_initialization_and_destruction_0(int, int) (_Z41__static_initialization_and_destruction_0ii, funcdef_no=6310, decl_uid=152433, cgraph_uid=2638, symbol_order=2701)
 
 void __static_initialization_and_destruction_0(int, int) (int __initialize_p, int __priority)
 {
@@ -2372,7 +3374,7 @@ void __static_initialization_and_destruction_0(int, int) (int __initialize_p, in
 
 
 
-;; Function (static initializers for /home/benjamin/Videos/openGLSeries/code/opengl.cpp) (_GLOBAL__sub_I_main, funcdef_no=6047, decl_uid=147252, cgraph_uid=2405, symbol_order=3037)
+;; Function (static initializers for /home/benjamin/Videos/openGLSeries/code/opengl.cpp) (_GLOBAL__sub_I_main, funcdef_no=6311, decl_uid=152442, cgraph_uid=2639, symbol_order=3271)
 
 (static initializers for /home/benjamin/Videos/openGLSeries/code/opengl.cpp) ()
 {

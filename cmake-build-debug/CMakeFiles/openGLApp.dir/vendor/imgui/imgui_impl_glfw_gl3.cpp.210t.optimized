@@ -1,0 +1,2753 @@
+
+;; Function ImVec2::ImVec2(float, float) (_ZN6ImVec2C2Eff, funcdef_no=4, decl_uid=2361, cgraph_uid=4, symbol_order=4)
+
+ImVec2::ImVec2(float, float) (struct ImVec2 * const this, float _x, float _y)
+{
+  <bb 2>:
+  MEM[(struct  &)this_2(D)] ={v} {CLOBBER};
+  this_2(D)->x = _x_4(D);
+  this_2(D)->y = _y_6(D);
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfwGL3_RenderDrawData(ImDrawData*) (_Z32ImGui_ImplGlfwGL3_RenderDrawDataP10ImDrawData, funcdef_no=175, decl_uid=7182, cgraph_uid=145, symbol_order=161)
+
+void ImGui_ImplGlfwGL3_RenderDrawData(ImDrawData*) (struct ImDrawData * draw_data)
+{
+  GLboolean D.24547;
+  GLboolean D.24546;
+  GLboolean D.24545;
+  GLboolean D.24544;
+  struct ImGuiIO & D.24543;
+  const struct ImDrawCmd * pcmd;
+  int cmd_i;
+  const ImDrawIdx * idx_buffer_offset;
+  const struct ImDrawList * cmd_list;
+  int n;
+  GLuint vao_handle;
+  const float ortho_projection[4][4];
+  GLboolean last_enable_scissor_test;
+  GLboolean last_enable_depth_test;
+  GLboolean last_enable_cull_face;
+  GLboolean last_enable_blend;
+  GLenum last_blend_equation_alpha;
+  GLenum last_blend_equation_rgb;
+  GLenum last_blend_dst_alpha;
+  GLenum last_blend_src_alpha;
+  GLenum last_blend_dst_rgb;
+  GLenum last_blend_src_rgb;
+  GLint last_scissor_box[4];
+  GLint last_viewport[4];
+  GLint last_polygon_mode[2];
+  GLint last_vertex_array;
+  GLint last_element_array_buffer;
+  GLint last_array_buffer;
+  GLint last_sampler;
+  GLint last_texture;
+  GLint last_program;
+  GLenum last_active_texture;
+  int fb_height;
+  int fb_width;
+  struct ImGuiIO & io;
+  int D.24541;
+  int D.24540;
+  int D.24539;
+  int D.24538;
+  int D.24537;
+  int D.24536;
+  int D.24535;
+  int D.24534;
+  unsigned int D.24533;
+  int D.24532;
+  unsigned int last_blend_src_rgb.66;
+  unsigned int last_blend_dst_rgb.65;
+  unsigned int last_blend_src_alpha.64;
+  unsigned int last_blend_dst_alpha.63;
+  void (*<T15c7>) (GLenum, GLenum, GLenum, GLenum) __glewBlendFuncSeparate.62;
+  unsigned int last_blend_equation_rgb.61;
+  unsigned int last_blend_equation_alpha.60;
+  void (*<T16e1>) (GLenum, GLenum) __glewBlendEquationSeparate.59;
+  unsigned int last_element_array_buffer.58;
+  int last_element_array_buffer.57;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.56;
+  unsigned int last_array_buffer.55;
+  int last_array_buffer.54;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.53;
+  unsigned int last_vertex_array.52;
+  int last_vertex_array.51;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.50;
+  unsigned int last_active_texture.49;
+  void (*<T14e9>) (GLenum) __glewActiveTexture.48;
+  unsigned int last_sampler.47;
+  int last_sampler.46;
+  void (*<T16d6>) (GLuint, GLuint) __glewBindSampler.45;
+  unsigned int last_texture.44;
+  int last_texture.43;
+  unsigned int last_program.42;
+  int last_program.41;
+  void (*<T16e5>) (GLuint) __glewUseProgram.40;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteVertexArrays.39;
+  long unsigned int D.24491;
+  long unsigned int D.24490;
+  unsigned int D.24489;
+  int D.24488;
+  unsigned int D.24487;
+  int D.24486;
+  float D.24485;
+  int D.24484;
+  float D.24483;
+  float D.24482;
+  float D.24481;
+  int D.24480;
+  float D.24479;
+  float D.24478;
+  float D.24477;
+  int D.24476;
+  float D.24475;
+  float D.24474;
+  float D.24473;
+  unsigned int D.24472;
+  long int D.24471;
+  void * D.24470;
+  void (*<Tbc9>) (const struct ImDrawList *, const struct ImDrawCmd *) D.24468;
+  void (*<Tbc9>) (const struct ImDrawList *, const struct ImDrawCmd *) D.24465;
+  const struct ImVector * D.24464;
+  int D.24462;
+  long int D.24460;
+  long unsigned int D.24459;
+  long unsigned int D.24458;
+  int D.24457;
+  short unsigned int * D.24456;
+  void (*<T168d>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.38;
+  unsigned int g_ElementsHandle.37;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.36;
+  long int D.24452;
+  long unsigned int D.24451;
+  long unsigned int D.24450;
+  int D.24449;
+  struct ImDrawVert * D.24448;
+  void (*<T168d>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.35;
+  unsigned int g_VboHandle.34;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.33;
+  struct ImDrawList * * D.24444;
+  long unsigned int D.24443;
+  long unsigned int D.24442;
+  struct ImDrawList * * D.24441;
+  int D.24439;
+  unsigned int g_AttribLocationColor.32;
+  int g_AttribLocationColor.31;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.30;
+  unsigned int g_AttribLocationUV.29;
+  int g_AttribLocationUV.28;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.27;
+  unsigned int g_AttribLocationPosition.26;
+  int g_AttribLocationPosition.25;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.24;
+  unsigned int g_AttribLocationColor.23;
+  int g_AttribLocationColor.22;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.21;
+  unsigned int g_AttribLocationUV.20;
+  int g_AttribLocationUV.19;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.18;
+  unsigned int g_AttribLocationPosition.17;
+  int g_AttribLocationPosition.16;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.15;
+  unsigned int g_VboHandle.14;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.13;
+  unsigned int vao_handle.12;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.11;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenVertexArrays.10;
+  void (*<T16d6>) (GLuint, GLuint) __glewBindSampler.9;
+  int g_AttribLocationProjMtx.8;
+  void (*<T17a7>) (GLint, GLsizei, GLboolean, const GLfloat *) __glewUniformMatrix4fv.7;
+  int g_AttribLocationTex.6;
+  void (*<T165c>) (GLint, GLint) __glewUniform1i.5;
+  unsigned int g_ShaderHandle.4;
+  int g_ShaderHandle.3;
+  void (*<T16e5>) (GLuint) __glewUseProgram.2;
+  float D.24406;
+  float D.24405;
+  float D.24404;
+  float D.24403;
+  float D.24402;
+  void (*<T14e9>) (GLenum) __glewBlendEquation.1;
+  void (*<T14e9>) (GLenum) __glewActiveTexture.0;
+  struct ImVec2 * D.24399;
+  float D.24395;
+  float D.24394;
+  float D.24393;
+  float D.24392;
+  float D.24391;
+  float D.24390;
+  struct ImGuiIO & _15;
+  float _17;
+  float _18;
+  float _19;
+  float _21;
+  float _22;
+  float _23;
+  struct ImVec2 * _25;
+  void (*<T14e9>) (GLenum) __glewActiveTexture.0_29;
+  GLboolean _47;
+  GLboolean _50;
+  GLboolean _53;
+  GLboolean _56;
+  void (*<T14e9>) (GLenum) __glewBlendEquation.1_59;
+  float _72;
+  float _73;
+  float _75;
+  float _76;
+  float _77;
+  void (*<T16e5>) (GLuint) __glewUseProgram.2_79;
+  int g_ShaderHandle.3_80;
+  unsigned int g_ShaderHandle.4_81;
+  void (*<T165c>) (GLint, GLint) __glewUniform1i.5_83;
+  int g_AttribLocationTex.6_84;
+  void (*<T17a7>) (GLint, GLsizei, GLboolean, const GLfloat *) __glewUniformMatrix4fv.7_86;
+  int g_AttribLocationProjMtx.8_87;
+  void (*<T16d6>) (GLuint, GLuint) __glewBindSampler.9_89;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenVertexArrays.10_92;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.11_94;
+  unsigned int vao_handle.12_95;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.13_97;
+  unsigned int g_VboHandle.14_98;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.15_100;
+  int g_AttribLocationPosition.16_101;
+  unsigned int g_AttribLocationPosition.17_102;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.18_104;
+  int g_AttribLocationUV.19_105;
+  unsigned int g_AttribLocationUV.20_106;
+  void (*<T16e5>) (GLuint) __glewEnableVertexAttribArray.21_108;
+  int g_AttribLocationColor.22_109;
+  unsigned int g_AttribLocationColor.23_110;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.24_112;
+  int g_AttribLocationPosition.25_113;
+  unsigned int g_AttribLocationPosition.26_114;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.27_116;
+  int g_AttribLocationUV.28_117;
+  unsigned int g_AttribLocationUV.29_118;
+  void (*<T183e>) (GLuint, GLint, GLenum, GLboolean, GLsizei, const void *) __glewVertexAttribPointer.30_120;
+  int g_AttribLocationColor.31_121;
+  unsigned int g_AttribLocationColor.32_122;
+  int _125;
+  struct ImDrawList * * _126;
+  long unsigned int _127;
+  long unsigned int _128;
+  struct ImDrawList * * _129;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.33_132;
+  unsigned int g_VboHandle.34_133;
+  void (*<T168d>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.35_135;
+  struct ImDrawVert * _136;
+  int _137;
+  long unsigned int _138;
+  long unsigned int _139;
+  long int _140;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.36_142;
+  unsigned int g_ElementsHandle.37_143;
+  void (*<T168d>) (GLenum, GLsizeiptr, const void *, GLenum) __glewBufferData.38_145;
+  short unsigned int * _146;
+  int _147;
+  long unsigned int _148;
+  long unsigned int _149;
+  long int _150;
+  int _153;
+  const struct ImVector * _154;
+  void (*<Tbc9>) (const struct ImDrawList *, const struct ImDrawCmd *) _157;
+  void (*<Tbc9>) (const struct ImDrawList *, const struct ImDrawCmd *) _158;
+  void * _160;
+  long int _161;
+  unsigned int _162;
+  float _164;
+  float _165;
+  float _166;
+  int _167;
+  float _168;
+  float _169;
+  float _170;
+  int _171;
+  float _172;
+  float _173;
+  float _174;
+  int _175;
+  float _176;
+  int _177;
+  unsigned int _179;
+  int _180;
+  unsigned int _182;
+  long unsigned int _183;
+  long unsigned int _184;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteVertexArrays.39_188;
+  void (*<T16e5>) (GLuint) __glewUseProgram.40_190;
+  int last_program.41_191;
+  unsigned int last_program.42_192;
+  int last_texture.43_194;
+  unsigned int last_texture.44_195;
+  void (*<T16d6>) (GLuint, GLuint) __glewBindSampler.45_197;
+  int last_sampler.46_198;
+  unsigned int last_sampler.47_199;
+  void (*<T14e9>) (GLenum) __glewActiveTexture.48_201;
+  unsigned int last_active_texture.49_202;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.50_204;
+  int last_vertex_array.51_205;
+  unsigned int last_vertex_array.52_206;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.53_208;
+  int last_array_buffer.54_209;
+  unsigned int last_array_buffer.55_210;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.56_212;
+  int last_element_array_buffer.57_213;
+  unsigned int last_element_array_buffer.58_214;
+  void (*<T16e1>) (GLenum, GLenum) __glewBlendEquationSeparate.59_216;
+  unsigned int last_blend_equation_alpha.60_217;
+  unsigned int last_blend_equation_rgb.61_218;
+  void (*<T15c7>) (GLenum, GLenum, GLenum, GLenum) __glewBlendFuncSeparate.62_220;
+  unsigned int last_blend_dst_alpha.63_221;
+  unsigned int last_blend_src_alpha.64_222;
+  unsigned int last_blend_dst_rgb.65_223;
+  unsigned int last_blend_src_rgb.66_224;
+  int _234;
+  unsigned int _235;
+  int _237;
+  int _238;
+  int _239;
+  int _240;
+  int _242;
+  int _243;
+  int _244;
+  int _245;
+
+  <bb 2>:
+  _15 = ImGui::GetIO ();
+  io_16 = _15;
+  _17 = io_16->DisplaySize.x;
+  _18 = io_16->DisplayFramebufferScale.x;
+  _19 = _17 * _18;
+  fb_width_20 = (int) _19;
+  _21 = io_16->DisplaySize.y;
+  _22 = io_16->DisplayFramebufferScale.y;
+  _23 = _21 * _22;
+  fb_height_24 = (int) _23;
+  if (fb_width_20 == 0)
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  if (fb_height_24 == 0)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  last_active_texture ={v} {CLOBBER};
+  last_program ={v} {CLOBBER};
+  last_texture ={v} {CLOBBER};
+  last_sampler ={v} {CLOBBER};
+  last_array_buffer ={v} {CLOBBER};
+  last_element_array_buffer ={v} {CLOBBER};
+  last_vertex_array ={v} {CLOBBER};
+  last_polygon_mode ={v} {CLOBBER};
+  last_viewport ={v} {CLOBBER};
+  last_scissor_box ={v} {CLOBBER};
+  last_blend_src_rgb ={v} {CLOBBER};
+  last_blend_dst_rgb ={v} {CLOBBER};
+  last_blend_src_alpha ={v} {CLOBBER};
+  last_blend_dst_alpha ={v} {CLOBBER};
+  last_blend_equation_rgb ={v} {CLOBBER};
+  last_blend_equation_alpha ={v} {CLOBBER};
+  ortho_projection ={v} {CLOBBER};
+  vao_handle ={v} {CLOBBER};
+  goto <bb 27> (<L26>);
+
+  <bb 5>:
+  _25 = &io_16->DisplayFramebufferScale;
+  ImDrawData::ScaleClipRects (draw_data_26(D), _25);
+  glGetIntegerv (34016, &last_active_texture);
+  __glewActiveTexture.0_29 = __glewActiveTexture;
+  __glewActiveTexture.0_29 (33984);
+  glGetIntegerv (35725, &last_program);
+  glGetIntegerv (32873, &last_texture);
+  glGetIntegerv (35097, &last_sampler);
+  glGetIntegerv (34964, &last_array_buffer);
+  glGetIntegerv (34965, &last_element_array_buffer);
+  glGetIntegerv (34229, &last_vertex_array);
+  glGetIntegerv (2880, &last_polygon_mode);
+  glGetIntegerv (2978, &last_viewport);
+  glGetIntegerv (3088, &last_scissor_box);
+  glGetIntegerv (32969, &last_blend_src_rgb);
+  glGetIntegerv (32968, &last_blend_dst_rgb);
+  glGetIntegerv (32971, &last_blend_src_alpha);
+  glGetIntegerv (32970, &last_blend_dst_alpha);
+  glGetIntegerv (32777, &last_blend_equation_rgb);
+  glGetIntegerv (34877, &last_blend_equation_alpha);
+  _47 = glIsEnabled (3042);
+  last_enable_blend_48 = _47;
+  _50 = glIsEnabled (2884);
+  last_enable_cull_face_51 = _50;
+  _53 = glIsEnabled (2929);
+  last_enable_depth_test_54 = _53;
+  _56 = glIsEnabled (3089);
+  last_enable_scissor_test_57 = _56;
+  glEnable (3042);
+  __glewBlendEquation.1_59 = __glewBlendEquation;
+  __glewBlendEquation.1_59 (32774);
+  glBlendFunc (770, 771);
+  glDisable (2884);
+  glDisable (2929);
+  glEnable (3089);
+  glPolygonMode (1032, 6914);
+  glViewport (0, 0, fb_width_20, fb_height_24);
+  ortho_projection = {};
+  ortho_projection[2][2] = -1.0e+0;
+  ortho_projection[3][0] = -1.0e+0;
+  ortho_projection[3][1] = 1.0e+0;
+  ortho_projection[3][3] = 1.0e+0;
+  _72 = io_16->DisplaySize.x;
+  _73 = 2.0e+0 / _72;
+  ortho_projection[0][0] = _73;
+  _75 = io_16->DisplaySize.y;
+  _76 = -_75;
+  _77 = 2.0e+0 / _76;
+  ortho_projection[1][1] = _77;
+  __glewUseProgram.2_79 = __glewUseProgram;
+  g_ShaderHandle.3_80 = g_ShaderHandle;
+  g_ShaderHandle.4_81 = (unsigned int) g_ShaderHandle.3_80;
+  __glewUseProgram.2_79 (g_ShaderHandle.4_81);
+  __glewUniform1i.5_83 = __glewUniform1i;
+  g_AttribLocationTex.6_84 = g_AttribLocationTex;
+  __glewUniform1i.5_83 (g_AttribLocationTex.6_84, 0);
+  __glewUniformMatrix4fv.7_86 = __glewUniformMatrix4fv;
+  g_AttribLocationProjMtx.8_87 = g_AttribLocationProjMtx;
+  __glewUniformMatrix4fv.7_86 (g_AttribLocationProjMtx.8_87, 1, 0, &ortho_projection[0][0]);
+  __glewBindSampler.9_89 = __glewBindSampler;
+  __glewBindSampler.9_89 (0, 0);
+  vao_handle = 0;
+  __glewGenVertexArrays.10_92 = __glewGenVertexArrays;
+  __glewGenVertexArrays.10_92 (1, &vao_handle);
+  __glewBindVertexArray.11_94 = __glewBindVertexArray;
+  vao_handle.12_95 = vao_handle;
+  __glewBindVertexArray.11_94 (vao_handle.12_95);
+  __glewBindBuffer.13_97 = __glewBindBuffer;
+  g_VboHandle.14_98 = g_VboHandle;
+  __glewBindBuffer.13_97 (34962, g_VboHandle.14_98);
+  __glewEnableVertexAttribArray.15_100 = __glewEnableVertexAttribArray;
+  g_AttribLocationPosition.16_101 = g_AttribLocationPosition;
+  g_AttribLocationPosition.17_102 = (unsigned int) g_AttribLocationPosition.16_101;
+  __glewEnableVertexAttribArray.15_100 (g_AttribLocationPosition.17_102);
+  __glewEnableVertexAttribArray.18_104 = __glewEnableVertexAttribArray;
+  g_AttribLocationUV.19_105 = g_AttribLocationUV;
+  g_AttribLocationUV.20_106 = (unsigned int) g_AttribLocationUV.19_105;
+  __glewEnableVertexAttribArray.18_104 (g_AttribLocationUV.20_106);
+  __glewEnableVertexAttribArray.21_108 = __glewEnableVertexAttribArray;
+  g_AttribLocationColor.22_109 = g_AttribLocationColor;
+  g_AttribLocationColor.23_110 = (unsigned int) g_AttribLocationColor.22_109;
+  __glewEnableVertexAttribArray.21_108 (g_AttribLocationColor.23_110);
+  __glewVertexAttribPointer.24_112 = __glewVertexAttribPointer;
+  g_AttribLocationPosition.25_113 = g_AttribLocationPosition;
+  g_AttribLocationPosition.26_114 = (unsigned int) g_AttribLocationPosition.25_113;
+  __glewVertexAttribPointer.24_112 (g_AttribLocationPosition.26_114, 2, 5126, 0, 20, 0B);
+  __glewVertexAttribPointer.27_116 = __glewVertexAttribPointer;
+  g_AttribLocationUV.28_117 = g_AttribLocationUV;
+  g_AttribLocationUV.29_118 = (unsigned int) g_AttribLocationUV.28_117;
+  __glewVertexAttribPointer.27_116 (g_AttribLocationUV.29_118, 2, 5126, 0, 20, 8B);
+  __glewVertexAttribPointer.30_120 = __glewVertexAttribPointer;
+  g_AttribLocationColor.31_121 = g_AttribLocationColor;
+  g_AttribLocationColor.32_122 = (unsigned int) g_AttribLocationColor.31_121;
+  __glewVertexAttribPointer.30_120 (g_AttribLocationColor.32_122, 4, 5121, 1, 20, 16B);
+  n_124 = 0;
+
+  <bb 6>:
+  # n_1 = PHI <n_124(5), n_187(13)>
+  _125 = draw_data_26(D)->CmdListsCount;
+  if (_125 <= n_1)
+    goto <bb 14>;
+  else
+    goto <bb 7>;
+
+  <bb 7>:
+  _126 = draw_data_26(D)->CmdLists;
+  _127 = (long unsigned int) n_1;
+  _128 = _127 * 8;
+  _129 = _126 + _128;
+  cmd_list_130 = *_129;
+  idx_buffer_offset_131 = 0B;
+  __glewBindBuffer.33_132 = __glewBindBuffer;
+  g_VboHandle.34_133 = g_VboHandle;
+  __glewBindBuffer.33_132 (34962, g_VboHandle.34_133);
+  __glewBufferData.35_135 = __glewBufferData;
+  _136 = cmd_list_130->VtxBuffer.Data;
+  _137 = cmd_list_130->VtxBuffer.Size;
+  _138 = (long unsigned int) _137;
+  _139 = _138 * 20;
+  _140 = (long int) _139;
+  __glewBufferData.35_135 (34962, _140, _136, 35040);
+  __glewBindBuffer.36_142 = __glewBindBuffer;
+  g_ElementsHandle.37_143 = g_ElementsHandle;
+  __glewBindBuffer.36_142 (34963, g_ElementsHandle.37_143);
+  __glewBufferData.38_145 = __glewBufferData;
+  _146 = cmd_list_130->IdxBuffer.Data;
+  _147 = cmd_list_130->IdxBuffer.Size;
+  _148 = (long unsigned int) _147;
+  _149 = _148 * 2;
+  _150 = (long int) _149;
+  __glewBufferData.38_145 (34963, _150, _146, 35040);
+  cmd_i_152 = 0;
+
+  <bb 8>:
+  # idx_buffer_offset_2 = PHI <idx_buffer_offset_131(7), idx_buffer_offset_185(12)>
+  # cmd_i_3 = PHI <cmd_i_152(7), cmd_i_186(12)>
+  _153 = cmd_list_130->CmdBuffer.Size;
+  if (_153 <= cmd_i_3)
+    goto <bb 13>;
+  else
+    goto <bb 9>;
+
+  <bb 9>:
+  _154 = &cmd_list_130->CmdBuffer;
+  pcmd_156 = ImVector<ImDrawCmd>::operator[] (_154, cmd_i_3);
+  _157 = pcmd_156->UserCallback;
+  if (_157 != 0B)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  _158 = pcmd_156->UserCallback;
+  _158 (cmd_list_130, pcmd_156);
+  goto <bb 12>;
+
+  <bb 11>:
+  _160 = pcmd_156->TextureId;
+  _161 = (long int) _160;
+  _162 = (unsigned int) _161;
+  glBindTexture (3553, _162);
+  _164 = pcmd_156->ClipRect.w;
+  _165 = pcmd_156->ClipRect.y;
+  _166 = _164 - _165;
+  _167 = (int) _166;
+  _168 = pcmd_156->ClipRect.z;
+  _169 = pcmd_156->ClipRect.x;
+  _170 = _168 - _169;
+  _171 = (int) _170;
+  _172 = (float) fb_height_24;
+  _173 = pcmd_156->ClipRect.w;
+  _174 = _172 - _173;
+  _175 = (int) _174;
+  _176 = pcmd_156->ClipRect.x;
+  _177 = (int) _176;
+  glScissor (_177, _175, _171, _167);
+  _179 = pcmd_156->ElemCount;
+  _180 = (int) _179;
+  glDrawElements (4, _180, 5123, idx_buffer_offset_2);
+
+  <bb 12>:
+  _182 = pcmd_156->ElemCount;
+  _183 = (long unsigned int) _182;
+  _184 = _183 * 2;
+  idx_buffer_offset_185 = idx_buffer_offset_2 + _184;
+  cmd_i_186 = cmd_i_3 + 1;
+  goto <bb 8>;
+
+  <bb 13>:
+  n_187 = n_1 + 1;
+  goto <bb 6>;
+
+  <bb 14>:
+  __glewDeleteVertexArrays.39_188 = __glewDeleteVertexArrays;
+  __glewDeleteVertexArrays.39_188 (1, &vao_handle);
+  __glewUseProgram.40_190 = __glewUseProgram;
+  last_program.41_191 = last_program;
+  last_program.42_192 = (unsigned int) last_program.41_191;
+  __glewUseProgram.40_190 (last_program.42_192);
+  last_texture.43_194 = last_texture;
+  last_texture.44_195 = (unsigned int) last_texture.43_194;
+  glBindTexture (3553, last_texture.44_195);
+  __glewBindSampler.45_197 = __glewBindSampler;
+  last_sampler.46_198 = last_sampler;
+  last_sampler.47_199 = (unsigned int) last_sampler.46_198;
+  __glewBindSampler.45_197 (0, last_sampler.47_199);
+  __glewActiveTexture.48_201 = __glewActiveTexture;
+  last_active_texture.49_202 = last_active_texture;
+  __glewActiveTexture.48_201 (last_active_texture.49_202);
+  __glewBindVertexArray.50_204 = __glewBindVertexArray;
+  last_vertex_array.51_205 = last_vertex_array;
+  last_vertex_array.52_206 = (unsigned int) last_vertex_array.51_205;
+  __glewBindVertexArray.50_204 (last_vertex_array.52_206);
+  __glewBindBuffer.53_208 = __glewBindBuffer;
+  last_array_buffer.54_209 = last_array_buffer;
+  last_array_buffer.55_210 = (unsigned int) last_array_buffer.54_209;
+  __glewBindBuffer.53_208 (34962, last_array_buffer.55_210);
+  __glewBindBuffer.56_212 = __glewBindBuffer;
+  last_element_array_buffer.57_213 = last_element_array_buffer;
+  last_element_array_buffer.58_214 = (unsigned int) last_element_array_buffer.57_213;
+  __glewBindBuffer.56_212 (34963, last_element_array_buffer.58_214);
+  __glewBlendEquationSeparate.59_216 = __glewBlendEquationSeparate;
+  last_blend_equation_alpha.60_217 = last_blend_equation_alpha;
+  last_blend_equation_rgb.61_218 = last_blend_equation_rgb;
+  __glewBlendEquationSeparate.59_216 (last_blend_equation_rgb.61_218, last_blend_equation_alpha.60_217);
+  __glewBlendFuncSeparate.62_220 = __glewBlendFuncSeparate;
+  last_blend_dst_alpha.63_221 = last_blend_dst_alpha;
+  last_blend_src_alpha.64_222 = last_blend_src_alpha;
+  last_blend_dst_rgb.65_223 = last_blend_dst_rgb;
+  last_blend_src_rgb.66_224 = last_blend_src_rgb;
+  __glewBlendFuncSeparate.62_220 (last_blend_src_rgb.66_224, last_blend_dst_rgb.65_223, last_blend_src_alpha.64_222, last_blend_dst_alpha.63_221);
+  if (last_enable_blend_48 != 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  glEnable (3042);
+  goto <bb 17>;
+
+  <bb 16>:
+  glDisable (3042);
+
+  <bb 17>:
+  if (last_enable_cull_face_51 != 0)
+    goto <bb 18>;
+  else
+    goto <bb 19>;
+
+  <bb 18>:
+  glEnable (2884);
+  goto <bb 20>;
+
+  <bb 19>:
+  glDisable (2884);
+
+  <bb 20>:
+  if (last_enable_depth_test_54 != 0)
+    goto <bb 21>;
+  else
+    goto <bb 22>;
+
+  <bb 21>:
+  glEnable (2929);
+  goto <bb 23>;
+
+  <bb 22>:
+  glDisable (2929);
+
+  <bb 23>:
+  if (last_enable_scissor_test_57 != 0)
+    goto <bb 24>;
+  else
+    goto <bb 25>;
+
+  <bb 24>:
+  glEnable (3089);
+  goto <bb 26>;
+
+  <bb 25>:
+  glDisable (3089);
+
+  <bb 26>:
+  _234 = last_polygon_mode[0];
+  _235 = (unsigned int) _234;
+  glPolygonMode (1032, _235);
+  _237 = last_viewport[3];
+  _238 = last_viewport[2];
+  _239 = last_viewport[1];
+  _240 = last_viewport[0];
+  glViewport (_240, _239, _238, _237);
+  _242 = last_scissor_box[3];
+  _243 = last_scissor_box[2];
+  _244 = last_scissor_box[1];
+  _245 = last_scissor_box[0];
+  glScissor (_245, _244, _243, _242);
+  last_active_texture ={v} {CLOBBER};
+  last_program ={v} {CLOBBER};
+  last_texture ={v} {CLOBBER};
+  last_sampler ={v} {CLOBBER};
+  last_array_buffer ={v} {CLOBBER};
+  last_element_array_buffer ={v} {CLOBBER};
+  last_vertex_array ={v} {CLOBBER};
+  last_polygon_mode ={v} {CLOBBER};
+  last_viewport ={v} {CLOBBER};
+  last_scissor_box ={v} {CLOBBER};
+  last_blend_src_rgb ={v} {CLOBBER};
+  last_blend_dst_rgb ={v} {CLOBBER};
+  last_blend_src_alpha ={v} {CLOBBER};
+  last_blend_dst_alpha ={v} {CLOBBER};
+  last_blend_equation_rgb ={v} {CLOBBER};
+  last_blend_equation_alpha ={v} {CLOBBER};
+  ortho_projection ={v} {CLOBBER};
+  vao_handle ={v} {CLOBBER};
+
+<L26>:
+  return;
+
+}
+
+
+
+;; Function const char* ImGui_ImplGlfwGL3_GetClipboardText(void*) (_ZL34ImGui_ImplGlfwGL3_GetClipboardTextPv, funcdef_no=176, decl_uid=24174, cgraph_uid=146, symbol_order=162)
+
+const char* ImGui_ImplGlfwGL3_GetClipboardText(void*) (void * user_data)
+{
+  const char * D.24563;
+  const char * D.24561;
+  const char * _4;
+  const char * _5;
+
+  <bb 2>:
+  _4 = glfwGetClipboardString (user_data_2(D));
+  _5 = _4;
+
+<L0>:
+  return _5;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfwGL3_SetClipboardText(void*, const char*) (_ZL34ImGui_ImplGlfwGL3_SetClipboardTextPvPKc, funcdef_no=177, decl_uid=24178, cgraph_uid=147, symbol_order=163)
+
+void ImGui_ImplGlfwGL3_SetClipboardText(void*, const char*) (void * user_data, const char * text)
+{
+  <bb 2>:
+  glfwSetClipboardString (user_data_2(D), text_3(D));
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfw_MouseButtonCallback(GLFWwindow*, int, int, int) (_Z34ImGui_ImplGlfw_MouseButtonCallbackP10GLFWwindowiii, funcdef_no=178, decl_uid=7189, cgraph_uid=148, symbol_order=164)
+
+void ImGui_ImplGlfw_MouseButtonCallback(GLFWwindow*, int, int, int) (struct GLFWwindow * D.24180, int button, int action, int D.24183)
+{
+  <bb 2>:
+  if (action_2(D) == 1)
+    goto <bb 3>;
+  else
+    goto <bb 6>;
+
+  <bb 3>:
+  if (button_4(D) >= 0)
+    goto <bb 4>;
+  else
+    goto <bb 6>;
+
+  <bb 4>:
+  if (button_4(D) <= 2)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  g_MouseJustPressed[button_4(D)] = 1;
+
+  <bb 6>:
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfw_ScrollCallback(GLFWwindow*, double, double) (_Z29ImGui_ImplGlfw_ScrollCallbackP10GLFWwindowdd, funcdef_no=179, decl_uid=7193, cgraph_uid=149, symbol_order=165)
+
+void ImGui_ImplGlfw_ScrollCallback(GLFWwindow*, double, double) (struct GLFWwindow * D.24186, double xoffset, double yoffset)
+{
+  struct ImGuiIO & D.24577;
+  struct ImGuiIO & io;
+  float D.24576;
+  float D.24575;
+  float D.24574;
+  float D.24573;
+  float D.24572;
+  float D.24571;
+  struct ImGuiIO & _3;
+  float _5;
+  float _7;
+  float _8;
+  float _10;
+  float _12;
+  float _13;
+
+  <bb 2>:
+  _3 = ImGui::GetIO ();
+  io_4 = _3;
+  _5 = io_4->MouseWheelH;
+  _7 = (float) xoffset_6(D);
+  _8 = _5 + _7;
+  io_4->MouseWheelH = _8;
+  _10 = io_4->MouseWheel;
+  _12 = (float) yoffset_11(D);
+  _13 = _10 + _12;
+  io_4->MouseWheel = _13;
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfw_KeyCallback(GLFWwindow*, int, int, int, int) (_Z26ImGui_ImplGlfw_KeyCallbackP10GLFWwindowiiii, funcdef_no=180, decl_uid=7199, cgraph_uid=150, symbol_order=166)
+
+void ImGui_ImplGlfw_KeyCallback(GLFWwindow*, int, int, int, int) (struct GLFWwindow * D.24192, int key, int D.24194, int action, int mods)
+{
+  struct ImGuiIO & D.24612;
+  struct ImGuiIO & io;
+  bool D.24611;
+  bool D.24609;
+  bool iftmp.70;
+  bool D.24604;
+  bool D.24602;
+  bool iftmp.69;
+  bool D.24597;
+  bool D.24595;
+  bool iftmp.68;
+  bool D.24590;
+  bool D.24588;
+  bool iftmp.67;
+  bool iftmp.67_1;
+  bool iftmp.68_2;
+  bool iftmp.69_3;
+  bool iftmp.70_4;
+  struct ImGuiIO & _9;
+  bool _15;
+  bool _16;
+  bool iftmp.67_17;
+  bool iftmp.67_18;
+  bool _20;
+  bool _21;
+  bool iftmp.68_22;
+  bool iftmp.68_23;
+  bool _25;
+  bool _26;
+  bool iftmp.69_27;
+  bool iftmp.69_28;
+  bool _30;
+  bool _31;
+  bool iftmp.70_32;
+  bool iftmp.70_33;
+
+  <bb 2>:
+  _9 = ImGui::GetIO ();
+  io_10 = _9;
+  if (action_11(D) == 1)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  io_10->KeysDown[key_12(D)] = 1;
+
+  <bb 4>:
+  if (action_11(D) == 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  io_10->KeysDown[key_12(D)] = 0;
+
+  <bb 6>:
+  _15 = io_10->KeysDown[341];
+  if (_15 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 7>;
+
+  <bb 7>:
+  _16 = io_10->KeysDown[345];
+  if (_16 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  iftmp.67_18 = 1;
+  goto <bb 10>;
+
+  <bb 9>:
+  iftmp.67_17 = 0;
+
+  <bb 10>:
+  # iftmp.67_1 = PHI <iftmp.67_18(8), iftmp.67_17(9)>
+  io_10->KeyCtrl = iftmp.67_1;
+  _20 = io_10->KeysDown[340];
+  if (_20 != 0)
+    goto <bb 12>;
+  else
+    goto <bb 11>;
+
+  <bb 11>:
+  _21 = io_10->KeysDown[344];
+  if (_21 != 0)
+    goto <bb 12>;
+  else
+    goto <bb 13>;
+
+  <bb 12>:
+  iftmp.68_23 = 1;
+  goto <bb 14>;
+
+  <bb 13>:
+  iftmp.68_22 = 0;
+
+  <bb 14>:
+  # iftmp.68_2 = PHI <iftmp.68_23(12), iftmp.68_22(13)>
+  io_10->KeyShift = iftmp.68_2;
+  _25 = io_10->KeysDown[342];
+  if (_25 != 0)
+    goto <bb 16>;
+  else
+    goto <bb 15>;
+
+  <bb 15>:
+  _26 = io_10->KeysDown[346];
+  if (_26 != 0)
+    goto <bb 16>;
+  else
+    goto <bb 17>;
+
+  <bb 16>:
+  iftmp.69_28 = 1;
+  goto <bb 18>;
+
+  <bb 17>:
+  iftmp.69_27 = 0;
+
+  <bb 18>:
+  # iftmp.69_3 = PHI <iftmp.69_28(16), iftmp.69_27(17)>
+  io_10->KeyAlt = iftmp.69_3;
+  _30 = io_10->KeysDown[343];
+  if (_30 != 0)
+    goto <bb 20>;
+  else
+    goto <bb 19>;
+
+  <bb 19>:
+  _31 = io_10->KeysDown[347];
+  if (_31 != 0)
+    goto <bb 20>;
+  else
+    goto <bb 21>;
+
+  <bb 20>:
+  iftmp.70_33 = 1;
+  goto <bb 22>;
+
+  <bb 21>:
+  iftmp.70_32 = 0;
+
+  <bb 22>:
+  # iftmp.70_4 = PHI <iftmp.70_33(20), iftmp.70_32(21)>
+  io_10->KeySuper = iftmp.70_4;
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfw_CharCallback(GLFWwindow*, unsigned int) (_Z27ImGui_ImplGlfw_CharCallbackP10GLFWwindowj, funcdef_no=181, decl_uid=7202, cgraph_uid=151, symbol_order=167)
+
+void ImGui_ImplGlfw_CharCallback(GLFWwindow*, unsigned int) (struct GLFWwindow * D.24200, unsigned int c)
+{
+  struct ImGuiIO & D.24620;
+  struct ImGuiIO & io;
+  int D.24618;
+  short unsigned int D.24617;
+  struct ImGuiIO & _4;
+  short unsigned int _7;
+  int _8;
+
+  <bb 2>:
+  _4 = ImGui::GetIO ();
+  io_5 = _4;
+  if (c_6(D) != 0)
+    goto <bb 3>;
+  else
+    goto <bb 5>;
+
+  <bb 3>:
+  if (c_6(D) <= 65535)
+    goto <bb 4>;
+  else
+    goto <bb 5>;
+
+  <bb 4>:
+  _7 = (short unsigned int) c_6(D);
+  _8 = (int) _7;
+  ImGuiIO::AddInputCharacter (io_5, _8);
+
+  <bb 5>:
+  return;
+
+}
+
+
+
+;; Function bool ImGui_ImplGlfwGL3_CreateFontsTexture() (_Z36ImGui_ImplGlfwGL3_CreateFontsTexturev, funcdef_no=182, decl_uid=24205, cgraph_uid=152, symbol_order=168)
+
+bool ImGui_ImplGlfwGL3_CreateFontsTexture() ()
+{
+  struct ImGuiIO & D.24634;
+  GLint last_texture;
+  int height;
+  int width;
+  unsigned char * pixels;
+  struct ImGuiIO & io;
+  bool D.24632;
+  unsigned int last_texture.77;
+  int last_texture.76;
+  void * D.24629;
+  long int D.24628;
+  unsigned int g_FontTexture.75;
+  struct ImFontAtlas * D.24626;
+  int width.74;
+  int height.73;
+  unsigned char * pixels.72;
+  unsigned int g_FontTexture.71;
+  struct ImFontAtlas * D.24621;
+  struct ImGuiIO & _4;
+  struct ImFontAtlas * _6;
+  unsigned int g_FontTexture.71_10;
+  unsigned char * pixels.72_15;
+  int height.73_16;
+  int width.74_17;
+  struct ImFontAtlas * _19;
+  unsigned int g_FontTexture.75_20;
+  long int _21;
+  void * _22;
+  int last_texture.76_24;
+  unsigned int last_texture.77_25;
+  bool _27;
+
+  <bb 2>:
+  _4 = ImGui::GetIO ();
+  io_5 = _4;
+  _6 = io_5->Fonts;
+  ImFontAtlas::GetTexDataAsRGBA32 (_6, &pixels, &width, &height, 0B);
+  glGetIntegerv (32873, &last_texture);
+  glGenTextures (1, &g_FontTexture);
+  g_FontTexture.71_10 = g_FontTexture;
+  glBindTexture (3553, g_FontTexture.71_10);
+  glTexParameteri (3553, 10241, 9729);
+  glTexParameteri (3553, 10240, 9729);
+  glPixelStorei (3314, 0);
+  pixels.72_15 = pixels;
+  height.73_16 = height;
+  width.74_17 = width;
+  glTexImage2D (3553, 0, 6408, width.74_17, height.73_16, 0, 6408, 5121, pixels.72_15);
+  _19 = io_5->Fonts;
+  g_FontTexture.75_20 = g_FontTexture;
+  _21 = (long int) g_FontTexture.75_20;
+  _22 = (void *) _21;
+  _19->TexID = _22;
+  last_texture.76_24 = last_texture;
+  last_texture.77_25 = (unsigned int) last_texture.76_24;
+  glBindTexture (3553, last_texture.77_25);
+  _27 = 1;
+  pixels ={v} {CLOBBER};
+  width ={v} {CLOBBER};
+  height ={v} {CLOBBER};
+  last_texture ={v} {CLOBBER};
+
+<L1>:
+  return _27;
+
+}
+
+
+
+;; Function bool ImGui_ImplGlfwGL3_CreateDeviceObjects() (_Z37ImGui_ImplGlfwGL3_CreateDeviceObjectsv, funcdef_no=183, decl_uid=7184, cgraph_uid=153, symbol_order=169)
+
+bool ImGui_ImplGlfwGL3_CreateDeviceObjects() ()
+{
+  int D.24710;
+  int D.24709;
+  int D.24708;
+  int D.24707;
+  int D.24706;
+  unsigned int D.24705;
+  unsigned int D.24704;
+  unsigned int D.24703;
+  const GLchar * fragment_shader_with_version[2];
+  const GLchar * vertex_shader_with_version[2];
+  const GLchar * fragment_shader;
+  const GLchar * vertex_shader;
+  GLint last_vertex_array;
+  GLint last_array_buffer;
+  GLint last_texture;
+  bool D.24701;
+  unsigned int last_vertex_array.130;
+  int last_vertex_array.129;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.128;
+  unsigned int last_array_buffer.127;
+  int last_array_buffer.126;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.125;
+  unsigned int last_texture.124;
+  int last_texture.123;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenBuffers.122;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenBuffers.121;
+  int D.24690;
+  unsigned int g_ShaderHandle.120;
+  int g_ShaderHandle.119;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.118;
+  int D.24686;
+  unsigned int g_ShaderHandle.117;
+  int g_ShaderHandle.116;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.115;
+  int D.24682;
+  unsigned int g_ShaderHandle.114;
+  int g_ShaderHandle.113;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.112;
+  int D.24678;
+  unsigned int g_ShaderHandle.111;
+  int g_ShaderHandle.110;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetUniformLocation.109;
+  int D.24674;
+  unsigned int g_ShaderHandle.108;
+  int g_ShaderHandle.107;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetUniformLocation.106;
+  unsigned int g_ShaderHandle.105;
+  int g_ShaderHandle.104;
+  void (*<T16e5>) (GLuint) __glewLinkProgram.103;
+  unsigned int g_ShaderHandle.102;
+  int g_ShaderHandle.101;
+  unsigned int g_FragHandle.100;
+  int g_FragHandle.99;
+  void (*<T16d6>) (GLuint, GLuint) __glewAttachShader.98;
+  unsigned int g_ShaderHandle.97;
+  int g_ShaderHandle.96;
+  unsigned int g_VertHandle.95;
+  int g_VertHandle.94;
+  void (*<T16d6>) (GLuint, GLuint) __glewAttachShader.93;
+  unsigned int g_FragHandle.92;
+  int g_FragHandle.91;
+  void (*<T16e5>) (GLuint) __glewCompileShader.90;
+  unsigned int g_VertHandle.89;
+  int g_VertHandle.88;
+  void (*<T16e5>) (GLuint) __glewCompileShader.87;
+  unsigned int g_FragHandle.86;
+  int g_FragHandle.85;
+  void (*<T1757>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.84;
+  unsigned int g_VertHandle.83;
+  int g_VertHandle.82;
+  void (*<T1757>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.81;
+  int D.24645;
+  unsigned int D.24644;
+  GLuint (*<T16ee>) (GLenum) __glewCreateShader.80;
+  int D.24642;
+  unsigned int D.24641;
+  GLuint (*<T16ee>) (GLenum) __glewCreateShader.79;
+  int D.24639;
+  unsigned int D.24638;
+  GLuint (*<T16e9>) (void) __glewCreateProgram.78;
+  GLuint (*<T16e9>) (void) __glewCreateProgram.78_14;
+  unsigned int _16;
+  unsigned int _17;
+  int _18;
+  GLuint (*<T16ee>) (GLenum) __glewCreateShader.79_20;
+  unsigned int _22;
+  unsigned int _23;
+  int _24;
+  GLuint (*<T16ee>) (GLenum) __glewCreateShader.80_26;
+  unsigned int _28;
+  unsigned int _29;
+  int _30;
+  void (*<T1757>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.81_32;
+  int g_VertHandle.82_33;
+  unsigned int g_VertHandle.83_34;
+  void (*<T1757>) (GLuint, GLsizei, const GLchar * const *, const GLint *) __glewShaderSource.84_36;
+  int g_FragHandle.85_37;
+  unsigned int g_FragHandle.86_38;
+  void (*<T16e5>) (GLuint) __glewCompileShader.87_40;
+  int g_VertHandle.88_41;
+  unsigned int g_VertHandle.89_42;
+  void (*<T16e5>) (GLuint) __glewCompileShader.90_44;
+  int g_FragHandle.91_45;
+  unsigned int g_FragHandle.92_46;
+  void (*<T16d6>) (GLuint, GLuint) __glewAttachShader.93_48;
+  int g_VertHandle.94_49;
+  unsigned int g_VertHandle.95_50;
+  int g_ShaderHandle.96_51;
+  unsigned int g_ShaderHandle.97_52;
+  void (*<T16d6>) (GLuint, GLuint) __glewAttachShader.98_54;
+  int g_FragHandle.99_55;
+  unsigned int g_FragHandle.100_56;
+  int g_ShaderHandle.101_57;
+  unsigned int g_ShaderHandle.102_58;
+  void (*<T16e5>) (GLuint) __glewLinkProgram.103_60;
+  int g_ShaderHandle.104_61;
+  unsigned int g_ShaderHandle.105_62;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetUniformLocation.106_64;
+  int g_ShaderHandle.107_65;
+  unsigned int g_ShaderHandle.108_66;
+  int _68;
+  int _69;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetUniformLocation.109_71;
+  int g_ShaderHandle.110_72;
+  unsigned int g_ShaderHandle.111_73;
+  int _75;
+  int _76;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.112_78;
+  int g_ShaderHandle.113_79;
+  unsigned int g_ShaderHandle.114_80;
+  int _82;
+  int _83;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.115_85;
+  int g_ShaderHandle.116_86;
+  unsigned int g_ShaderHandle.117_87;
+  int _89;
+  int _90;
+  GLint (*<T1718>) (GLuint, const GLchar *) __glewGetAttribLocation.118_92;
+  int g_ShaderHandle.119_93;
+  unsigned int g_ShaderHandle.120_94;
+  int _96;
+  int _97;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenBuffers.121_99;
+  void (*<T16a2>) (GLsizei, GLuint *) __glewGenBuffers.122_101;
+  int last_texture.123_104;
+  unsigned int last_texture.124_105;
+  void (*<T1685>) (GLenum, GLuint) __glewBindBuffer.125_107;
+  int last_array_buffer.126_108;
+  unsigned int last_array_buffer.127_109;
+  void (*<T16e5>) (GLuint) __glewBindVertexArray.128_111;
+  int last_vertex_array.129_112;
+  unsigned int last_vertex_array.130_113;
+  bool _115;
+
+  <bb 2>:
+  glGetIntegerv (32873, &last_texture);
+  glGetIntegerv (34964, &last_array_buffer);
+  glGetIntegerv (34229, &last_vertex_array);
+  vertex_shader_6 = "uniform mat4 ProjMtx;\nin vec2 Position;\nin vec2 UV;\nin vec4 Color;\nout vec2 Frag_UV;\nout vec4 Frag_Color;\nvoid main()\n{\n\tFrag_UV = UV;\n\tFrag_Color = Color;\n\tgl_Position = ProjMtx * vec4(Position.xy,0,1);\n}\n";
+  fragment_shader_7 = "uniform sampler2D Texture;\nin vec2 Frag_UV;\nin vec4 Frag_Color;\nout vec4 Out_Color;\nvoid main()\n{\n\tOut_Color = Frag_Color * texture( Texture, Frag_UV.st);\n}\n";
+  vertex_shader_with_version = {};
+  vertex_shader_with_version[0] = &g_GlslVersion;
+  vertex_shader_with_version[1] = vertex_shader_6;
+  fragment_shader_with_version = {};
+  fragment_shader_with_version[0] = &g_GlslVersion;
+  fragment_shader_with_version[1] = fragment_shader_7;
+  __glewCreateProgram.78_14 = __glewCreateProgram;
+  _16 = __glewCreateProgram.78_14 ();
+  _17 = _16;
+  _18 = (int) _17;
+  g_ShaderHandle = _18;
+  __glewCreateShader.79_20 = __glewCreateShader;
+  _22 = __glewCreateShader.79_20 (35633);
+  _23 = _22;
+  _24 = (int) _23;
+  g_VertHandle = _24;
+  __glewCreateShader.80_26 = __glewCreateShader;
+  _28 = __glewCreateShader.80_26 (35632);
+  _29 = _28;
+  _30 = (int) _29;
+  g_FragHandle = _30;
+  __glewShaderSource.81_32 = __glewShaderSource;
+  g_VertHandle.82_33 = g_VertHandle;
+  g_VertHandle.83_34 = (unsigned int) g_VertHandle.82_33;
+  __glewShaderSource.81_32 (g_VertHandle.83_34, 2, &vertex_shader_with_version, 0B);
+  __glewShaderSource.84_36 = __glewShaderSource;
+  g_FragHandle.85_37 = g_FragHandle;
+  g_FragHandle.86_38 = (unsigned int) g_FragHandle.85_37;
+  __glewShaderSource.84_36 (g_FragHandle.86_38, 2, &fragment_shader_with_version, 0B);
+  __glewCompileShader.87_40 = __glewCompileShader;
+  g_VertHandle.88_41 = g_VertHandle;
+  g_VertHandle.89_42 = (unsigned int) g_VertHandle.88_41;
+  __glewCompileShader.87_40 (g_VertHandle.89_42);
+  __glewCompileShader.90_44 = __glewCompileShader;
+  g_FragHandle.91_45 = g_FragHandle;
+  g_FragHandle.92_46 = (unsigned int) g_FragHandle.91_45;
+  __glewCompileShader.90_44 (g_FragHandle.92_46);
+  __glewAttachShader.93_48 = __glewAttachShader;
+  g_VertHandle.94_49 = g_VertHandle;
+  g_VertHandle.95_50 = (unsigned int) g_VertHandle.94_49;
+  g_ShaderHandle.96_51 = g_ShaderHandle;
+  g_ShaderHandle.97_52 = (unsigned int) g_ShaderHandle.96_51;
+  __glewAttachShader.93_48 (g_ShaderHandle.97_52, g_VertHandle.95_50);
+  __glewAttachShader.98_54 = __glewAttachShader;
+  g_FragHandle.99_55 = g_FragHandle;
+  g_FragHandle.100_56 = (unsigned int) g_FragHandle.99_55;
+  g_ShaderHandle.101_57 = g_ShaderHandle;
+  g_ShaderHandle.102_58 = (unsigned int) g_ShaderHandle.101_57;
+  __glewAttachShader.98_54 (g_ShaderHandle.102_58, g_FragHandle.100_56);
+  __glewLinkProgram.103_60 = __glewLinkProgram;
+  g_ShaderHandle.104_61 = g_ShaderHandle;
+  g_ShaderHandle.105_62 = (unsigned int) g_ShaderHandle.104_61;
+  __glewLinkProgram.103_60 (g_ShaderHandle.105_62);
+  __glewGetUniformLocation.106_64 = __glewGetUniformLocation;
+  g_ShaderHandle.107_65 = g_ShaderHandle;
+  g_ShaderHandle.108_66 = (unsigned int) g_ShaderHandle.107_65;
+  _68 = __glewGetUniformLocation.106_64 (g_ShaderHandle.108_66, "Texture");
+  _69 = _68;
+  g_AttribLocationTex = _69;
+  __glewGetUniformLocation.109_71 = __glewGetUniformLocation;
+  g_ShaderHandle.110_72 = g_ShaderHandle;
+  g_ShaderHandle.111_73 = (unsigned int) g_ShaderHandle.110_72;
+  _75 = __glewGetUniformLocation.109_71 (g_ShaderHandle.111_73, "ProjMtx");
+  _76 = _75;
+  g_AttribLocationProjMtx = _76;
+  __glewGetAttribLocation.112_78 = __glewGetAttribLocation;
+  g_ShaderHandle.113_79 = g_ShaderHandle;
+  g_ShaderHandle.114_80 = (unsigned int) g_ShaderHandle.113_79;
+  _82 = __glewGetAttribLocation.112_78 (g_ShaderHandle.114_80, "Position");
+  _83 = _82;
+  g_AttribLocationPosition = _83;
+  __glewGetAttribLocation.115_85 = __glewGetAttribLocation;
+  g_ShaderHandle.116_86 = g_ShaderHandle;
+  g_ShaderHandle.117_87 = (unsigned int) g_ShaderHandle.116_86;
+  _89 = __glewGetAttribLocation.115_85 (g_ShaderHandle.117_87, "UV");
+  _90 = _89;
+  g_AttribLocationUV = _90;
+  __glewGetAttribLocation.118_92 = __glewGetAttribLocation;
+  g_ShaderHandle.119_93 = g_ShaderHandle;
+  g_ShaderHandle.120_94 = (unsigned int) g_ShaderHandle.119_93;
+  _96 = __glewGetAttribLocation.118_92 (g_ShaderHandle.120_94, "Color");
+  _97 = _96;
+  g_AttribLocationColor = _97;
+  __glewGenBuffers.121_99 = __glewGenBuffers;
+  __glewGenBuffers.121_99 (1, &g_VboHandle);
+  __glewGenBuffers.122_101 = __glewGenBuffers;
+  __glewGenBuffers.122_101 (1, &g_ElementsHandle);
+  ImGui_ImplGlfwGL3_CreateFontsTexture ();
+  last_texture.123_104 = last_texture;
+  last_texture.124_105 = (unsigned int) last_texture.123_104;
+  glBindTexture (3553, last_texture.124_105);
+  __glewBindBuffer.125_107 = __glewBindBuffer;
+  last_array_buffer.126_108 = last_array_buffer;
+  last_array_buffer.127_109 = (unsigned int) last_array_buffer.126_108;
+  __glewBindBuffer.125_107 (34962, last_array_buffer.127_109);
+  __glewBindVertexArray.128_111 = __glewBindVertexArray;
+  last_vertex_array.129_112 = last_vertex_array;
+  last_vertex_array.130_113 = (unsigned int) last_vertex_array.129_112;
+  __glewBindVertexArray.128_111 (last_vertex_array.130_113);
+  _115 = 1;
+  last_texture ={v} {CLOBBER};
+  last_array_buffer ={v} {CLOBBER};
+  last_vertex_array ={v} {CLOBBER};
+  vertex_shader_with_version ={v} {CLOBBER};
+  fragment_shader_with_version ={v} {CLOBBER};
+
+<L1>:
+  return _115;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfwGL3_InvalidateDeviceObjects() (_Z41ImGui_ImplGlfwGL3_InvalidateDeviceObjectsv, funcdef_no=184, decl_uid=7183, cgraph_uid=154, symbol_order=170)
+
+void ImGui_ImplGlfwGL3_InvalidateDeviceObjects() ()
+{
+  struct ImGuiIO & D.24775;
+  struct ImFontAtlas * D.24773;
+  struct ImGuiIO & D.24772;
+  unsigned int g_FontTexture.162;
+  unsigned int g_ShaderHandle.161;
+  int g_ShaderHandle.160;
+  void (*<T16e5>) (GLuint) __glewDeleteProgram.159;
+  int g_ShaderHandle.158;
+  unsigned int g_FragHandle.157;
+  int g_FragHandle.156;
+  void (*<T16e5>) (GLuint) __glewDeleteShader.155;
+  int g_FragHandle.154;
+  unsigned int g_ShaderHandle.153;
+  int g_ShaderHandle.152;
+  unsigned int g_FragHandle.151;
+  int g_FragHandle.150;
+  void (*<T16d6>) (GLuint, GLuint) __glewDetachShader.149;
+  int g_FragHandle.148;
+  int g_ShaderHandle.147;
+  unsigned int g_VertHandle.146;
+  int g_VertHandle.145;
+  void (*<T16e5>) (GLuint) __glewDeleteShader.144;
+  int g_VertHandle.143;
+  unsigned int g_ShaderHandle.142;
+  int g_ShaderHandle.141;
+  unsigned int g_VertHandle.140;
+  int g_VertHandle.139;
+  void (*<T16d6>) (GLuint, GLuint) __glewDetachShader.138;
+  int g_VertHandle.137;
+  int g_ShaderHandle.136;
+  unsigned int g_ElementsHandle.135;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteBuffers.134;
+  unsigned int g_ElementsHandle.133;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteBuffers.132;
+  unsigned int g_VboHandle.131;
+  unsigned int g_VboHandle.131_10;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteBuffers.132_11;
+  unsigned int g_ElementsHandle.133_13;
+  void (*<T1697>) (GLsizei, const GLuint *) __glewDeleteBuffers.134_14;
+  unsigned int g_ElementsHandle.135_17;
+  int g_ShaderHandle.136_19;
+  int g_VertHandle.137_20;
+  void (*<T16d6>) (GLuint, GLuint) __glewDetachShader.138_21;
+  int g_VertHandle.139_22;
+  unsigned int g_VertHandle.140_23;
+  int g_ShaderHandle.141_24;
+  unsigned int g_ShaderHandle.142_25;
+  int g_VertHandle.143_27;
+  void (*<T16e5>) (GLuint) __glewDeleteShader.144_28;
+  int g_VertHandle.145_29;
+  unsigned int g_VertHandle.146_30;
+  int g_ShaderHandle.147_33;
+  int g_FragHandle.148_34;
+  void (*<T16d6>) (GLuint, GLuint) __glewDetachShader.149_35;
+  int g_FragHandle.150_36;
+  unsigned int g_FragHandle.151_37;
+  int g_ShaderHandle.152_38;
+  unsigned int g_ShaderHandle.153_39;
+  int g_FragHandle.154_41;
+  void (*<T16e5>) (GLuint) __glewDeleteShader.155_42;
+  int g_FragHandle.156_43;
+  unsigned int g_FragHandle.157_44;
+  int g_ShaderHandle.158_47;
+  void (*<T16e5>) (GLuint) __glewDeleteProgram.159_48;
+  int g_ShaderHandle.160_49;
+  unsigned int g_ShaderHandle.161_50;
+  unsigned int g_FontTexture.162_53;
+  struct ImGuiIO & _56;
+  struct ImGuiIO & _57;
+  struct ImFontAtlas * _58;
+
+  <bb 2>:
+  g_VboHandle.131_10 = g_VboHandle;
+  if (g_VboHandle.131_10 != 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  __glewDeleteBuffers.132_11 = __glewDeleteBuffers;
+  __glewDeleteBuffers.132_11 (1, &g_VboHandle);
+
+  <bb 4>:
+  g_ElementsHandle.133_13 = g_ElementsHandle;
+  if (g_ElementsHandle.133_13 != 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  __glewDeleteBuffers.134_14 = __glewDeleteBuffers;
+  __glewDeleteBuffers.134_14 (1, &g_ElementsHandle);
+
+  <bb 6>:
+  g_ElementsHandle = 0;
+  g_ElementsHandle.135_17 = g_ElementsHandle;
+  g_VboHandle = g_ElementsHandle.135_17;
+  g_ShaderHandle.136_19 = g_ShaderHandle;
+  if (g_ShaderHandle.136_19 != 0)
+    goto <bb 7>;
+  else
+    goto <bb 9>;
+
+  <bb 7>:
+  g_VertHandle.137_20 = g_VertHandle;
+  if (g_VertHandle.137_20 != 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  __glewDetachShader.138_21 = __glewDetachShader;
+  g_VertHandle.139_22 = g_VertHandle;
+  g_VertHandle.140_23 = (unsigned int) g_VertHandle.139_22;
+  g_ShaderHandle.141_24 = g_ShaderHandle;
+  g_ShaderHandle.142_25 = (unsigned int) g_ShaderHandle.141_24;
+  __glewDetachShader.138_21 (g_ShaderHandle.142_25, g_VertHandle.140_23);
+
+  <bb 9>:
+  g_VertHandle.143_27 = g_VertHandle;
+  if (g_VertHandle.143_27 != 0)
+    goto <bb 10>;
+  else
+    goto <bb 11>;
+
+  <bb 10>:
+  __glewDeleteShader.144_28 = __glewDeleteShader;
+  g_VertHandle.145_29 = g_VertHandle;
+  g_VertHandle.146_30 = (unsigned int) g_VertHandle.145_29;
+  __glewDeleteShader.144_28 (g_VertHandle.146_30);
+
+  <bb 11>:
+  g_VertHandle = 0;
+  g_ShaderHandle.147_33 = g_ShaderHandle;
+  if (g_ShaderHandle.147_33 != 0)
+    goto <bb 12>;
+  else
+    goto <bb 14>;
+
+  <bb 12>:
+  g_FragHandle.148_34 = g_FragHandle;
+  if (g_FragHandle.148_34 != 0)
+    goto <bb 13>;
+  else
+    goto <bb 14>;
+
+  <bb 13>:
+  __glewDetachShader.149_35 = __glewDetachShader;
+  g_FragHandle.150_36 = g_FragHandle;
+  g_FragHandle.151_37 = (unsigned int) g_FragHandle.150_36;
+  g_ShaderHandle.152_38 = g_ShaderHandle;
+  g_ShaderHandle.153_39 = (unsigned int) g_ShaderHandle.152_38;
+  __glewDetachShader.149_35 (g_ShaderHandle.153_39, g_FragHandle.151_37);
+
+  <bb 14>:
+  g_FragHandle.154_41 = g_FragHandle;
+  if (g_FragHandle.154_41 != 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  __glewDeleteShader.155_42 = __glewDeleteShader;
+  g_FragHandle.156_43 = g_FragHandle;
+  g_FragHandle.157_44 = (unsigned int) g_FragHandle.156_43;
+  __glewDeleteShader.155_42 (g_FragHandle.157_44);
+
+  <bb 16>:
+  g_FragHandle = 0;
+  g_ShaderHandle.158_47 = g_ShaderHandle;
+  if (g_ShaderHandle.158_47 != 0)
+    goto <bb 17>;
+  else
+    goto <bb 18>;
+
+  <bb 17>:
+  __glewDeleteProgram.159_48 = __glewDeleteProgram;
+  g_ShaderHandle.160_49 = g_ShaderHandle;
+  g_ShaderHandle.161_50 = (unsigned int) g_ShaderHandle.160_49;
+  __glewDeleteProgram.159_48 (g_ShaderHandle.161_50);
+
+  <bb 18>:
+  g_ShaderHandle = 0;
+  g_FontTexture.162_53 = g_FontTexture;
+  if (g_FontTexture.162_53 != 0)
+    goto <bb 19>;
+  else
+    goto <bb 20>;
+
+  <bb 19>:
+  glDeleteTextures (1, &g_FontTexture);
+  _56 = ImGui::GetIO ();
+  _57 = _56;
+  _58 = _57->Fonts;
+  _58->TexID = 0B;
+  g_FontTexture = 0;
+
+  <bb 20>:
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfw_InstallCallbacks(GLFWwindow*) (_ZL31ImGui_ImplGlfw_InstallCallbacksP10GLFWwindow, funcdef_no=185, decl_uid=24224, cgraph_uid=155, symbol_order=171)
+
+void ImGui_ImplGlfw_InstallCallbacks(GLFWwindow*) (struct GLFWwindow * window)
+{
+  <bb 2>:
+  glfwSetMouseButtonCallback (window_2(D), ImGui_ImplGlfw_MouseButtonCallback);
+  glfwSetScrollCallback (window_2(D), ImGui_ImplGlfw_ScrollCallback);
+  glfwSetKeyCallback (window_2(D), ImGui_ImplGlfw_KeyCallback);
+  glfwSetCharCallback (window_2(D), ImGui_ImplGlfw_CharCallback);
+  return;
+
+}
+
+
+
+;; Function bool ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool, const char*) (_Z22ImGui_ImplGlfwGL3_InitP10GLFWwindowbPKc, funcdef_no=186, decl_uid=7178, cgraph_uid=156, symbol_order=172)
+
+bool ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool, const char*) (struct GLFWwindow * window, bool install_callbacks, const char * glsl_version)
+{
+  struct GLFWcursor * D.24811;
+  struct GLFWcursor * D.24810;
+  struct GLFWcursor * D.24809;
+  struct GLFWcursor * D.24808;
+  struct GLFWcursor * D.24807;
+  struct GLFWcursor * D.24806;
+  struct GLFWcursor * D.24805;
+  struct ImGuiIO & D.24804;
+  struct ImGuiIO & io;
+  static const char __PRETTY_FUNCTION__[60] = "bool ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool, const char*)";
+  bool D.24802;
+  struct GLFWcursor * D.24798;
+  struct GLFWcursor * D.24797;
+  struct GLFWcursor * D.24796;
+  struct GLFWcursor * D.24795;
+  struct GLFWcursor * D.24794;
+  struct GLFWcursor * D.24793;
+  struct GLFWcursor * D.24792;
+  struct GLFWwindow * g_Window.163;
+  int D.24790;
+  int D.24789;
+  int D.24788;
+  int D.24787;
+  long unsigned int D.24785;
+  int D.24781;
+  int D.24780;
+  long unsigned int D.24779;
+  char[32] * D.24786;
+  long unsigned int _8;
+  int _9;
+  int _10;
+  long unsigned int _12;
+  char[32] * _13;
+  struct ImGuiIO & _16;
+  int _18;
+  int _19;
+  int _21;
+  int _22;
+  struct GLFWwindow * g_Window.163_47;
+  struct GLFWcursor * _50;
+  struct GLFWcursor * _51;
+  struct GLFWcursor * _54;
+  struct GLFWcursor * _55;
+  struct GLFWcursor * _58;
+  struct GLFWcursor * _59;
+  struct GLFWcursor * _62;
+  struct GLFWcursor * _63;
+  struct GLFWcursor * _66;
+  struct GLFWcursor * _67;
+  struct GLFWcursor * _70;
+  struct GLFWcursor * _71;
+  struct GLFWcursor * _74;
+  struct GLFWcursor * _75;
+  bool _79;
+
+  <bb 2>:
+  g_Window = window_4(D);
+  if (glsl_version_6(D) == 0B)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  glsl_version_7 = "#version 150";
+
+  <bb 4>:
+  # glsl_version_1 = PHI <glsl_version_6(D)(2), glsl_version_7(3)>
+  _8 = strlen (glsl_version_1);
+  _9 = (int) _8;
+  _10 = _9 + 2;
+  if (_10 <= 31)
+    goto <bb 6>;
+  else
+    goto <bb 5>;
+
+  <bb 5>:
+  __assert_fail ("(int)strlen(glsl_version) + 2 < ((int)(sizeof(g_GlslVersion)/sizeof(*g_GlslVersion)))", "/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp", 365, &__PRETTY_FUNCTION__);
+
+  <bb 6>:
+  strcpy (&g_GlslVersion, glsl_version_1);
+  _12 = __builtin_strlen (&g_GlslVersion);
+  _13 = &g_GlslVersion + _12;
+  __builtin_memcpy (_13, "\n", 2);
+  _16 = ImGui::GetIO ();
+  io_17 = _16;
+  _18 = io_17->BackendFlags;
+  _19 = _18 | 2;
+  io_17->BackendFlags = _19;
+  _21 = io_17->BackendFlags;
+  _22 = _21 | 4;
+  io_17->BackendFlags = _22;
+  io_17->KeyMap[0] = 258;
+  io_17->KeyMap[1] = 263;
+  io_17->KeyMap[2] = 262;
+  io_17->KeyMap[3] = 265;
+  io_17->KeyMap[4] = 264;
+  io_17->KeyMap[5] = 266;
+  io_17->KeyMap[6] = 267;
+  io_17->KeyMap[7] = 268;
+  io_17->KeyMap[8] = 269;
+  io_17->KeyMap[9] = 260;
+  io_17->KeyMap[10] = 261;
+  io_17->KeyMap[11] = 259;
+  io_17->KeyMap[12] = 32;
+  io_17->KeyMap[13] = 257;
+  io_17->KeyMap[14] = 256;
+  io_17->KeyMap[15] = 65;
+  io_17->KeyMap[16] = 67;
+  io_17->KeyMap[17] = 86;
+  io_17->KeyMap[18] = 88;
+  io_17->KeyMap[19] = 89;
+  io_17->KeyMap[20] = 90;
+  io_17->SetClipboardTextFn = ImGui_ImplGlfwGL3_SetClipboardText;
+  io_17->GetClipboardTextFn = ImGui_ImplGlfwGL3_GetClipboardText;
+  g_Window.163_47 = g_Window;
+  io_17->ClipboardUserData = g_Window.163_47;
+  _50 = glfwCreateStandardCursor (221185);
+  _51 = _50;
+  g_MouseCursors[0] = _51;
+  _54 = glfwCreateStandardCursor (221186);
+  _55 = _54;
+  g_MouseCursors[1] = _55;
+  _58 = glfwCreateStandardCursor (221185);
+  _59 = _58;
+  g_MouseCursors[2] = _59;
+  _62 = glfwCreateStandardCursor (221190);
+  _63 = _62;
+  g_MouseCursors[3] = _63;
+  _66 = glfwCreateStandardCursor (221189);
+  _67 = _66;
+  g_MouseCursors[4] = _67;
+  _70 = glfwCreateStandardCursor (221185);
+  _71 = _70;
+  g_MouseCursors[5] = _71;
+  _74 = glfwCreateStandardCursor (221185);
+  _75 = _74;
+  g_MouseCursors[6] = _75;
+  if (install_callbacks_77(D) != 0)
+    goto <bb 7>;
+  else
+    goto <bb 8>;
+
+  <bb 7>:
+  ImGui_ImplGlfw_InstallCallbacks (window_4(D));
+
+  <bb 8>:
+  _79 = 1;
+
+<L9>:
+  return _79;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfwGL3_Shutdown() (_Z26ImGui_ImplGlfwGL3_Shutdownv, funcdef_no=187, decl_uid=7179, cgraph_uid=157, symbol_order=173)
+
+void ImGui_ImplGlfwGL3_Shutdown() ()
+{
+  ImGuiMouseCursor cursor_n;
+  struct GLFWcursor * D.24814;
+  struct GLFWcursor * _5;
+
+  <bb 2>:
+  cursor_n_3 = 0;
+
+  <bb 3>:
+  # cursor_n_1 = PHI <cursor_n_3(2), cursor_n_7(4)>
+  if (cursor_n_1 > 6)
+    goto <bb 5>;
+  else
+    goto <bb 4>;
+
+  <bb 4>:
+  _5 = g_MouseCursors[cursor_n_1];
+  glfwDestroyCursor (_5);
+  cursor_n_7 = cursor_n_1 + 1;
+  goto <bb 3>;
+
+  <bb 5>:
+  memset (&g_MouseCursors, 0, 56);
+  ImGui_ImplGlfwGL3_InvalidateDeviceObjects ();
+  return;
+
+}
+
+
+
+;; Function void ImGui_ImplGlfwGL3_NewFrame() (_Z26ImGui_ImplGlfwGL3_NewFramev, funcdef_no=188, decl_uid=7180, cgraph_uid=158, symbol_order=174)
+
+void ImGui_ImplGlfwGL3_NewFrame() ()
+{
+  const unsigned char * D.25079;
+  const float * D.25078;
+  ImGuiMouseCursor D.25077;
+  int D.25076;
+  int D.25075;
+  int D.25073;
+  double D.25072;
+  struct ImGuiIO & D.25071;
+  float v;
+  float v;
+  float v;
+  float v;
+  const unsigned char * buttons;
+  const float * axes;
+  int buttons_count;
+  int axes_count;
+  ImGuiMouseCursor cursor;
+  int i;
+  double mouse_y;
+  double mouse_x;
+  double current_time;
+  int display_h;
+  int display_w;
+  int h;
+  int w;
+  struct ImGuiIO & io;
+  int D.25069;
+  int D.25068;
+  int D.25067;
+  int D.25066;
+  int buttons_count.216;
+  int axes_count.215;
+  float D.25056;
+  float D.25052;
+  const float * D.25050;
+  int axes_count.214;
+  float iftmp.213;
+  float D.25042;
+  float D.25038;
+  const float * D.25036;
+  int axes_count.212;
+  float iftmp.211;
+  float D.25028;
+  float D.25024;
+  int axes_count.210;
+  float iftmp.209;
+  float D.25015;
+  float D.25011;
+  int axes_count.208;
+  float iftmp.207;
+  unsigned char D.25002;
+  const unsigned char * D.25001;
+  int buttons_count.206;
+  unsigned char D.24994;
+  const unsigned char * D.24993;
+  int buttons_count.205;
+  unsigned char D.24986;
+  const unsigned char * D.24985;
+  int buttons_count.204;
+  unsigned char D.24978;
+  const unsigned char * D.24977;
+  int buttons_count.203;
+  unsigned char D.24970;
+  const unsigned char * D.24969;
+  int buttons_count.202;
+  unsigned char D.24962;
+  const unsigned char * D.24961;
+  int buttons_count.201;
+  unsigned char D.24954;
+  const unsigned char * D.24953;
+  int buttons_count.200;
+  unsigned char D.24946;
+  const unsigned char * D.24945;
+  int buttons_count.199;
+  unsigned char D.24938;
+  const unsigned char * D.24937;
+  int buttons_count.198;
+  unsigned char D.24930;
+  const unsigned char * D.24929;
+  int buttons_count.197;
+  unsigned char D.24922;
+  const unsigned char * D.24921;
+  int buttons_count.196;
+  unsigned char D.24914;
+  int buttons_count.195;
+  int D.24908;
+  int D.24907;
+  float[21] * D.24906;
+  struct GLFWwindow * g_Window.194;
+  struct GLFWwindow * g_Window.193;
+  struct GLFWcursor * D.24899;
+  struct GLFWcursor * iftmp.192;
+  struct GLFWwindow * g_Window.191;
+  bool D.24895;
+  int D.24888;
+  struct GLFWwindow * g_Window.190;
+  int D.24885;
+  int D.24884;
+  bool iftmp.189;
+  bool retval.188;
+  int D.24879;
+  struct GLFWwindow * g_Window.187;
+  bool D.24876;
+  bool iftmp.186;
+  struct ImVec2 D.24251;
+  float D.24868;
+  double mouse_x.185;
+  float D.24866;
+  double mouse_y.184;
+  struct ImVec2 D.24250;
+  struct GLFWwindow * g_Window.183;
+  struct GLFWwindow * g_Window.182;
+  double D.24861;
+  float D.24860;
+  double D.24859;
+  float D.24858;
+  bool D.24855;
+  int D.24852;
+  struct GLFWwindow * g_Window.181;
+  bool retval.180;
+  double D.24848;
+  double g_Time.179;
+  double g_Time.178;
+  float iftmp.177;
+  float D.24841;
+  int w.176;
+  float D.24839;
+  int display_w.175;
+  int w.174;
+  float iftmp.173;
+  float D.24832;
+  int h.172;
+  float D.24830;
+  int display_h.171;
+  int h.170;
+  float iftmp.169;
+  struct ImVec2 D.24246;
+  float D.24824;
+  int w.168;
+  float D.24822;
+  int h.167;
+  struct ImVec2 D.24245;
+  struct GLFWwindow * g_Window.166;
+  struct GLFWwindow * g_Window.165;
+  unsigned int g_FontTexture.164;
+  float iftmp.169_6;
+  float iftmp.173_7;
+  float iftmp.177_8;
+  bool iftmp.186_9;
+  bool iftmp.189_10;
+  struct GLFWcursor * iftmp.192_11;
+  float iftmp.207_12;
+  float iftmp.209_13;
+  float iftmp.211_14;
+  float iftmp.213_15;
+  unsigned int g_FontTexture.164_47;
+  struct ImGuiIO & _50;
+  struct GLFWwindow * g_Window.165_52;
+  struct GLFWwindow * g_Window.166_54;
+  int h.167_56;
+  float _57;
+  int w.168_58;
+  float _59;
+  int h.170_63;
+  int display_h.171_64;
+  float _65;
+  int h.172_66;
+  float _67;
+  float iftmp.169_68;
+  float iftmp.169_69;
+  int w.174_70;
+  int display_w.175_71;
+  float _72;
+  int w.176_73;
+  float _74;
+  float iftmp.173_75;
+  float iftmp.173_76;
+  double _81;
+  double g_Time.178_83;
+  double g_Time.179_84;
+  double _85;
+  float iftmp.177_86;
+  float iftmp.177_87;
+  struct GLFWwindow * g_Window.181_90;
+  int _92;
+  int _93;
+  bool retval.180_94;
+  bool _95;
+  float _96;
+  double _97;
+  float _98;
+  double _99;
+  struct GLFWwindow * g_Window.182_100;
+  struct GLFWwindow * g_Window.183_102;
+  double mouse_y.184_104;
+  float _105;
+  double mouse_x.185_106;
+  float _107;
+  bool _119;
+  struct GLFWwindow * g_Window.187_120;
+  int _122;
+  int _123;
+  bool iftmp.186_124;
+  bool iftmp.186_125;
+  int _129;
+  int _130;
+  struct GLFWwindow * g_Window.190_131;
+  int _133;
+  int _134;
+  bool iftmp.189_135;
+  bool iftmp.189_136;
+  bool retval.188_137;
+  ImGuiMouseCursor _139;
+  bool _141;
+  struct GLFWcursor * _142;
+  struct GLFWcursor * iftmp.192_143;
+  struct GLFWcursor * iftmp.192_144;
+  struct GLFWwindow * g_Window.193_145;
+  struct GLFWwindow * g_Window.194_147;
+  struct GLFWwindow * g_Window.191_149;
+  float[21] * _151;
+  int _153;
+  int _154;
+  const float * _158;
+  const unsigned char * _161;
+  int buttons_count.195_163;
+  unsigned char _164;
+  int buttons_count.196_166;
+  const unsigned char * _167;
+  unsigned char _168;
+  int buttons_count.197_170;
+  const unsigned char * _171;
+  unsigned char _172;
+  int buttons_count.198_174;
+  const unsigned char * _175;
+  unsigned char _176;
+  int buttons_count.199_178;
+  const unsigned char * _179;
+  unsigned char _180;
+  int buttons_count.200_182;
+  const unsigned char * _183;
+  unsigned char _184;
+  int buttons_count.201_186;
+  const unsigned char * _187;
+  unsigned char _188;
+  int buttons_count.202_190;
+  const unsigned char * _191;
+  unsigned char _192;
+  int buttons_count.203_194;
+  const unsigned char * _195;
+  unsigned char _196;
+  int buttons_count.204_198;
+  const unsigned char * _199;
+  unsigned char _200;
+  int buttons_count.205_202;
+  const unsigned char * _203;
+  unsigned char _204;
+  int buttons_count.206_206;
+  const unsigned char * _207;
+  unsigned char _208;
+  int axes_count.208_210;
+  float iftmp.207_211;
+  float iftmp.207_212;
+  float _214;
+  float _217;
+  int axes_count.210_219;
+  float iftmp.209_220;
+  float iftmp.209_221;
+  float _223;
+  float _226;
+  int axes_count.212_228;
+  const float * _229;
+  float iftmp.211_230;
+  float iftmp.211_231;
+  float _233;
+  float _236;
+  int axes_count.214_238;
+  const float * _239;
+  float iftmp.213_240;
+  float iftmp.213_241;
+  float _243;
+  float _246;
+  int axes_count.215_248;
+  int buttons_count.216_249;
+  int _250;
+  int _251;
+  int _253;
+  int _254;
+
+  <bb 2>:
+  g_FontTexture.164_47 = g_FontTexture;
+  if (g_FontTexture.164_47 == 0)
+    goto <bb 3>;
+  else
+    goto <bb 4>;
+
+  <bb 3>:
+  ImGui_ImplGlfwGL3_CreateDeviceObjects ();
+
+  <bb 4>:
+  _50 = ImGui::GetIO ();
+  io_51 = _50;
+  g_Window.165_52 = g_Window;
+  glfwGetWindowSize (g_Window.165_52, &w, &h);
+  g_Window.166_54 = g_Window;
+  glfwGetFramebufferSize (g_Window.166_54, &display_w, &display_h);
+  h.167_56 = h;
+  _57 = (float) h.167_56;
+  w.168_58 = w;
+  _59 = (float) w.168_58;
+  ImVec2::ImVec2 (&D.24245, _59, _57);
+  io_51->DisplaySize = D.24245;
+  D.24245 ={v} {CLOBBER};
+  h.170_63 = h;
+  if (h.170_63 > 0)
+    goto <bb 5>;
+  else
+    goto <bb 6>;
+
+  <bb 5>:
+  display_h.171_64 = display_h;
+  _65 = (float) display_h.171_64;
+  h.172_66 = h;
+  _67 = (float) h.172_66;
+  iftmp.169_68 = _65 / _67;
+  goto <bb 7>;
+
+  <bb 6>:
+  iftmp.169_69 = 0.0;
+
+  <bb 7>:
+  # iftmp.169_6 = PHI <iftmp.169_68(5), iftmp.169_69(6)>
+  w.174_70 = w;
+  if (w.174_70 > 0)
+    goto <bb 8>;
+  else
+    goto <bb 9>;
+
+  <bb 8>:
+  display_w.175_71 = display_w;
+  _72 = (float) display_w.175_71;
+  w.176_73 = w;
+  _74 = (float) w.176_73;
+  iftmp.173_75 = _72 / _74;
+  goto <bb 10>;
+
+  <bb 9>:
+  iftmp.173_76 = 0.0;
+
+  <bb 10>:
+  # iftmp.173_7 = PHI <iftmp.173_75(8), iftmp.173_76(9)>
+  ImVec2::ImVec2 (&D.24246, iftmp.173_7, iftmp.169_6);
+  io_51->DisplayFramebufferScale = D.24246;
+  D.24246 ={v} {CLOBBER};
+  _81 = glfwGetTime ();
+  current_time_82 = _81;
+  g_Time.178_83 = g_Time;
+  if (g_Time.178_83 > 0.0)
+    goto <bb 11>;
+  else
+    goto <bb 12>;
+
+  <bb 11>:
+  g_Time.179_84 = g_Time;
+  _85 = current_time_82 - g_Time.179_84;
+  iftmp.177_86 = (float) _85;
+  goto <bb 13>;
+
+  <bb 12>:
+  iftmp.177_87 = 1.666666753590106964111328125e-2;
+
+  <bb 13>:
+  # iftmp.177_8 = PHI <iftmp.177_86(11), iftmp.177_87(12)>
+  io_51->DeltaTime = iftmp.177_8;
+  g_Time = current_time_82;
+  g_Window.181_90 = g_Window;
+  _92 = glfwGetWindowAttrib (g_Window.181_90, 131073);
+  _93 = _92;
+  retval.180_94 = _93 != 0;
+  if (retval.180_94 != 0)
+    goto <bb 14>;
+  else
+    goto <bb 18>;
+
+  <bb 14>:
+  _95 = io_51->WantSetMousePos;
+  if (_95 != 0)
+    goto <bb 15>;
+  else
+    goto <bb 16>;
+
+  <bb 15>:
+  _96 = io_51->MousePos.y;
+  _97 = (double) _96;
+  _98 = io_51->MousePos.x;
+  _99 = (double) _98;
+  g_Window.182_100 = g_Window;
+  glfwSetCursorPos (g_Window.182_100, _99, _97);
+  goto <bb 17>;
+
+  <bb 16>:
+  g_Window.183_102 = g_Window;
+  glfwGetCursorPos (g_Window.183_102, &mouse_x, &mouse_y);
+  mouse_y.184_104 = mouse_y;
+  _105 = (float) mouse_y.184_104;
+  mouse_x.185_106 = mouse_x;
+  _107 = (float) mouse_x.185_106;
+  ImVec2::ImVec2 (&D.24250, _107, _105);
+  io_51->MousePos = D.24250;
+  D.24250 ={v} {CLOBBER};
+  mouse_x ={v} {CLOBBER};
+  mouse_y ={v} {CLOBBER};
+
+  <bb 17>:
+  goto <bb 19>;
+
+  <bb 18>:
+  ImVec2::ImVec2 (&D.24251, -3.4028234663852885981170418348451692544e+38, -3.4028234663852885981170418348451692544e+38);
+  io_51->MousePos = D.24251;
+  D.24251 ={v} {CLOBBER};
+
+  <bb 19>:
+  i_118 = 0;
+
+  <bb 20>:
+  # i_1 = PHI <i_118(19), i_128(25)>
+  if (i_1 > 2)
+    goto <bb 26>;
+  else
+    goto <bb 21>;
+
+  <bb 21>:
+  _119 = g_MouseJustPressed[i_1];
+  if (_119 != 0)
+    goto <bb 23>;
+  else
+    goto <bb 22>;
+
+  <bb 22>:
+  g_Window.187_120 = g_Window;
+  _122 = glfwGetMouseButton (g_Window.187_120, i_1);
+  _123 = _122;
+  if (_123 != 0)
+    goto <bb 23>;
+  else
+    goto <bb 24>;
+
+  <bb 23>:
+  iftmp.186_125 = 1;
+  goto <bb 25>;
+
+  <bb 24>:
+  iftmp.186_124 = 0;
+
+  <bb 25>:
+  # iftmp.186_9 = PHI <iftmp.186_125(23), iftmp.186_124(24)>
+  io_51->MouseDown[i_1] = iftmp.186_9;
+  g_MouseJustPressed[i_1] = 0;
+  i_128 = i_1 + 1;
+  goto <bb 20>;
+
+  <bb 26>:
+  _129 = io_51->ConfigFlags;
+  _130 = _129 & 32;
+  if (_130 == 0)
+    goto <bb 27>;
+  else
+    goto <bb 29>;
+
+  <bb 27>:
+  g_Window.190_131 = g_Window;
+  _133 = glfwGetInputMode (g_Window.190_131, 208897);
+  _134 = _133;
+  if (_134 != 212995)
+    goto <bb 28>;
+  else
+    goto <bb 29>;
+
+  <bb 28>:
+  iftmp.189_135 = 1;
+  goto <bb 30>;
+
+  <bb 29>:
+  iftmp.189_136 = 0;
+
+  <bb 30>:
+  # iftmp.189_10 = PHI <iftmp.189_135(28), iftmp.189_136(29)>
+  retval.188_137 = iftmp.189_10;
+  if (retval.188_137 != 0)
+    goto <bb 31>;
+  else
+    goto <bb 39>;
+
+  <bb 31>:
+  _139 = ImGui::GetMouseCursor ();
+  cursor_140 = _139;
+  _141 = io_51->MouseDrawCursor;
+  if (_141 != 0)
+    goto <bb 33>;
+  else
+    goto <bb 32>;
+
+  <bb 32>:
+  if (cursor_140 == -1)
+    goto <bb 33>;
+  else
+    goto <bb 34>;
+
+  <bb 33>:
+  g_Window.191_149 = g_Window;
+  glfwSetInputMode (g_Window.191_149, 208897, 212994);
+  goto <bb 38>;
+
+  <bb 34>:
+  _142 = g_MouseCursors[cursor_140];
+  if (_142 != 0B)
+    goto <bb 35>;
+  else
+    goto <bb 36>;
+
+  <bb 35>:
+  iftmp.192_143 = g_MouseCursors[cursor_140];
+  goto <bb 37>;
+
+  <bb 36>:
+  iftmp.192_144 = g_MouseCursors[0];
+
+  <bb 37>:
+  # iftmp.192_11 = PHI <iftmp.192_143(35), iftmp.192_144(36)>
+  g_Window.193_145 = g_Window;
+  glfwSetCursor (g_Window.193_145, iftmp.192_11);
+  g_Window.194_147 = g_Window;
+  glfwSetInputMode (g_Window.194_147, 208897, 212993);
+
+  <bb 38>:
+
+  <bb 39>:
+  _151 = &io_51->NavInputs;
+  memset (_151, 0, 84);
+  _153 = io_51->ConfigFlags;
+  _154 = _153 & 2;
+  if (_154 != 0)
+    goto <bb 40>;
+  else
+    goto <bb 109>;
+
+  <bb 40>:
+  axes_count = 0;
+  buttons_count = 0;
+  _158 = glfwGetJoystickAxes (0, &axes_count);
+  axes_159 = _158;
+  _161 = glfwGetJoystickButtons (0, &buttons_count);
+  buttons_162 = _161;
+  buttons_count.195_163 = buttons_count;
+  if (buttons_count.195_163 > 0)
+    goto <bb 41>;
+  else
+    goto <bb 43>;
+
+  <bb 41>:
+  _164 = *buttons_162;
+  if (_164 == 1)
+    goto <bb 42>;
+  else
+    goto <bb 43>;
+
+  <bb 42>:
+  io_51->NavInputs[0] = 1.0e+0;
+
+  <bb 43>:
+  buttons_count.196_166 = buttons_count;
+  if (buttons_count.196_166 > 1)
+    goto <bb 44>;
+  else
+    goto <bb 46>;
+
+  <bb 44>:
+  _167 = buttons_162 + 1;
+  _168 = *_167;
+  if (_168 == 1)
+    goto <bb 45>;
+  else
+    goto <bb 46>;
+
+  <bb 45>:
+  io_51->NavInputs[1] = 1.0e+0;
+
+  <bb 46>:
+  buttons_count.197_170 = buttons_count;
+  if (buttons_count.197_170 > 2)
+    goto <bb 47>;
+  else
+    goto <bb 49>;
+
+  <bb 47>:
+  _171 = buttons_162 + 2;
+  _172 = *_171;
+  if (_172 == 1)
+    goto <bb 48>;
+  else
+    goto <bb 49>;
+
+  <bb 48>:
+  io_51->NavInputs[3] = 1.0e+0;
+
+  <bb 49>:
+  buttons_count.198_174 = buttons_count;
+  if (buttons_count.198_174 > 3)
+    goto <bb 50>;
+  else
+    goto <bb 52>;
+
+  <bb 50>:
+  _175 = buttons_162 + 3;
+  _176 = *_175;
+  if (_176 == 1)
+    goto <bb 51>;
+  else
+    goto <bb 52>;
+
+  <bb 51>:
+  io_51->NavInputs[2] = 1.0e+0;
+
+  <bb 52>:
+  buttons_count.199_178 = buttons_count;
+  if (buttons_count.199_178 > 13)
+    goto <bb 53>;
+  else
+    goto <bb 55>;
+
+  <bb 53>:
+  _179 = buttons_162 + 13;
+  _180 = *_179;
+  if (_180 == 1)
+    goto <bb 54>;
+  else
+    goto <bb 55>;
+
+  <bb 54>:
+  io_51->NavInputs[4] = 1.0e+0;
+
+  <bb 55>:
+  buttons_count.200_182 = buttons_count;
+  if (buttons_count.200_182 > 11)
+    goto <bb 56>;
+  else
+    goto <bb 58>;
+
+  <bb 56>:
+  _183 = buttons_162 + 11;
+  _184 = *_183;
+  if (_184 == 1)
+    goto <bb 57>;
+  else
+    goto <bb 58>;
+
+  <bb 57>:
+  io_51->NavInputs[5] = 1.0e+0;
+
+  <bb 58>:
+  buttons_count.201_186 = buttons_count;
+  if (buttons_count.201_186 > 10)
+    goto <bb 59>;
+  else
+    goto <bb 61>;
+
+  <bb 59>:
+  _187 = buttons_162 + 10;
+  _188 = *_187;
+  if (_188 == 1)
+    goto <bb 60>;
+  else
+    goto <bb 61>;
+
+  <bb 60>:
+  io_51->NavInputs[6] = 1.0e+0;
+
+  <bb 61>:
+  buttons_count.202_190 = buttons_count;
+  if (buttons_count.202_190 > 12)
+    goto <bb 62>;
+  else
+    goto <bb 64>;
+
+  <bb 62>:
+  _191 = buttons_162 + 12;
+  _192 = *_191;
+  if (_192 == 1)
+    goto <bb 63>;
+  else
+    goto <bb 64>;
+
+  <bb 63>:
+  io_51->NavInputs[7] = 1.0e+0;
+
+  <bb 64>:
+  buttons_count.203_194 = buttons_count;
+  if (buttons_count.203_194 > 4)
+    goto <bb 65>;
+  else
+    goto <bb 67>;
+
+  <bb 65>:
+  _195 = buttons_162 + 4;
+  _196 = *_195;
+  if (_196 == 1)
+    goto <bb 66>;
+  else
+    goto <bb 67>;
+
+  <bb 66>:
+  io_51->NavInputs[12] = 1.0e+0;
+
+  <bb 67>:
+  buttons_count.204_198 = buttons_count;
+  if (buttons_count.204_198 > 5)
+    goto <bb 68>;
+  else
+    goto <bb 70>;
+
+  <bb 68>:
+  _199 = buttons_162 + 5;
+  _200 = *_199;
+  if (_200 == 1)
+    goto <bb 69>;
+  else
+    goto <bb 70>;
+
+  <bb 69>:
+  io_51->NavInputs[13] = 1.0e+0;
+
+  <bb 70>:
+  buttons_count.205_202 = buttons_count;
+  if (buttons_count.205_202 > 4)
+    goto <bb 71>;
+  else
+    goto <bb 73>;
+
+  <bb 71>:
+  _203 = buttons_162 + 4;
+  _204 = *_203;
+  if (_204 == 1)
+    goto <bb 72>;
+  else
+    goto <bb 73>;
+
+  <bb 72>:
+  io_51->NavInputs[14] = 1.0e+0;
+
+  <bb 73>:
+  buttons_count.206_206 = buttons_count;
+  if (buttons_count.206_206 > 5)
+    goto <bb 74>;
+  else
+    goto <bb 76>;
+
+  <bb 74>:
+  _207 = buttons_162 + 5;
+  _208 = *_207;
+  if (_208 == 1)
+    goto <bb 75>;
+  else
+    goto <bb 76>;
+
+  <bb 75>:
+  io_51->NavInputs[15] = 1.0e+0;
+
+  <bb 76>:
+  axes_count.208_210 = axes_count;
+  if (axes_count.208_210 > 0)
+    goto <bb 77>;
+  else
+    goto <bb 78>;
+
+  <bb 77>:
+  iftmp.207_211 = *axes_159;
+  goto <bb 79>;
+
+  <bb 78>:
+  iftmp.207_212 = -3.00000011920928955078125e-1;
+
+  <bb 79>:
+  # iftmp.207_12 = PHI <iftmp.207_211(77), iftmp.207_212(78)>
+  v_213 = iftmp.207_12;
+  _214 = v_213 + 3.00000011920928955078125e-1;
+  v_215 = _214 / -5.99999964237213134765625e-1;
+  if (v_215 > 1.0e+0)
+    goto <bb 80>;
+  else
+    goto <bb 81>;
+
+  <bb 80>:
+  v_216 = 1.0e+0;
+
+  <bb 81>:
+  # v_2 = PHI <v_215(79), v_216(80)>
+  _217 = io_51->NavInputs[8];
+  if (_217 < v_2)
+    goto <bb 82>;
+  else
+    goto <bb 83>;
+
+  <bb 82>:
+  io_51->NavInputs[8] = v_2;
+
+  <bb 83>:
+  axes_count.210_219 = axes_count;
+  if (axes_count.210_219 > 0)
+    goto <bb 84>;
+  else
+    goto <bb 85>;
+
+  <bb 84>:
+  iftmp.209_220 = *axes_159;
+  goto <bb 86>;
+
+  <bb 85>:
+  iftmp.209_221 = 3.00000011920928955078125e-1;
+
+  <bb 86>:
+  # iftmp.209_13 = PHI <iftmp.209_220(84), iftmp.209_221(85)>
+  v_222 = iftmp.209_13;
+  _223 = v_222 - 3.00000011920928955078125e-1;
+  v_224 = _223 / 5.99999964237213134765625e-1;
+  if (v_224 > 1.0e+0)
+    goto <bb 87>;
+  else
+    goto <bb 88>;
+
+  <bb 87>:
+  v_225 = 1.0e+0;
+
+  <bb 88>:
+  # v_3 = PHI <v_224(86), v_225(87)>
+  _226 = io_51->NavInputs[9];
+  if (_226 < v_3)
+    goto <bb 89>;
+  else
+    goto <bb 90>;
+
+  <bb 89>:
+  io_51->NavInputs[9] = v_3;
+
+  <bb 90>:
+  axes_count.212_228 = axes_count;
+  if (axes_count.212_228 > 1)
+    goto <bb 91>;
+  else
+    goto <bb 92>;
+
+  <bb 91>:
+  _229 = axes_159 + 4;
+  iftmp.211_230 = *_229;
+  goto <bb 93>;
+
+  <bb 92>:
+  iftmp.211_231 = 3.00000011920928955078125e-1;
+
+  <bb 93>:
+  # iftmp.211_14 = PHI <iftmp.211_230(91), iftmp.211_231(92)>
+  v_232 = iftmp.211_14;
+  _233 = v_232 - 3.00000011920928955078125e-1;
+  v_234 = _233 / 5.99999964237213134765625e-1;
+  if (v_234 > 1.0e+0)
+    goto <bb 94>;
+  else
+    goto <bb 95>;
+
+  <bb 94>:
+  v_235 = 1.0e+0;
+
+  <bb 95>:
+  # v_4 = PHI <v_234(93), v_235(94)>
+  _236 = io_51->NavInputs[10];
+  if (_236 < v_4)
+    goto <bb 96>;
+  else
+    goto <bb 97>;
+
+  <bb 96>:
+  io_51->NavInputs[10] = v_4;
+
+  <bb 97>:
+  axes_count.214_238 = axes_count;
+  if (axes_count.214_238 > 1)
+    goto <bb 98>;
+  else
+    goto <bb 99>;
+
+  <bb 98>:
+  _239 = axes_159 + 4;
+  iftmp.213_240 = *_239;
+  goto <bb 100>;
+
+  <bb 99>:
+  iftmp.213_241 = -3.00000011920928955078125e-1;
+
+  <bb 100>:
+  # iftmp.213_15 = PHI <iftmp.213_240(98), iftmp.213_241(99)>
+  v_242 = iftmp.213_15;
+  _243 = v_242 + 3.00000011920928955078125e-1;
+  v_244 = _243 / -5.99999964237213134765625e-1;
+  if (v_244 > 1.0e+0)
+    goto <bb 101>;
+  else
+    goto <bb 102>;
+
+  <bb 101>:
+  v_245 = 1.0e+0;
+
+  <bb 102>:
+  # v_5 = PHI <v_244(100), v_245(101)>
+  _246 = io_51->NavInputs[11];
+  if (_246 < v_5)
+    goto <bb 103>;
+  else
+    goto <bb 104>;
+
+  <bb 103>:
+  io_51->NavInputs[11] = v_5;
+
+  <bb 104>:
+  axes_count.215_248 = axes_count;
+  if (axes_count.215_248 > 0)
+    goto <bb 105>;
+  else
+    goto <bb 107>;
+
+  <bb 105>:
+  buttons_count.216_249 = buttons_count;
+  if (buttons_count.216_249 > 0)
+    goto <bb 106>;
+  else
+    goto <bb 107>;
+
+  <bb 106>:
+  _250 = io_51->BackendFlags;
+  _251 = _250 | 1;
+  io_51->BackendFlags = _251;
+  goto <bb 108>;
+
+  <bb 107>:
+  _253 = io_51->BackendFlags;
+  _254 = _253 & -2;
+  io_51->BackendFlags = _254;
+
+  <bb 108>:
+  axes_count ={v} {CLOBBER};
+  buttons_count ={v} {CLOBBER};
+
+  <bb 109>:
+  ImGui::NewFrame ();
+  w ={v} {CLOBBER};
+  h ={v} {CLOBBER};
+  display_w ={v} {CLOBBER};
+  display_h ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function const value_type& ImVector<T>::operator[](int) const [with T = ImDrawCmd] (_ZNK8ImVectorI9ImDrawCmdEixEi, funcdef_no=258, decl_uid=5081, cgraph_uid=228, symbol_order=244)
+
+const value_type& ImVector<T>::operator[](int) const [with T = ImDrawCmd] (const struct ImVector * const this, int i)
+{
+  static const char __PRETTY_FUNCTION__[111] = "const value_type& ImVector<T>::operator[](int) const [with T = ImDrawCmd; ImVector<T>::value_type = ImDrawCmd]";
+  long unsigned int D.24559;
+  long unsigned int D.24558;
+  struct ImDrawCmd * D.24557;
+  const struct value_type & D.24556;
+  int D.24552;
+  int _3;
+  struct ImDrawCmd * _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  const struct value_type & _8;
+
+  <bb 2>:
+  _3 = this_2(D)->Size;
+  if (_3 > i_4(D))
+    goto <bb 4>;
+  else
+    goto <bb 3>;
+
+  <bb 3>:
+  __assert_fail ("i < Size", "/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h", 1170, &__PRETTY_FUNCTION__);
+
+  <bb 4>:
+  _5 = this_2(D)->Data;
+  _6 = (long unsigned int) i_4(D);
+  _7 = _6 * 48;
+  _8 = _5 + _7;
+
+<L3>:
+  return _8;
+
+}
+
+

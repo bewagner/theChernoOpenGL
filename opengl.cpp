@@ -8,6 +8,8 @@
 #include <sstream>
 #include <cstddef>
 
+#include "imgui.h"
+#include "imgui_impl_glfw_gl3.h"
 #include "gtc/matrix_transform.hpp"
 
 #include "Renderer.h"
@@ -28,7 +30,7 @@ int main() {
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(640, 480, "OpenGL Tutorial", nullptr, nullptr);
+    window = glfwCreateWindow(960, 540, "OpenGL Tutorial", nullptr, nullptr);
     if (!window) {
         glfwTerminate();
         return -1;
@@ -42,10 +44,10 @@ int main() {
     }
 
     float positions[] = {
-            -0.5f, -0.5f, 0.0f, 0.0f,
-            0.5f, -0.5f, 1.0f, 0.0f,
-            0.5f, 0.5f, 1.0f, 1.0f,
-            -0.5f, 0.5f, 0.0f, 1.0f};
+            -50.0f, -50.0f, 0.0f, 0.0f,
+            50.0f, -50.0f, 1.0f, 0.0f,
+            50.0f, 50.0f, 1.0f, 1.0f,
+            -50.0f, 50.0f, 0.0f, 1.0f};
 
     unsigned int indices[] = {
             0, 1, 2,
@@ -64,12 +66,11 @@ int main() {
 
     IndexBuffer ib(indices, 6);
 
-    glm::mat4 proj = glm::ortho(-2.0f, 2.0f, -1.5f, 1.5f, -1.0f, 1.0f);
-
+    glm::mat4 proj = glm::ortho(0.0f, 960.0f, 0.0f, 540.0f, -1.0f, 1.0f);
+    glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(0, 0, 0));
 
     Shader shader("/home/benjamin/Videos/openGLSeries/code/res/shaders/Basic.shader");
     shader.Bind();
-    shader.SetUniformMat4f("u_MVP", proj);
 
     Texture texture("/home/benjamin/Videos/openGLSeries/code/res/textures/dog.png");
     texture.Bind();
@@ -78,17 +79,48 @@ int main() {
 
     Renderer renderer;
 
+    ImGui::CreateContext();
+    ImGui_ImplGlfwGL3_Init(window, true);
+    ImGui::StyleColorsDark();
+
+    glm::vec3 translationA(200, 200, 0);
+    glm::vec3 translationB(400, 200, 0);
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
 
         renderer.Clear();
+        ImGui_ImplGlfwGL3_NewFrame();
 
-        renderer.Draw(va, ib, shader);
+        {
+            glm::mat4 model = glm::translate(glm::mat4(1.0f), translationA);
+            glm::mat4 mvp = proj * view * model;
+            shader.Bind();
+            shader.SetUniformMat4f("u_MVP", mvp);
+            renderer.Draw(va, ib, shader);
+        }
 
+        {
+            glm::mat4 model = glm::translate(glm::mat4(1.0f), translationB);
+            glm::mat4 mvp = proj * view * model;
+            shader.Bind();
+            shader.SetUniformMat4f("u_MVP", mvp);
+            renderer.Draw(va, ib, shader);
+        }
+
+        //ImGui window
+        ImGui::SliderFloat2("Translation A", &translationA.x, 0.0f, 960.0f);
+        ImGui::SliderFloat2("Translation B", &translationB.x, 0.0f, 960.0f);
+
+        ImGui::Render();
+        ImGui_ImplGlfwGL3_RenderDrawData(ImGui::GetDrawData());
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
 
+
+    ImGui_ImplGlfwGL3_Shutdown();
+    ImGui::DestroyContext();
     glfwTerminate();
     return 0;
 }

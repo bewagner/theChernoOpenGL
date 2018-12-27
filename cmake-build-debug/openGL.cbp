@@ -117,6 +117,7 @@
 					<Add directory="/usr/local/include"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/stb_image"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/glm"/>
+					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/imgui"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/glfw/include"/>
 					<Add directory="/opt/intel/compilers_and_libraries_2018.3.222/linux/mkl/include"/>
 					<Add directory="/opt/intel/compilers_and_libraries_2018.3.222/linux/pstl/include"/>
@@ -146,6 +147,7 @@
 					<Add directory="/usr/local/include"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/stb_image"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/glm"/>
+					<Add directory="/home/benjamin/Videos/openGLSeries/code/vendor/imgui"/>
 					<Add directory="/home/benjamin/Videos/openGLSeries/code/glfw/include"/>
 					<Add directory="/opt/intel/compilers_and_libraries_2018.3.222/linux/mkl/include"/>
 					<Add directory="/opt/intel/compilers_and_libraries_2018.3.222/linux/pstl/include"/>
@@ -396,6 +398,39 @@
 			<Option target="glfw"/>
 		</Unit>
 		<Unit filename="/home/benjamin/Videos/openGLSeries/code/opengl.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_impl_glfw_gl3.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_internal.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_rect_pack.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_textedit.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/stb_truetype.h">
 			<Option target="openGLApp"/>
 		</Unit>
 		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/stb_image/stb_image.cpp">

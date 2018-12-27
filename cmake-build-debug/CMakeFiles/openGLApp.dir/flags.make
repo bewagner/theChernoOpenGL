@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -std=c++17 -fdump-tree-optimized -g  -O0 -pg -ggdb3
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include -I/home/benjamin/Videos/openGLSeries/code/vendor/stb_image -I/home/benjamin/Videos/openGLSeries/code/vendor/glm -I/home/benjamin/Videos/openGLSeries/code/glfw/include 
+CXX_INCLUDES = -I/usr/local/include -I/home/benjamin/Videos/openGLSeries/code/vendor/stb_image -I/home/benjamin/Videos/openGLSeries/code/vendor/glm -I/home/benjamin/Videos/openGLSeries/code/vendor/imgui -I/home/benjamin/Videos/openGLSeries/code/glfw/include 
 

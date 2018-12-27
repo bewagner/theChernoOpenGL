@@ -5,8 +5,10 @@ include(CTest)
 enable_testing()
 
 
+file(GLOB_RECURSE ImGui_SOURCES "vendor/imgui/*.cpp")
+file(GLOB_RECURSE ImGui_HEADERS "vendor/imgui/*.h")
 
-add_executable(openGLApp opengl.cpp Shader.cpp Shader.h vendor/stb_image/stb_image.h vendor/stb_image/stb_image.cpp Texture.cpp Texture.h Helpers.h)
+add_executable(openGLApp opengl.cpp Shader.cpp Shader.h vendor/stb_image/stb_image.h vendor/stb_image/stb_image.cpp Texture.cpp Texture.h Helpers.h ${ImGui_SOURCES} ${ImGui_HEADERS})
 
 target_sources(openGLApp 
 PRIVATE
@@ -44,9 +46,6 @@ find_package(GLEW REQUIRED)
 include_directories(${GLEW_INCLUDE_DIRS})
 target_link_libraries(openGLApp ${GLEW_LIBRARIES})
 
-
-
-
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
@@ -54,3 +53,4 @@ include(CPack)
 
 target_include_directories(openGLApp PRIVATE vendor/stb_image)
 target_include_directories(openGLApp PRIVATE vendor/glm)
+target_include_directories(openGLApp PRIVATE vendor/imgui)
