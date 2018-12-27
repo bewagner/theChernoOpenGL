@@ -781,6 +781,33 @@ opengl.cpp.s:
 	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/opengl.cpp.s
 .PHONY : opengl.cpp.s
 
+tests/TestClearColor.o: tests/TestClearColor.cpp.o
+
+.PHONY : tests/TestClearColor.o
+
+# target to build an object file
+tests/TestClearColor.cpp.o:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/tests/TestClearColor.cpp.o
+.PHONY : tests/TestClearColor.cpp.o
+
+tests/TestClearColor.i: tests/TestClearColor.cpp.i
+
+.PHONY : tests/TestClearColor.i
+
+# target to preprocess a source file
+tests/TestClearColor.cpp.i:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/tests/TestClearColor.cpp.i
+.PHONY : tests/TestClearColor.cpp.i
+
+tests/TestClearColor.s: tests/TestClearColor.cpp.s
+
+.PHONY : tests/TestClearColor.s
+
+# target to generate assembly for a file
+tests/TestClearColor.cpp.s:
+	$(MAKE) -f CMakeFiles/openGLApp.dir/build.make CMakeFiles/openGLApp.dir/tests/TestClearColor.cpp.s
+.PHONY : tests/TestClearColor.cpp.s
+
 vendor/imgui/imgui.o: vendor/imgui/imgui.cpp.o
 
 .PHONY : vendor/imgui/imgui.o
@@ -983,6 +1010,9 @@ help:
 	@echo "... opengl.o"
 	@echo "... opengl.i"
 	@echo "... opengl.s"
+	@echo "... tests/TestClearColor.o"
+	@echo "... tests/TestClearColor.i"
+	@echo "... tests/TestClearColor.s"
 	@echo "... vendor/imgui/imgui.o"
 	@echo "... vendor/imgui/imgui.i"
 	@echo "... vendor/imgui/imgui.s"

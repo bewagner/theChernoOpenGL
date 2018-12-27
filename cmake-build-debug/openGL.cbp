@@ -400,6 +400,15 @@
 		<Unit filename="/home/benjamin/Videos/openGLSeries/code/opengl.cpp">
 			<Option target="openGLApp"/>
 		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/tests/Test.h">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/tests/TestClearColor.cpp">
+			<Option target="openGLApp"/>
+		</Unit>
+		<Unit filename="/home/benjamin/Videos/openGLSeries/code/tests/TestClearColor.h">
+			<Option target="openGLApp"/>
+		</Unit>
 		<Unit filename="/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imconfig.h">
 			<Option target="openGLApp"/>
 		</Unit>

@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o"
   "CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o"
   "CMakeFiles/openGLApp.dir/vendor/imgui/imgui_impl_glfw_gl3.cpp.o"
+  "CMakeFiles/openGLApp.dir/tests/TestClearColor.cpp.o"
   "CMakeFiles/openGLApp.dir/IndexBuffer.cpp.o"
   "CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o"
   "CMakeFiles/openGLApp.dir/Renderer.cpp.o"

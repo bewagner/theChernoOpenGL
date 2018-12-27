@@ -8,7 +8,7 @@ enable_testing()
 file(GLOB_RECURSE ImGui_SOURCES "vendor/imgui/*.cpp")
 file(GLOB_RECURSE ImGui_HEADERS "vendor/imgui/*.h")
 
-add_executable(openGLApp opengl.cpp Shader.cpp Shader.h vendor/stb_image/stb_image.h vendor/stb_image/stb_image.cpp Texture.cpp Texture.h Helpers.h ${ImGui_SOURCES} ${ImGui_HEADERS})
+add_executable(openGLApp opengl.cpp Shader.cpp Shader.h vendor/stb_image/stb_image.h vendor/stb_image/stb_image.cpp Texture.cpp Texture.h Helpers.h ${ImGui_SOURCES} ${ImGui_HEADERS} tests/Test.h tests/TestClearColor.cpp tests/TestClearColor.h)
 
 target_sources(openGLApp 
 PRIVATE
@@ -23,6 +23,8 @@ Renderer.h
 VertexBufferLayout.h
 VertexArray.h
 )
+
+include_directories(${openGLApp_SOURCE_DIR})
 
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -std=c++17 -fdump-tree-optimized")

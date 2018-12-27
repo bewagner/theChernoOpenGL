@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/benjamin/Videos/openGLSeries/code/VertexArray.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/VertexArray.cpp.o"
   "/home/benjamin/Videos/openGLSeries/code/VertexBuffer.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/VertexBuffer.cpp.o"
   "/home/benjamin/Videos/openGLSeries/code/opengl.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/opengl.cpp.o"
+  "/home/benjamin/Videos/openGLSeries/code/tests/TestClearColor.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/tests/TestClearColor.cpp.o"
   "/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/vendor/imgui/imgui.cpp.o"
   "/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_demo.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/vendor/imgui/imgui_demo.cpp.o"
   "/home/benjamin/Videos/openGLSeries/code/vendor/imgui/imgui_draw.cpp" "/home/benjamin/Videos/openGLSeries/code/cmake-build-debug/CMakeFiles/openGLApp.dir/vendor/imgui/imgui_draw.cpp.o"
